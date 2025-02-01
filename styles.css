@@ -437,6 +437,12 @@ body {
   column-gap: 30px;
   align-items: center;
 }
+
+.a-as-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*? Конец раздела Хедер */
 
 /*? Раздел Херо */
@@ -642,8 +648,8 @@ body {
 @media screen and (min-width: 834px) {
   .create-acc {
     padding-top: 80px;
-    padding-bottom: 80px;
     padding-right: 72px;
+    padding-bottom: 80px;
   }
 }
 
@@ -651,7 +657,7 @@ body {
   .create-acc {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-right: 72px;
+    padding-right: 150px;
   }
 }
 
@@ -672,6 +678,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center;
 }
 
 .form-input {
@@ -682,10 +689,12 @@ body {
   border: 1px solid var(--elem-primary-color);
   border-radius: 20px;
   height: 46px;
-  min-width: 100%;
   padding-left: 52px;
-
+  width: calc(100vw - 60px);
+  max-width: 330px;
 }
+
+
 
 .create-acc-form__input--username {
   background-image: url(./images/icons/input-user.png);
@@ -700,10 +709,19 @@ body {
   background-position: 20px center, calc(100% - 20px) center;
 }
 
-.create-acc-form__submit {
-  margin-top: 15px;
+.btn--form {
+  /* margin-top: 15px; */
+  width: calc(100vw - 60px);
+  max-width: 330px;
 }
 
+.create-acc-form__after {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
 
 
 
