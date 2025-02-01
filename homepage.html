@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animalshare</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./fonts/workSans/font.css" />
+    <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--? Мобильный хедер -->
+    <header class="header-mobile wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+        Animalshare
+      </a>
+      <div class="overlay hidden"></div>
+      <button class="btn-menu">
+        <img class="btn-menu__img" src="./images/icons/list.png" alt="menu" />
+      </button>
+      <div class="mobile-menu hidden">
+        <div class="mobile-menu__a">
+          <button class="mobile-menu__login workSans-btns">
+            Login
+            <img
+              class="btn__img btn__img--mobile"
+              src="./images/icons/user.png"
+              alt="Login"
+            />
+          </button>
+          <a class="workSans-btns" href="/">Marketplace</a>
+          <a class="workSans-btns" href="/">Forum</a>
+          <a class="workSans-btns" href="/">Profile</a>
+        </div>
+        <button class="mobile-menu__exit workSans-btns">x</button>
+      </div>
+    </header>
+    <!--? Конец мобильного хедера -->
+
+    <!--? Десктопный хедер -->
+    <header class="header-desktop wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+        Animalshare
+      </a>
+      <div class="desktop-menu">
+        <a class="workSans-btns" href="/">Marketplace</a>
+        <a class="workSans-btns" href="/">Forum</a>
+        <a class="workSans-btns" href="/">Profile</a>
+        <button
+          class="desktop-menu__login btn btn--Filled btn--Secondary workSans-btns"
+        >
+          <img
+            class="btn__img btn__img--desktop"
+            src="./images/icons/user.png"
+            alt=""
+          />Login
+        </button>
+      </div>
+    </header>
+    <!--? Конец десктопного хедера -->
+    <main class="wrapper">
+      <h1 class="welcome workSans-h4-h3-h1">Welcome to Animalshare</h1>
+      <!--? раздел херо -->
+      <div class="hero">
+        <div class="hero__description">
+          <p class="hero__text--color workSans-h5">
+            This is a test site as a portfolio for job offer, to show everyone,
+            how good I am at django and deploy it.
+          </p>
+          <p class="workSans-base-body">
+            Happiness for everyone, for free, and let no one leave offended!
+          </p>
+          <div class="hero__statistics">
+            <div class="hero__post-statistics">
+              <p class="spaceMono-h5-h4">80+</p>
+              <p class="workSans-base-body">Posts</p>
+            </div>
+            <div class="hero__profile-statistics">
+              <p class="spaceMono-h5-h4">20+</p>
+              <p class="workSans-base-body">Profiles</p>
+            </div>
+            <div class="hero__goods-statistics">
+              <p class="spaceMono-h5-h4">100+</p>
+              <p class="workSans-base-body">Products</p>
+            </div>
+          </div>
+        </div>
+        <div class="post-cards">
+          <div class="post-card">
+            <img
+              class="post-card__img"
+              src="./images/users images/lesnoi-khomiak-karbysh-chernyi-24.webp"
+              alt="Post picture"
+            />
+            <div class="post-card__description">
+              <a href="/" class="post-card__sign workSans-h5"
+                >The hamster has escaped!</a
+              >
+              <a href="/" class="post-card__author workSans-base">
+                <img
+                  class="post-card__avatar"
+                  src="./images/icons/avatars/avatar3.png"
+                  alt="Avatar"
+                />Little Bird</a
+              >
+            </div>
+          </div>
+          <div class="post-card">
+            <img
+              class="post-card__img"
+              src="./images/users images/IMG_20241118_120913919_MP.jpg"
+              alt="Post picture"
+            />
+            <div class="post-card__description">
+              <a href="/" class="post-card__sign workSans-h5"
+                >My dog ate my neighbor!</a
+              >
+              <a href="/" class="post-card__author workSans-base">
+                <img
+                  class="post-card__avatar"
+                  src="./images/icons/avatars/avatar13.png"
+                  alt="Avatar"
+                />Animakid</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--? Конец раздела херо -->
+    </main>
+    <!--? Футер -->
+    <footer class="footer">
+      <div class="footer__inner wrapper">
+        <div class="footer__before-hr">
+          <div class="footer__before-hr-description">
+            <a class="logo spaceMono-btns" href="./homepage.html">
+              <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+              Animalshare
+            </a>
+            <p class="workSans-base">Question about commercial? Contact us!</p>
+            <address class="footer__adress">
+              <a class="footer__adress-a" href="tel:+380633731255">
+                <img
+                  class="footer__adress-img"
+                  src="./images/icons/phone.png"
+                  alt="Phone"
+                />
+                +380633731255</a
+              >
+              <a class="footer__adress-a" href="mailto:237629134pah@gmail.com">
+                <img
+                  class="footer__adress-img"
+                  src="./images/icons/message.png"
+                  width="32px"
+                  alt="Email"
+                />
+                237629134pah@gmail.com</a
+              >
+            </address>
+          </div>
+        </div>
+        <p class="footer__text-after-hr workSans-caption">
+          Ⓒ Animalshare. Use it with pleasure.
+        </p>
+      </div>
+    </footer>
+    <!--? Конец футера -->
+    <script src="./script.js"></script>
+  </body>
+</html>

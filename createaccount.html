@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animalshare</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./fonts/workSans/font.css" />
+    <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--? Мобильный хедер -->
+    <header class="header-mobile wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+        Animalshare
+      </a>
+      <div class="overlay hidden"></div>
+      <button class="btn-menu">
+        <img class="btn-menu__img" src="./images/icons/list.png" alt="menu" />
+      </button>
+      <div class="mobile-menu hidden">
+        <div class="mobile-menu__a">
+          <button class="mobile-menu__login workSans-btns">
+            Login
+            <img
+              class="btn__img btn__img--mobile"
+              src="./images/icons/user.png"
+              alt="Login"
+            />
+          </button>
+          <a class="workSans-btns" href="/">Marketplace</a>
+          <a class="workSans-btns" href="/">Forum</a>
+          <a class="workSans-btns" href="/">Profile</a>
+        </div>
+        <button class="mobile-menu__exit workSans-btns">x</button>
+      </div>
+    </header>
+    <!--? Конец мобильного хедера -->
+
+    <!--? Десктопный хедер -->
+    <header class="header-desktop wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+        Animalshare
+      </a>
+      <div class="desktop-menu">
+        <a class="workSans-btns" href="/">Marketplace</a>
+        <a class="workSans-btns" href="/">Forum</a>
+        <a class="workSans-btns" href="/">Profile</a>
+        <button
+          class="desktop-menu__login btn btn--Filled btn--Secondary workSans-btns"
+        >
+          <img
+            class="btn__img btn__img--desktop"
+            src="./images/icons/user.png"
+            alt=""
+          />Login
+        </button>
+      </div>
+    </header>
+    <!--? Конец десктопного хедера -->
+    <main class="create-acc-main">
+      <!--? Фоновая картинка для раздела Create Account -->
+      <img
+        class="create-acc-img"
+        src="./images/zhivotnoe-sobaka-pios-golova-priroda-tsvety-petunia.jpg"
+        alt="Create account"
+      />
+      <!--? Начало раздела Create Acc -->
+        <section class="create-acc create-acc--wrapper">
+            <div class="create-acc__description">
+                <h1 class="workSans-h3-h2">Create Account</h1>
+                <p class="workSans-base-body">Welcome! enter your details and start creating posts, chatting and shopping on Animalshare.</p>
+            </div>
+            <form class="create-acc-form">
+                <input class="form-input create-acc-form__input--username" type="text" name="username" id="id_username" placeholder="Username" required>
+                <input class="form-input create-acc-form__input--email" type="email" name="email" id="id_email" placeholder="Email" required>
+                <input class="form-input create-acc-form__input--password" type="password" name="password1" id="id_password1" placeholder="Password" required>
+                <input class="form-input create-acc-form__input--password" type="password" name="password2" id="id_password2" placeholder="Confirm Password" required>
+                <button class="create-acc-form__submit btn btn--Filled btn--Tertiary workSans-btns" type="submit">Create account</button>
+            </form>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--? Конец раздела Create Account -->
+    </main>
+    <!--? Футер -->
+    <footer class="footer">
+        <div class="footer__inner wrapper">
+          <div class="footer__before-hr">
+            <div class="footer__before-hr-description">
+              <a class="logo spaceMono-btns" href="./homepage.html">
+                <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+                Animalshare
+              </a>
+              <p class="workSans-base">Question about commercial? Contact us!</p>
+              <address class="footer__adress">
+                <a class="footer__adress-a" href="tel:+380633731255">
+                  <img
+                    class="footer__adress-img"
+                    src="./images/icons/phone.png"
+                    alt="Phone"
+                  />
+                  +380633731255</a
+                >
+                <a class="footer__adress-a" href="mailto:237629134pah@gmail.com">
+                  <img
+                    class="footer__adress-img"
+                    src="./images/icons/message.png"
+                    width="32px"
+                    alt="Email"
+                  />
+                  237629134pah@gmail.com</a
+                >
+              </address>
+            </div>
+          </div>
+          <p class="footer__text-after-hr workSans-caption">
+            Ⓒ Animalshare. Use it with pleasure.
+          </p>
+        </div>
+      </footer>
+      <!--? Конец футера -->
+    <script src="./script.js"></script>
+  </body>
+</html>
