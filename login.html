@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animalshare</title>
+    <title>Animalshare/Login</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./fonts/workSans/font.css" />
     <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
@@ -49,8 +49,8 @@
         <a class="workSans-btns" href="/">Marketplace</a>
         <a class="workSans-btns" href="/">Forum</a>
         <a class="workSans-btns" href="/">Profile</a>
-        <a href="/"
-          class="desktop-menu__login btn btn--Filled btn--Secondary workSans-btns"
+        <a href="./login.html"
+          class="a-as-btn btn btn--Filled btn--Secondary workSans-btns"
         >
           <img
             class="btn__img btn__img--desktop"
@@ -66,21 +66,29 @@
       <img
         class="create-acc-img"
         src="./images/zhivotnoe-sobaka-pios-golova-priroda-tsvety-petunia.jpg"
-        alt="Create account"
+        alt="Login"
       />
       <!--? Начало раздела Create Acc -->
         <section class="create-acc create-acc--wrapper">
             <div class="create-acc__description">
-                <h1 class="workSans-h3-h2">Create Account</h1>
-                <p class="workSans-base-body">Welcome! enter your details and start creating posts, chatting and shopping on Animalshare.</p>
+                <h1 class="workSans-h3-h2">Login</h1>
+                <p class="workSans-base-body">Welcome! Login and start creating posts, chatting and shopping on Animalshare.</p>
             </div>
             <form class="create-acc-form">
                 <input class="form-input create-acc-form__input--username" type="text" name="username" id="id_username" placeholder="Username" required>
-                <input class="form-input create-acc-form__input--email" type="email" name="email" id="id_email" placeholder="Email" required>
-                <input class="form-input create-acc-form__input--password" type="password" name="password1" id="id_password1" placeholder="Password" required>
-                <input class="form-input create-acc-form__input--password" type="password" name="password2" id="id_password2" placeholder="Confirm Password" required>
-                <button class="create-acc-form__submit btn btn--Filled btn--Tertiary workSans-btns" type="submit">Create account</button>
+                <input class="form-input create-acc-form__input--password" type="password" name="password" id="id_password" placeholder="Password" required>
+                <button class="btn btn--form btn--Filled btn--Tertiary workSans-btns" type="submit">Login</button>
             </form>
+            <div class="create-acc-form__after">
+              <p class="workSans-base-body">Forget your password?</p>
+              <a href="/" class="a-as-btn btn btn--form btn--Outlined btn--Tertiary workSans-btns">Reset password</a>
+            </div>
+            <div class="create-acc-form__after">
+              <!-- <p class="workSans-base-body">Forget your password?</p>
+              <a href="/" class="a-as-btn btn btn--form btn--Outlined btn--Tertiary workSans-btns">Reset password</a> -->
+              <p class="workSans-base-body">Need an account?</p>
+              <a href="./createaccount.html" class="a-as-btn btn btn--form btn--Filled btn--Tertiary workSans-btns">Create account</a>
+            </div>
         </section>
       <!--? Конец раздела Create Account -->
     </main>
