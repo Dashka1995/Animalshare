@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animalshare/Profile</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./fonts/workSans/font.css" />
+    <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+<!--? Мобильный хедер -->
+    <header class="header-mobile wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+        Animalshare
+      </a>
+      <div class="overlay hidden"></div>
+      <button class="btn-menu">
+        <img class="btn-menu__img" src="./images/icons/list.png" alt="menu" />
+      </button>
+      <div class="mobile-menu hidden">
+        <div class="mobile-menu__a">
+          <a href="./login.html" class="mobile-menu__login workSans-btns">
+            Login
+            <img
+              class="btn__img btn__img--mobile"
+              src="./images/icons/user.png"
+              alt="Login"
+            />
+          </a>
+          <a class="workSans-btns" href="/">Marketplace</a>
+          <a class="workSans-btns" href="/">Forum</a>
+          <a class="workSans-btns" href="./myprofile.html">Profile</a>
+        </div>
+        <button class="mobile-menu__exit workSans-btns">x</button>
+      </div>
+    </header>
+<!--? Конец мобильного хедера -->
+
+<!--? Десктопный хедер -->
+    <header class="header-desktop wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+        Animalshare
+      </a>
+      <div class="desktop-menu">
+        <a class="workSans-btns" href="/">Marketplace</a>
+        <a class="workSans-btns" href="/">Forum</a>
+        <a class="workSans-btns" href="./myprofile.html">Profile</a>
+        <a href="./login.html"
+          class="a-as-btn btn btn--Filled btn--Secondary workSans-btns"
+        >
+          <img
+            class="btn__img btn__img--desktop"
+            src="./images/icons/user.png"
+            alt=""
+          />Login
+      </a>
+      </div>
+    </header>
+<!--? Конец десктопного хедера -->
+<!--? Раздел Ворнинг-месс -->
+<div class="warning-mess warning-mess--error hidden">
+  <p class="spaceMono-h5-h4">Error during registration</p>
+</div>
+<!--? Конец раздела Ворнинг-месс -->
+<main class="profile">
+    <img class="profile__bg-img" src="./images/iashcheritsa-trava-boke-vzgliad.jpg" alt="My Profile">
+    <img class="profile__avatar" src="./images/icons/avatars/Avatar3.png" alt="Avatar">
+    <h1 class="profile__title wrapper workSans-h4-h3-h2">Little bird</h1>
+    <h2 class="profile__title profile__title--under wrapper workSans-base-body">Profile info Update</h1>
+    <div class="profile__cont wrapper">
+        <div class="profile__details">
+            
+            <form class="change-profile-form">
+                <div class="change-profile-form__long-input">
+                    <label class="label-on-the-left workSans-base-body" for="id_username">Change your name here</label>
+                    <input class="form-input create-acc-form__input--username workSans-base" type="text" name="username" id="id_username" value="Kartoshka" required>
+                </div>
+                <div class="change-profile-form__long-input">
+                    <label class="label-on-the-left workSans-base-body" for="id_username">Change your email</label>
+                    <input class="form-input create-acc-form__input--email workSans-base" type="email" name="email" id="id_email" placeholder="Email" required>
+                </div>
+                
+                <div class="change-profile-form__long-input">
+                    <label class="label-on-the-left workSans-base-body" for="id_username">Add or change your phone</label>
+                    <input class="form-input  create-acc-form-form__input--phone workSans-base" type="text" class="form-label" name="phone_number" value="" id="id_phone_number" placeholder="(000) 000-00-00" required>
+                </div>
+             
+                <button class="btn btn--form btn--Filled btn--Tertiary workSans-btns" type="submit">Update</button>
+            </form>
+            <div class="create-acc-form__after create-acc-form__after--left">
+                <p class="workSans-base-body">Forget your password?</p>
+                <a href="/" class="a-as-btn btn btn--form btn--Outlined btn--Tertiary workSans-btns">Reset password</a>
+              </div>
+        </div>
+        <div class="profile__orders">
+
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<!--? Футер -->
+<footer class="footer">
+    <div class="footer__inner wrapper">
+      <div class="footer__before-hr">
+        <div class="footer__before-hr-description">
+          <a class="logo spaceMono-btns" href="./homepage.html">
+            <img class="logo__img" src="./images/icons/logo.png" alt="logo" />
+            Animalshare
+          </a>
+          <p class="workSans-base">Question about commercial? Contact us!</p>
+          <address class="footer__adress">
+            <a class="footer__adress-a" href="tel:+380633731255">
+              <img
+                class="footer__adress-img"
+                src="./images/icons/phone.png"
+                alt="Phone"
+              />
+              +380633731255</a
+            >
+            <a class="footer__adress-a" href="mailto:237629134pah@gmail.com">
+              <img
+                class="footer__adress-img"
+                src="./images/icons/message.png"
+                width="32px"
+                alt="Email"
+              />
+              237629134pah@gmail.com</a
+            >
+          </address>
+        </div>
+      </div>
+      <p class="footer__text-after-hr workSans-caption">
+        Ⓒ Animalshare. Use it with pleasure.
+      </p>
+    </div>
+  </footer>
+<!--? Конец футера -->
+  <script src="./script.js"></script>
+</body>
+</html>

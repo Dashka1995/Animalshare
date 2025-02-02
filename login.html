@@ -22,17 +22,17 @@
       </button>
       <div class="mobile-menu hidden">
         <div class="mobile-menu__a">
-          <button class="mobile-menu__login workSans-btns">
+          <a href="./login.html" class="mobile-menu__login workSans-btns">
             Login
             <img
               class="btn__img btn__img--mobile"
               src="./images/icons/user.png"
               alt="Login"
             />
-          </button>
+          </a>
           <a class="workSans-btns" href="/">Marketplace</a>
           <a class="workSans-btns" href="/">Forum</a>
-          <a class="workSans-btns" href="/">Profile</a>
+          <a class="workSans-btns" href="./myprofile.html">Profile</a>
         </div>
         <button class="mobile-menu__exit workSans-btns">x</button>
       </div>
@@ -48,7 +48,7 @@
       <div class="desktop-menu">
         <a class="workSans-btns" href="/">Marketplace</a>
         <a class="workSans-btns" href="/">Forum</a>
-        <a class="workSans-btns" href="/">Profile</a>
+        <a class="workSans-btns" href="./myprofile.html">Profile</a>
         <a href="./login.html"
           class="a-as-btn btn btn--Filled btn--Secondary workSans-btns"
         >
@@ -70,7 +70,7 @@
 <!--? Фоновая картинка для раздела Create Account -->
       <img
         class="create-acc-img"
-        src="./images/zhivotnoe-sobaka-pios-golova-priroda-tsvety-petunia.jpg"
+        src="./images/sobaka-zhivotnoe-pes-vzglyad.jpg"
         alt="Login"
       />
 <!--? Начало раздела Create Acc -->
@@ -80,8 +80,8 @@
                 <p class="workSans-base-body">Welcome! Login and start creating posts, chatting and shopping on Animalshare.</p>
             </div>
             <form class="create-acc-form">
-                <input class="form-input create-acc-form__input--username" type="text" name="username" id="id_username" placeholder="Username" required>
-                <input class="form-input create-acc-form__input--password" type="password" name="password" id="id_password" placeholder="Password" required>
+                <input class="form-input create-acc-form__input--username workSans-base" type="text" name="username" id="id_username" placeholder="Username" required>
+                <input class="form-input create-acc-form__input--password workSans-base" type="password" name="password" id="id_password" placeholder="Password" required>
                 <button class="btn btn--form btn--Filled btn--Tertiary workSans-btns" type="submit">Login</button>
             </form>
             <div class="create-acc-form__after">

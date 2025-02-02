@@ -237,6 +237,25 @@ body {
   line-height: clamp(46px, 1.706rem + 2.24vw, 56px);
 }
 
+
+
+
+.workSans-h4-h3-h2 {
+  font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: clamp(28px, 1.239rem + 2.18vw, 38px);
+  line-height: clamp(39px, 2.08rem + 1.53vw, 46px);
+}
+@media screen and (min-width: 834px) {
+  .workSans-h4-h3-h2 {
+    font-size: clamp(38px, 0.856rem + 2.91vw, 51px);
+    line-height: clamp(46px, 1.706rem + 2.24vw, 56px);
+  }
+}
+
+
+
+
 .workSans-h4-h3-h1 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
@@ -698,6 +717,7 @@ body {
   align-items: center;
 }
 
+
 .form-input {
   background-size: 20px;
   background-repeat: no-repeat;  
@@ -710,6 +730,7 @@ body {
   width: calc(100vw - 60px);
   max-width: 330px;
 }
+
 
 
 
@@ -726,6 +747,10 @@ body {
   background-position: 20px center, calc(100% - 20px) center;
 }
 
+.create-acc-form__input--phone {
+  background-image: url(./images/icons/input-phone.png);
+}
+
 .btn--form {
   width: calc(100vw - 60px);
   max-width: 330px;
@@ -739,10 +764,113 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 834px) {
+  .create-acc-form__after--left {
+    align-items: start;
+  }
+}
+
+
+
 /*? Конец раздела Креэйт Акк*/
 
+/*? Начало раздела My Profile*/
+
+.profile__bg-img {
+  width: 100vw;
+  height: 66vw;
+}
 
 
+@media screen and (min-width: 834px) {
+  .profile__bg-img {
+    min-height: 280px;
+    height: calc(205px + 8.97vw);
+    object-position: 0vw -13vw;
+  }
+}
+
+.profile__avatar {
+  height: 120px;
+  position: relative;
+  top: -50px;
+  left: calc(50% - 60px);
+  border: 2px solid var(--elem-primary-color);
+  background-color: var(--elem-primary-color);
+  border-radius: 60px;
+
+}
+
+@media screen and (min-width: 834px) {
+  .profile__avatar {
+    left: 72px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .profile__avatar {
+    left: 115px;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .profile__title {
+  text-align: center;
+  }
+}
+
+.profile__title--under {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+
+.profile__cont {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 834px) {
+  .profile__cont {
+    flex-direction: row;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .profile__cont {
+    padding-bottom: 100px;
+  }
+}
+
+.change-profile-form__long-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+@media screen and (min-width: 834px) {
+  .change-profile-form__long-input {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: calc(15px + 1vw);
+    justify-content: space-between;
+  }
+}
+
+.change-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 833px) {
+  .change-profile-form {
+    align-items: center;
+  }
+}
 
 
 
@@ -762,3 +890,5 @@ body {
 .hidden {
   display: none;
 }
+
+
