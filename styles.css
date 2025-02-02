@@ -9,6 +9,7 @@
   --elem-secondary-color: #a259ff;
   --elem-tertiary-color: #CCCCCC;
   --elem-fourth-color: #858584;
+  --elem-error-color: #870f0f;
   --primary-font: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   --secondary-font: "Space Mono", "Lucida Console", Monaco, monospace;
 }
@@ -445,6 +446,22 @@ body {
 }
 /*? Конец раздела Хедер */
 
+/* Раздел Ворнинг-месс */
+.warning-mess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--elem-primary-color);
+  background-color: var(--elem-secondary-color);
+
+}
+
+.warning-mess--error {
+  color: var(--elem-error-color);
+}
+/* Конец раздела Ворнинг-месс */
+
 /*? Раздел Херо */
 .welcome {
   padding: 20px 0px 10px 0px;
@@ -710,7 +727,6 @@ body {
 }
 
 .btn--form {
-  /* margin-top: 15px; */
   width: calc(100vw - 60px);
   max-width: 330px;
 }
@@ -723,7 +739,7 @@ body {
   align-items: center;
 }
 
-
+/*? Конец раздела Креэйт Акк*/
 
 
 
