@@ -1,4 +1,6 @@
-'use strict';
+"use strict";
+
+console.log(document.body.clientWidth);
 
 // window.addEventListener('resize', function () {
 //     if(document.body.clientWidth >= 834) {
@@ -13,18 +15,19 @@
 //     }
 // });
 
-
-document.querySelector('.btn-menu').addEventListener('click', function () {
-    document.querySelector('.overlay').classList.toggle('hidden');
-    document.querySelector('.mobile-menu').classList.toggle('hidden');
+document.querySelector(".btn-menu").addEventListener("click", function () {
+  document.querySelector(".overlay").classList.toggle("hidden");
+  document.querySelector(".mobile-menu").classList.toggle("hidden");
 });
 
-document.querySelector('.mobile-menu__exit').addEventListener('click', function () {
-    document.querySelector('.mobile-menu').classList.add('hidden');
-    document.querySelector('.overlay').classList.add('hidden');
-});
+document
+  .querySelector(".mobile-menu__exit")
+  .addEventListener("click", function () {
+    document.querySelector(".mobile-menu").classList.add("hidden");
+    document.querySelector(".overlay").classList.add("hidden");
+  });
 
-document.querySelector('.overlay').addEventListener('click', function () {
-    document.querySelector('.mobile-menu').classList.add('hidden');
-    document.querySelector('.overlay').classList.add('hidden');
+document.querySelector(".overlay").addEventListener("click", function () {
+  document.querySelector(".mobile-menu").classList.add("hidden");
+  document.querySelector(".overlay").classList.add("hidden");
 });

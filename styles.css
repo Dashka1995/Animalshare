@@ -4,10 +4,10 @@
 /*в селекторе :root создаем глобальные переменные для удобства: */
 :root {
   --main-primary-color: #2b2b2b;
-  --main-secondary-color: #3B3B3B;
+  --main-secondary-color: #3b3b3b;
   --elem-primary-color: #ffffff;
   --elem-secondary-color: #a259ff;
-  --elem-tertiary-color: #CCCCCC;
+  --elem-tertiary-color: #cccccc;
   --elem-fourth-color: #858584;
   --elem-error-color: #870f0f;
   --primary-font: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
@@ -194,7 +194,6 @@ body {
   line-height: clamp(35px, 2.084rem + 0.44vw, 39px);
 }
 
-
 .workSans-h5 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-size: 22px;
@@ -237,9 +236,6 @@ body {
   line-height: clamp(46px, 1.706rem + 2.24vw, 56px);
 }
 
-
-
-
 .workSans-h4-h3-h2 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
@@ -252,9 +248,6 @@ body {
     line-height: clamp(46px, 1.706rem + 2.24vw, 56px);
   }
 }
-
-
-
 
 .workSans-h4-h3-h1 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
@@ -395,7 +388,7 @@ body {
   max-width: 32px;
   background-color: var(--main-primary-color);
   border-radius: 5px;
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
 }
 
 @media screen and (min-width: 834px) {
@@ -451,7 +444,6 @@ body {
   border: none;
 }
 
-
 .desktop-menu {
   display: flex;
   column-gap: 30px;
@@ -473,7 +465,6 @@ body {
   align-items: center;
   color: var(--elem-primary-color);
   background-color: var(--elem-secondary-color);
-
 }
 
 .warning-mess--error {
@@ -542,7 +533,6 @@ body {
 
   overflow: hidden;
   background-color: var(--main-secondary-color);
-
 }
 
 @media screen and (min-width: 834px) {
@@ -599,7 +589,6 @@ body {
   }
 }
 
-
 .footer__before-hr-description {
   display: flex;
   flex-direction: column;
@@ -627,7 +616,7 @@ body {
 }
 
 .footer__text-after-hr::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   top: -20px;
@@ -643,7 +632,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 @media screen and (min-width: 834px) {
   .create-acc-main {
@@ -717,10 +705,9 @@ body {
   align-items: center;
 }
 
-
 .form-input {
   background-size: 20px;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: 20px center;
   background-color: var(--elem-primary-color);
   border: 1px solid var(--elem-primary-color);
@@ -731,9 +718,6 @@ body {
   max-width: 330px;
 }
 
-
-
-
 .create-acc-form__input--username {
   background-image: url(./images/icons/input-user.png);
 }
@@ -743,7 +727,8 @@ body {
 }
 
 .create-acc-form__input--password {
-  background-image: url(./images/icons/input-password.png), url(./images/icons/input-show.png);
+  background-image: url(./images/icons/input-password.png),
+    url(./images/icons/input-show.png);
   background-position: 20px center, calc(100% - 20px) center;
 }
 
@@ -770,17 +755,28 @@ body {
   }
 }
 
-
-
 /*? Конец раздела Креэйт Акк*/
 
 /*? Начало раздела My Profile*/
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 834px) {
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 
 .profile__bg-img {
   width: 100vw;
   height: 66vw;
 }
-
 
 @media screen and (min-width: 834px) {
   .profile__bg-img {
@@ -791,14 +787,14 @@ body {
 }
 
 .profile__avatar {
-  height: 120px;
+  height: 240px;
+  width: 240px;
   position: relative;
   top: -50px;
-  left: calc(50% - 60px);
+  left: calc(50% - 120px);
   border: 2px solid var(--elem-primary-color);
   background-color: var(--elem-primary-color);
-  border-radius: 60px;
-
+  border-radius: 40px;
 }
 
 @media screen and (min-width: 834px) {
@@ -815,15 +811,15 @@ body {
 
 @media screen and (max-width: 833px) {
   .profile__title {
-  text-align: center;
+    text-align: center;
   }
 }
 
 .profile__title--under {
   margin-top: 40px;
   margin-bottom: 15px;
+  color: var(--elem-secondary-color);
 }
-
 
 .profile__cont {
   display: flex;
@@ -844,20 +840,10 @@ body {
   }
 }
 
-.change-profile-form__long-input {
+.change-profile-form__input-cont {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
-}
-
-@media screen and (min-width: 834px) {
-  .change-profile-form__long-input {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: calc(15px + 1vw);
-    justify-content: space-between;
-  }
 }
 
 .change-profile-form {
@@ -871,6 +857,16 @@ body {
     align-items: center;
   }
 }
+
+.select-file{
+  font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  width: calc(100vw - 60px);
+  max-width: 330px;
+}
+
 
 
 
@@ -890,5 +886,3 @@ body {
 .hidden {
   display: none;
 }
-
-
