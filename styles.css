@@ -180,6 +180,13 @@ body {
   line-height: 35px;
 }
 
+.spaceMono-caption {
+  font-family: "Space Mono", "Lucida Console", Monaco, monospace;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+}
+
 .spaceMono-btns {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 700;
@@ -192,6 +199,13 @@ body {
   font-weight: 700;
   font-size: clamp(22px, 1.22rem + 0.66vw, 28px);
   line-height: clamp(35px, 2.084rem + 0.44vw, 39px);
+}
+
+.spaceMono-caption-base {
+  font-family: "Space Mono", "Lucida Console", Monaco, monospace;
+  font-weight: 400;
+  font-size: clamp(12px, 0.546rem + 0.87vw, 16px);
+  line-height: clamp(13px, 0.353rem + 1.96vw, 22px);
 }
 
 .workSans-h5 {
@@ -762,13 +776,21 @@ body {
 .profile {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 834px) {
   .profile {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* gap: 25px; */
+    gap: clamp(25px, calc(-757px + 93.75vw), 40px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .profile {
+    gap: 60px;
   }
 }
 
@@ -883,10 +905,69 @@ body {
   max-width: 330px;
 }
 
+.profile__right {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: clamp(920px, calc(827px + 11.21vw), 970px);
+  overflow-x: auto;
+}
 
+.profile__right::-webkit-scrollbar {
+  width: 10px;
+}
 
+.profile__right::-webkit-scrollbar-track {
+  background: var(--main-primary-color);
+}
 
+.profile__right::-webkit-scrollbar-thumb {
+  background-color: var(--elem-fourth-color);
+  border-radius: 20px;
 
+ }
+
+@media screen and (min-width: 1280px) {
+  .profile__right {
+    max-height: 970px;
+  }
+}
+
+/* Карточки заказов 950*/
+.order-card {
+  background-color: var(--main-secondary-color);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 834px) {
+  .order-card {
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
+
+.order-card__card-title {
+  margin-bottom: 25px;
+}
+
+.order-card__column-title, .order-card__tolall-sum {
+  color: var(--elem-tertiary-color);
+}
+
+.order-card__tolall-sum {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.order-card__elem--in-center{
+  text-align: center;
+}
+
+.order-card__elem--in-start{
+  text-align: left;
+}
 
 
 

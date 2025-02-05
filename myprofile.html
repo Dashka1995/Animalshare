@@ -102,6 +102,7 @@
                   name="username"
                   id="id_username"
                   value="Kartoshka"
+                  autocomplete="username"
                   required
                 />
               </div>
@@ -115,6 +116,7 @@
                   name="email"
                   id="id_email"
                   placeholder="Email"
+                  autocomplete="username"
                   required
                 />
               </div>
@@ -167,44 +169,38 @@
 
 <!-- Правая сторона: -->
     <div class="profile__right">
-      <div class="profile__orders">
         <!-- Карточки заказов -->
-        <div class="" id="accordionExample">       
-          <div class="">
-              <h2 class="" id="heading2">
-                  <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                      Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong class="">In progress</strong>
-                  </button>
+        <div class="order-card workSans-base-body">       
+              <h2 class="order-card__card-title workSans-h5">
+                      Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
               </h2>
-              <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordionExample">
-                  <div class="">
-                      <table class="">
-                          <thead>
-                              <tr>
-                                  <th>Product</th>
-                                  <th>Quantity</th>
+                      <table>
+                          <thead class="spaceMono-caption-base">
+                              <tr class="order-card__column-title">
+                                  <th class="order-card__elem--in-start">Product</th>
+                                  <th>sum</th>
                                   <th>Price</th>
                                   <th>Totall price</th>
                               </tr>
                           </thead>
-                          <tbody>
+                          <tbody >
                               
-                              <tr>
-                                  <td><a class="" href="/shop/product/bone-for-dog/">Bone for dog</a></td>
+                              <tr class="order-card__elem--in-center">
+                                  <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
                                   <td>1</td>
                                   <td>70.00</td>
                                   <td>70.00</td>  
                               </tr>
                               
-                              <tr>
-                                  <td><a class="" href="/shop/product/dog-food/">Dog food</a></td>
+                              <tr class="order-card__elem--in-center">
+                                  <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
                                   <td>3</td>
                                   <td>650.00</td>
                                   <td>1950.00</td>  
                               </tr>
                               
-                              <tr>
-                                  <td><a class="" href="/shop/product/cats-wheel/">Cat's wheel</a></td>
+                              <tr class="order-card__elem--in-center">
+                                  <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
                                   <td>2</td>
                                   <td>11000.00</td>
                                   <td>22000.00</td>  
@@ -212,12 +208,129 @@
                               
                           </tbody>
                       </table>
-                  </div>
-              </div>
+          <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
+        </div>
+        <div class="order-card workSans-base-body">       
+        <h2 class="order-card__card-title workSans-h5">
+                Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
+        </h2>
+                <table>
+                    <thead class="spaceMono-caption-base">
+                        <tr class="order-card__column-title">
+                            <th class="order-card__elem--in-start">Product</th>
+                            <th>sum</th>
+                            <th>Price</th>
+                            <th>Totall price</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        
+                        <tr class="order-card__elem--in-center">
+                            <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
+                            <td>1</td>
+                            <td>70.00</td>
+                            <td>70.00</td>  
+                        </tr>
+                        
+                        <tr class="order-card__elem--in-center">
+                            <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
+                            <td>3</td>
+                            <td>650.00</td>
+                            <td>1950.00</td>  
+                        </tr>
+                        
+                        <tr class="order-card__elem--in-center">
+                            <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
+                            <td>2</td>
+                            <td>11000.00</td>
+                            <td>22000.00</td>  
+                        </tr>
+                        
+                    </tbody>
+                </table>
+    <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
+        </div>
+        <div class="order-card workSans-base-body">       
+          <h2 class="order-card__card-title workSans-h5">
+                  Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
+          </h2>
+                  <table>
+                      <thead class="spaceMono-caption-base">
+                          <tr class="order-card__column-title">
+                              <th class="order-card__elem--in-start">Product</th>
+                              <th>sum</th>
+                              <th>Price</th>
+                              <th>Totall price</th>
+                          </tr>
+                      </thead>
+                      <tbody >
+                          
+                          <tr class="order-card__elem--in-center">
+                              <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
+                              <td>1</td>
+                              <td>70.00</td>
+                              <td>70.00</td>  
+                          </tr>
+                          
+                          <tr class="order-card__elem--in-center">
+                              <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
+                              <td>3</td>
+                              <td>650.00</td>
+                              <td>1950.00</td>  
+                          </tr>
+                          
+                          <tr class="order-card__elem--in-center">
+                              <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
+                              <td>2</td>
+                              <td>11000.00</td>
+                              <td>22000.00</td>  
+                          </tr>
+                          
+                      </tbody>
+                  </table>
+      <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
           </div>
-          <strong>Totall sum: 24020.00</strong>           
-      </div>
-      </div>
+        <div class="order-card workSans-base-body">       
+            <h2 class="order-card__card-title workSans-h5">
+                    Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
+            </h2>
+                    <table>
+                        <thead class="spaceMono-caption-base">
+                            <tr class="order-card__column-title">
+                                <th class="order-card__elem--in-start">Product</th>
+                                <th>sum</th>
+                                <th>Price</th>
+                                <th>Totall price</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            
+                            <tr class="order-card__elem--in-center">
+                                <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
+                                <td>1</td>
+                                <td>70.00</td>
+                                <td>70.00</td>  
+                            </tr>
+                            
+                            <tr class="order-card__elem--in-center">
+                                <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
+                                <td>3</td>
+                                <td>650.00</td>
+                                <td>1950.00</td>  
+                            </tr>
+                            
+                            <tr class="order-card__elem--in-center">
+                                <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
+                                <td>2</td>
+                                <td>11000.00</td>
+                                <td>22000.00</td>  
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+        <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
+          </div>
+
     </div>
     <!-- Конец правой стороны -->
     </main>
