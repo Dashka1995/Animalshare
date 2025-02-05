@@ -719,21 +719,21 @@ body {
 }
 
 .create-acc-form__input--username {
-  background-image: url(./images/icons/input-user.png);
+  background-image: url(./images/static/icons/input-user.png);
 }
 
 .create-acc-form__input--email {
-  background-image: url(./images/icons/input-email.png);
+  background-image: url(./images/static/icons/input-email.png);
 }
 
 .create-acc-form__input--password {
-  background-image: url(./images/icons/input-password.png),
-    url(./images/icons/input-show.png);
+  background-image: url(./images/static/icons/input-password.png),
+    url(./images/static/icons/input-show.png);
   background-position: 20px center, calc(100% - 20px) center;
 }
 
 .create-acc-form__input--phone {
-  background-image: url(./images/icons/input-phone.png);
+  background-image: url(./images/static/icons/input-phone.png);
 }
 
 .btn--form {
