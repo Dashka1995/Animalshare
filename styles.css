@@ -208,6 +208,13 @@ body {
   line-height: clamp(13px, 0.353rem + 1.96vw, 22px);
 }
 
+.workSans-h5-h4 {
+  font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 19.5px + 0.66vw, 28px);
+  line-height: clamp(31px, 27.7px + 0.88vw, 39px);
+}
+
 .workSans-h5 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-size: 22px;
@@ -241,6 +248,13 @@ body {
   font-weight: 400;
   font-size: clamp(16px, 0.845rem + 0.66vw, 22px);
   line-height: clamp(22px, 1.038rem + 1.44vw, 35px);
+}
+
+.workSans-h4-h3 {
+  font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: clamp(28px, 14.9px + 1.57vw, 35px);
+  line-height: clamp(39px, 33.4px + 0.67vw, 42px);
 }
 
 .workSans-h3-h2 {
@@ -305,6 +319,15 @@ body {
 
 .btn--Tertiary {
   height: 46px;
+}
+
+.btn--form {
+  width: calc(100vw - 60px);
+  max-width: 330px;
+}
+
+.btn--margin-top20 {
+  margin-top: 20px;
 }
 
 .btn__img {
@@ -544,7 +567,6 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 50px;
-
   overflow: hidden;
   background-color: var(--main-secondary-color);
 }
@@ -750,11 +772,6 @@ body {
   background-image: url(./images/static/icons/input-phone.png);
 }
 
-.btn--form {
-  width: calc(100vw - 60px);
-  max-width: 330px;
-}
-
 .create-acc-form__after {
   padding-top: 40px;
   display: flex;
@@ -773,54 +790,55 @@ body {
 
 /*? Начало раздела My Profile*/
 
-.profile {
+/*? Секция My Profile-top*/
+.profile-top {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 834px) {
-  .profile {
+  .profile-top {
     display: flex;
     flex-direction: row;
-    /* gap: 25px; */
     gap: clamp(25px, calc(-757px + 93.75vw), 40px);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .profile {
+  .profile-top {
     gap: 60px;
   }
 }
 
-
-.profile__bg-img {
+.profile-top__bg-img {
   width: 100vw;
   height: 66vw;
 }
 
 @media screen and (min-width: 834px) {
-  .profile__bg-img {
+  .profile-top__bg-img {
     min-height: 280px;
     height: calc(205px + 8.97vw);
     object-position: 0vw -13vw;
   }
 }
 
-.profile__before-form {
+/*? Начало левой части секции My Profile-top*/
+
+.profile-top__before-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media screen and (min-width: 834px) {
-  .profile__before-form {
+  .profile-top__before-form {
     align-items: start;
   }
 }
 
-.profile__avatar {
+.profile-top__avatar {
   align-self: start;
   height: 240px;
   width: 240px;
@@ -833,48 +851,40 @@ body {
 }
 
 @media screen and (min-width: 834px) {
-  .profile__avatar {
+  .profile-top__avatar {
     left: 0;
   }
 }
 
 @media screen and (max-width: 833px) {
-  .profile__title {
+  .profile-top__title {
     text-align: center;
   }
 }
 
-.profile__title--under {
+.profile-top__title--under {
+  text-align: center;
   margin-top: 40px;
   margin-bottom: 15px;
   color: var(--elem-secondary-color);
 }
 
-@media screen and (max-width: 833px) {
-  .profile__title--under {
+@media screen and (min-width: 834px) {
+  .profile-top__title--834-left {
     text-align: left;
-    width: calc(100vw - 60px);
-    max-width: 330px;
-    
   }
 }
 
-.profile__cont {
+.profile-top__cont {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 834px) {
-  .profile__cont {
+  .profile-top__cont {
     flex-direction: row;
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .profile__cont {
-    padding-bottom: 100px;
+    padding-bottom: 0;
   }
 }
 
@@ -896,45 +906,42 @@ body {
   }
 }
 
-.select-file{
-  font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  width: calc(100vw - 60px);
-  max-width: 330px;
+.select-file-label {
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
 }
+/*? Конец левой части секции My Profile-top*/
 
-.profile__right {
+/*? Правая часть секции My Profile-top*/
+.profile-top__right-cards {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-height: clamp(920px, calc(827px + 11.21vw), 970px);
+  max-height: clamp(885px, calc(790px + 11.21vw), 930px);
   overflow-x: auto;
 }
 
-.profile__right::-webkit-scrollbar {
-  width: 10px;
-}
-
-.profile__right::-webkit-scrollbar-track {
-  background: var(--main-primary-color);
-}
-
-.profile__right::-webkit-scrollbar-thumb {
-  background-color: var(--elem-fourth-color);
-  border-radius: 20px;
-
- }
-
 @media screen and (min-width: 1280px) {
-  .profile__right {
-    max-height: 970px;
+  .profile-top__right-cards {
+    max-height: 930px;
   }
 }
 
-/* Карточки заказов 950*/
+.profile-top__right-cards::-webkit-scrollbar {
+  width: 10px;
+}
+
+.profile-top__right-cards::-webkit-scrollbar-track {
+  background: var(--main-primary-color);
+}
+
+.profile-top__right-cards::-webkit-scrollbar-thumb {
+  background-color: var(--elem-fourth-color);
+  border-radius: 20px;
+}
+
 .order-card {
   background-color: var(--main-secondary-color);
   padding: 20px;
@@ -952,7 +959,8 @@ body {
   margin-bottom: 25px;
 }
 
-.order-card__column-title, .order-card__tolall-sum {
+.order-card__column-title,
+.order-card__tolall-sum {
   color: var(--elem-tertiary-color);
 }
 
@@ -961,24 +969,141 @@ body {
   margin-top: 25px;
 }
 
-.order-card__elem--in-center{
+.order-card__elem--in-center {
   text-align: center;
 }
 
-.order-card__elem--in-start{
+.order-card__elem--in-start {
   text-align: left;
 }
+/*? Конец правой части секции My Profile-top*/
+/*? Конец секции My Profile-top*/
 
+/*? Cекция My Profile-bottom*/
 
+.profile-bottom--margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
+@media screen and (min-width: 1280px) {
+  .profile-bottom--margin {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
 
+/*? Карточка заказанных товаров */
 
+.selected-goods {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
+.selected-goods__card {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 30px;
+  max-width: 100%;
+  background-color: var(--main-secondary-color);
+  border-radius: 20px;
+}
 
+/* @media screen and (max-width: 833px) {
+  .selected-goods__card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
 
+@media screen and (min-width: 1280px) {
+  .selected-goods__card {
+    gap: 80px;
+    padding: 60px;
+    height: 430px;
+    /* max-width: 1050px; */
+  }
+}
 
+.selected-goods__card-a-whith-img {
+  max-width: 300px;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
+@media screen and (min-width: 1280px) {
+  .selected-goods__card-a-whith-img {
+    width: 310px;
+  }
+}
 
+.selected-goods__card-img {
+  border-radius: 20px;
+}
+
+.selected-goods__card-inf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.selected-goods__card-btns--content-center {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selected-goods__card-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.selected-goods__card-change-quantity-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+@media screen and (max-width: 641px) {
+  .selected-goods__card-btns {
+    justify-content: center;
+    gap: 10px;
+  }
+  .selected-goods__card-change-quantity-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.selected-goods__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.selected-goods__btn-img {
+  height: 32px;
+  min-width: 32px;
+}
+
+.selected-goods__cart-quantity {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--elem-secondary-color);
+  padding-left: 25px;
+  padding-right: 25px;
+  align-content: center;
+}
+
+/*? Конец раздела My Profile*/
 
 .hidden {
   display: none;

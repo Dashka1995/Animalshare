@@ -13,12 +13,20 @@
     <!--? Мобильный хедер -->
     <header class="header-mobile wrapper-header">
       <a class="logo spaceMono-btns" href="./homepage.html">
-        <img class="logo__img" src="./images/static/icons/logo.png" alt="logo" />
+        <img
+          class="logo__img"
+          src="./images/static/icons/logo.png"
+          alt="logo"
+        />
         Animalshare
       </a>
       <div class="overlay hidden"></div>
       <button class="btn-menu">
-        <img class="btn-menu__img" src="./images/static/icons/list.png" alt="menu" />
+        <img
+          class="btn-menu__img"
+          src="./images/static/icons/list.png"
+          alt="menu"
+        />
       </button>
       <div class="mobile-menu hidden">
         <div class="mobile-menu__a">
@@ -42,7 +50,11 @@
     <!--? Десктопный хедер -->
     <header class="header-desktop wrapper-header">
       <a class="logo spaceMono-btns" href="./homepage.html">
-        <img class="logo__img" src="./images/static/icons/logo.png" alt="logo" />
+        <img
+          class="logo__img"
+          src="./images/static/icons/logo.png"
+          alt="logo"
+        />
         Animalshare
       </a>
       <div class="desktop-menu">
@@ -68,271 +80,483 @@
     </div>
     <!--? Конец раздела Ворнинг-месс -->
     <img
-      class="profile__bg-img"
+      class="profile-top__bg-img"
       src="./images/static/bg-img/iashcheritsa-trava-boke-vzgliad.jpg"
       alt="My Profile"
     />
-    <main class="profile wrapper">
-<!-- Левая сторона: -->
-      <div class="profile__left">      
-        <div class="profile__before-form">
-          <img
-            class="profile__avatar"
-            src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
-            alt="Avatar"
-          />
-          <h1 class="profile__title workSans-h4-h3-h2">Little bird</h1>
-          <h2
-            class="profile__title profile__title--under workSans-base-body"
-          >
-            Profile info Update
-          </h2>
-        </div>
-        <!-- Левая сторона, начало формы изменения акка: -->
-        <div class="profile__cont">
-          <div class="profile__details">
-            <form class="change-profile-form">
-              <div class="change-profile-form__input-cont">
-                <label class="workSans-base-body" for="id_username"
-                  >Change your name here:</label
+    <main class="wrapper">
+      <section class="profile-top">
+        <!-- Левая сторона: -->
+        <div class="profile-top__left">
+          <div class="profile-top__before-form">
+            <img
+              class="profile-top__avatar"
+              src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
+              alt="Avatar"
+            />
+            <h1 class="profile-top__title workSans-h4-h3-h2">Little bird</h1>
+            <h2
+              class="profile-top__title profile-top__title--under workSans-h4-h3"
+            >
+              Profile info Update
+            </h2>
+          </div>
+          <!-- Левая сторона, начало формы изменения акка: -->
+          <div class="profile-top__cont">
+            <div class="profile-top__details">
+              <form class="change-profile-form">
+                <div class="change-profile-form__input-cont">
+                  <label class="workSans-base-body" for="id_username"
+                    >Change your name here:</label
+                  >
+                  <input
+                    class="form-input create-acc-form__input--username workSans-base"
+                    type="text"
+                    name="username"
+                    id="id_username"
+                    value="Kartoshka"
+                    autocomplete="username"
+                    required
+                  />
+                </div>
+                <div class="change-profile-form__input-cont">
+                  <label class="workSans-base-body" for="id_username"
+                    >Change your email:</label
+                  >
+                  <input
+                    class="form-input create-acc-form__input--email workSans-base"
+                    type="email"
+                    name="email"
+                    id="id_email"
+                    placeholder="Email"
+                    autocomplete="username"
+                    required
+                  />
+                </div>
+
+                <div class="change-profile-form__input-cont">
+                  <label class="workSans-base-body" for="id_username"
+                    >Add or change your phone:</label
+                  >
+                  <input
+                    class="form-input create-acc-form__input--phone workSans-base"
+                    type="text"
+                    class="form-label"
+                    name="phone_number"
+                    value=""
+                    id="id_phone_number"
+                    placeholder="(000) 000-00-00"
+                    required
+                  />
+                </div>
+                <div class="change-profile-form__input-cont">
+                  <p class="workSans-base-body">Change your avatare:</p>
+                  <label
+                    class="select-file-label btn btn--form btn--Outlined btn--Tertiary workSans-btns"
+                    for="image"
+                    >Select file</label
+                  >
+                  <input
+                    class="hidden"
+                    type="file"
+                    name="image"
+                    value="profile_pics/Clipboard01_r5UMOFz.jpg"
+                    id="image"
+                    accept="image/png, image/jpeg, image/jpg, image/bmp, image/gif"
+                  />
+                </div>
+                <button
+                  class="btn btn--form btn--Filled btn--Tertiary btn--margin-top20 workSans-btns"
+                  type="submit"
                 >
-                <input
-                  class="form-input create-acc-form__input--username workSans-base"
-                  type="text"
-                  name="username"
-                  id="id_username"
-                  value="Kartoshka"
-                  autocomplete="username"
-                  required
-                />
-              </div>
-              <div class="change-profile-form__input-cont">
-                <label class="workSans-base-body" for="id_username"
-                  >Change your email:</label
+                  Update
+                </button>
+              </form>
+              <div class="create-acc-form__after create-acc-form__after--left">
+                <p class="workSans-base-body">Forget your password?</p>
+                <a
+                  href="/"
+                  class="a-as-btn btn btn--form btn--Outlined btn--Tertiary workSans-btns"
+                  >Reset password</a
                 >
-                <input
-                  class="form-input create-acc-form__input--email workSans-base"
-                  type="email"
-                  name="email"
-                  id="id_email"
-                  placeholder="Email"
-                  autocomplete="username"
-                  required
-                />
               </div>
-  
-              <div class="change-profile-form__input-cont">
-                <label class="workSans-base-body" for="id_username"
-                  >Add or change your phone:</label
-                >
-                <input
-                  class="form-input create-acc-form__input--phone workSans-base"
-                  type="text"
-                  class="form-label"
-                  name="phone_number"
-                  value=""
-                  id="id_phone_number"
-                  placeholder="(000) 000-00-00"
-                  required
-                />
-              </div>
-              <div class="change-profile-form__input-cont">
-                <p class="workSans-base-body">Change your avatare:</p>
-                <input
-                  class="select-file"
-                  type="file"
-                  name="image"
-                  value="profile_pics/Clipboard01_r5UMOFz.jpg"
-                  id="image"
-                  accept="image/png, image/jpeg, image/jpg, image/bmp, image/gif"
-                />
-              </div>
-              <button
-                class="btn btn--form btn--Filled btn--Tertiary workSans-btns"
-                type="submit"
-              >
-                Update
-              </button>
-            </form>
-            <div class="create-acc-form__after create-acc-form__after--left">
-              <p class="workSans-base-body">Forget your password?</p>
-              <a
-                href="/"
-                class="a-as-btn btn btn--form btn--Outlined btn--Tertiary workSans-btns"
-                >Reset password</a
-              >
             </div>
           </div>
-      </div>
-    </div>
-<!-- Конец левой стороны -->
+        </div>
+        <!-- Конец левой стороны -->
 
-<!-- Правая сторона: -->
-    <div class="profile__right">
-        <!-- Карточки заказов -->
-        <div class="order-card workSans-base-body">       
-              <h2 class="order-card__card-title workSans-h5">
-                      Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
-              </h2>
-                      <table>
-                          <thead class="spaceMono-caption-base">
-                              <tr class="order-card__column-title">
-                                  <th class="order-card__elem--in-start">Product</th>
-                                  <th>sum</th>
-                                  <th>Price</th>
-                                  <th>Totall price</th>
-                              </tr>
-                          </thead>
-                          <tbody >
-                              
-                              <tr class="order-card__elem--in-center">
-                                  <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
-                                  <td>1</td>
-                                  <td>70.00</td>
-                                  <td>70.00</td>  
-                              </tr>
-                              
-                              <tr class="order-card__elem--in-center">
-                                  <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
-                                  <td>3</td>
-                                  <td>650.00</td>
-                                  <td>1950.00</td>  
-                              </tr>
-                              
-                              <tr class="order-card__elem--in-center">
-                                  <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
-                                  <td>2</td>
-                                  <td>11000.00</td>
-                                  <td>22000.00</td>  
-                              </tr>
-                              
-                          </tbody>
-                      </table>
-          <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
-        </div>
-        <div class="order-card workSans-base-body">       
-        <h2 class="order-card__card-title workSans-h5">
-                Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
-        </h2>
-                <table>
-                    <thead class="spaceMono-caption-base">
-                        <tr class="order-card__column-title">
-                            <th class="order-card__elem--in-start">Product</th>
-                            <th>sum</th>
-                            <th>Price</th>
-                            <th>Totall price</th>
-                        </tr>
-                    </thead>
-                    <tbody >
-                        
-                        <tr class="order-card__elem--in-center">
-                            <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
-                            <td>1</td>
-                            <td>70.00</td>
-                            <td>70.00</td>  
-                        </tr>
-                        
-                        <tr class="order-card__elem--in-center">
-                            <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
-                            <td>3</td>
-                            <td>650.00</td>
-                            <td>1950.00</td>  
-                        </tr>
-                        
-                        <tr class="order-card__elem--in-center">
-                            <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
-                            <td>2</td>
-                            <td>11000.00</td>
-                            <td>22000.00</td>  
-                        </tr>
-                        
-                    </tbody>
-                </table>
-    <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
-        </div>
-        <div class="order-card workSans-base-body">       
-          <h2 class="order-card__card-title workSans-h5">
-                  Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
+        <!-- Правая сторона: -->
+        <div class="profile-top__right">
+          <h2
+            class="profile-top__title profile-top__title--under workSans-h4-h3"
+          >
+            My orders
           </h2>
-                  <table>
-                      <thead class="spaceMono-caption-base">
-                          <tr class="order-card__column-title">
-                              <th class="order-card__elem--in-start">Product</th>
-                              <th>sum</th>
-                              <th>Price</th>
-                              <th>Totall price</th>
-                          </tr>
-                      </thead>
-                      <tbody >
-                          
-                          <tr class="order-card__elem--in-center">
-                              <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
-                              <td>1</td>
-                              <td>70.00</td>
-                              <td>70.00</td>  
-                          </tr>
-                          
-                          <tr class="order-card__elem--in-center">
-                              <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
-                              <td>3</td>
-                              <td>650.00</td>
-                              <td>1950.00</td>  
-                          </tr>
-                          
-                          <tr class="order-card__elem--in-center">
-                              <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
-                              <td>2</td>
-                              <td>11000.00</td>
-                              <td>22000.00</td>  
-                          </tr>
-                          
-                      </tbody>
-                  </table>
-      <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
-          </div>
-        <div class="order-card workSans-base-body">       
-            <h2 class="order-card__card-title workSans-h5">
-                    Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status: <strong>In progress</strong>
-            </h2>
-                    <table>
-                        <thead class="spaceMono-caption-base">
-                            <tr class="order-card__column-title">
-                                <th class="order-card__elem--in-start">Product</th>
-                                <th>sum</th>
-                                <th>Price</th>
-                                <th>Totall price</th>
-                            </tr>
-                        </thead>
-                        <tbody >
-                            
-                            <tr class="order-card__elem--in-center">
-                                <td class="order-card__elem--in-start"><a href="/shop/product/bone-for-dog/">Bone for dog</a></td>
-                                <td>1</td>
-                                <td>70.00</td>
-                                <td>70.00</td>  
-                            </tr>
-                            
-                            <tr class="order-card__elem--in-center">
-                                <td class="order-card__elem--in-start"><a href="/shop/product/dog-food/">Dog food</a></td>
-                                <td>3</td>
-                                <td>650.00</td>
-                                <td>1950.00</td>  
-                            </tr>
-                            
-                            <tr class="order-card__elem--in-center">
-                                <td class="order-card__elem--in-start"><a href="/shop/product/cats-wheel/">Cat's wheel</a></td>
-                                <td>2</td>
-                                <td>11000.00</td>
-                                <td>22000.00</td>  
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-        <p class="order-card__tolall-sum spaceMono-caption-base">Totall sum: <strong class="workSans-h5">24020.00</strong><span class="workSans-h5"> $</span></p>         
-          </div>
+          <div class="profile-top__right-cards">
+            <!-- Карточки заказов -->
+            <div class="order-card workSans-base-body">
+              <h2 class="order-card__card-title workSans-h5">
+                Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status:
+                <strong>In progress</strong>
+              </h2>
+              <table>
+                <thead class="spaceMono-caption-base">
+                  <tr class="order-card__column-title">
+                    <th class="order-card__elem--in-start">Product</th>
+                    <th>sum</th>
+                    <th>Price</th>
+                    <th>Totall price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/bone-for-dog/">Bone for dog</a>
+                    </td>
+                    <td>1</td>
+                    <td>70.00</td>
+                    <td>70.00</td>
+                  </tr>
 
-    </div>
-    <!-- Конец правой стороны -->
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/dog-food/">Dog food</a>
+                    </td>
+                    <td>3</td>
+                    <td>650.00</td>
+                    <td>1950.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/cats-wheel/">Cat's wheel</a>
+                    </td>
+                    <td>2</td>
+                    <td>11000.00</td>
+                    <td>22000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="order-card__tolall-sum spaceMono-caption-base">
+                Totall sum: <strong class="workSans-h5">24020.00</strong
+                ><span class="workSans-h5"> $</span>
+              </p>
+            </div>
+            <div class="order-card workSans-base-body">
+              <h2 class="order-card__card-title workSans-h5">
+                Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status:
+                <strong>In progress</strong>
+              </h2>
+              <table>
+                <thead class="spaceMono-caption-base">
+                  <tr class="order-card__column-title">
+                    <th class="order-card__elem--in-start">Product</th>
+                    <th>sum</th>
+                    <th>Price</th>
+                    <th>Totall price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/bone-for-dog/">Bone for dog</a>
+                    </td>
+                    <td>1</td>
+                    <td>70.00</td>
+                    <td>70.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/dog-food/">Dog food</a>
+                    </td>
+                    <td>3</td>
+                    <td>650.00</td>
+                    <td>1950.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/cats-wheel/">Cat's wheel</a>
+                    </td>
+                    <td>2</td>
+                    <td>11000.00</td>
+                    <td>22000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="order-card__tolall-sum spaceMono-caption-base">
+                Totall sum: <strong class="workSans-h5">24020.00</strong
+                ><span class="workSans-h5"> $</span>
+              </p>
+            </div>
+            <div class="order-card workSans-base-body">
+              <h2 class="order-card__card-title workSans-h5">
+                Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status:
+                <strong>In progress</strong>
+              </h2>
+              <table>
+                <thead class="spaceMono-caption-base">
+                  <tr class="order-card__column-title">
+                    <th class="order-card__elem--in-start">Product</th>
+                    <th>sum</th>
+                    <th>Price</th>
+                    <th>Totall price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/bone-for-dog/">Bone for dog</a>
+                    </td>
+                    <td>1</td>
+                    <td>70.00</td>
+                    <td>70.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/dog-food/">Dog food</a>
+                    </td>
+                    <td>3</td>
+                    <td>650.00</td>
+                    <td>1950.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/cats-wheel/">Cat's wheel</a>
+                    </td>
+                    <td>2</td>
+                    <td>11000.00</td>
+                    <td>22000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="order-card__tolall-sum spaceMono-caption-base">
+                Totall sum: <strong class="workSans-h5">24020.00</strong
+                ><span class="workSans-h5"> $</span>
+              </p>
+            </div>
+            <div class="order-card workSans-base-body">
+              <h2 class="order-card__card-title workSans-h5">
+                Order № 2 - Feb. 2, 2025, 3:04 p.m. | Status:
+                <strong>In progress</strong>
+              </h2>
+              <table>
+                <thead class="spaceMono-caption-base">
+                  <tr class="order-card__column-title">
+                    <th class="order-card__elem--in-start">Product</th>
+                    <th>sum</th>
+                    <th>Price</th>
+                    <th>Totall price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/bone-for-dog/">Bone for dog</a>
+                    </td>
+                    <td>1</td>
+                    <td>70.00</td>
+                    <td>70.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/dog-food/">Dog food</a>
+                    </td>
+                    <td>3</td>
+                    <td>650.00</td>
+                    <td>1950.00</td>
+                  </tr>
+
+                  <tr class="order-card__elem--in-center">
+                    <td class="order-card__elem--in-start">
+                      <a href="/shop/product/cats-wheel/">Cat's wheel</a>
+                    </td>
+                    <td>2</td>
+                    <td>11000.00</td>
+                    <td>22000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="order-card__tolall-sum spaceMono-caption-base">
+                Totall sum: <strong class="workSans-h5">24020.00</strong
+                ><span class="workSans-h5"> $</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Конец правой стороны -->
+      </section>
+      <section class="profile-bottom profile-bottom--margin">
+        <div class="selected-goods">
+          <h2
+            class="profile-top__title profile-top__title--under profile-top__title--834-left workSans-h4-h3"
+          >
+            Selected goods
+          </h2>
+          <div class="selected-goods__card">
+            <a class="selected-goods__card-a-whith-img" href="/">
+              <img
+                class="selected-goods__card-img"
+                src="./images/static/goods/248932465.webp"
+                alt="Reptile run wheel"
+              />
+            </a>
+            <div class="selected-goods__card-inf">
+              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
+              <p class="workSans-base-body">4.99$</p>
+              <p class="workSans-h5-h4">Totall 4.99$</p>
+              <div class="selected-goods__card-btns--content-center">
+                <div class="selected-goods__card-btns">
+                  <div class="selected-goods__card-change-quantity-cont">
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="decrease"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/plus.png"
+                        alt="Add"
+                      />
+                    </button>
+                    <p
+                      class="selected-goods__cart-quantity workSans-h4-h3"
+                      data-cart-id="95"
+                    >
+                      1
+                    </p>
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="increase"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/minus.png"
+                        alt="Subtract"
+                      />
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
+                    data-cart-id="95"
+                    data-remove-url="/cart/cart_remove/95"
+                  >
+                    <input
+                      type="hidden"
+                      name="csrfmiddlewaretoken"
+                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                    />
+                    <img
+                      class="selected-goods__btn-img"
+                      src="./images/static/icons/trash.png"
+                      alt="Delete"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selected-goods__card">
+            <a class="selected-goods__card-a-whith-img" href="/">
+              <img
+                class="selected-goods__card-img"
+                src="./images/static/goods/248932465.webp"
+                alt="Reptile run wheel"
+              />
+            </a>
+            <div class="selected-goods__card-inf">
+              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
+              <p class="workSans-base-body">4.99$</p>
+              <p class="workSans-h5-h4">Totall 4.99$</p>
+              <div class="selected-goods__card-btns--content-center">
+                <div class="selected-goods__card-btns">
+                  <div class="selected-goods__card-change-quantity-cont">
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="decrease"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/plus.png"
+                        alt="Add"
+                      />
+                    </button>
+                    <p
+                      class="selected-goods__cart-quantity workSans-h4-h3"
+                      data-cart-id="95"
+                    >
+                      1
+                    </p>
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="increase"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/minus.png"
+                        alt="Subtract"
+                      />
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
+                    data-cart-id="95"
+                    data-remove-url="/cart/cart_remove/95"
+                  >
+                    <input
+                      type="hidden"
+                      name="csrfmiddlewaretoken"
+                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                    />
+                    <img
+                      class="selected-goods__btn-img"
+                      src="./images/static/icons/trash.png"
+                      alt="Delete"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--? Футер -->
@@ -341,7 +565,11 @@
         <div class="footer__before-hr">
           <div class="footer__before-hr-description">
             <a class="logo spaceMono-btns" href="./homepage.html">
-              <img class="logo__img" src="./images/static/icons/logo.png" alt="logo" />
+              <img
+                class="logo__img"
+                src="./images/static/icons/logo.png"
+                alt="logo"
+              />
               Animalshare
             </a>
             <p class="workSans-base">Question about commercial? Contact us!</p>
