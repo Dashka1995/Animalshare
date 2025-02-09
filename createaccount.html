@@ -29,8 +29,27 @@
         />
       </button>
       <div class="mobile-menu hidden">
-        <div class="mobile-menu__a">
-          <a href="./login.html" class="mobile-menu__login workSans-btns">
+        <div class="mobile-menu__logo-cont">
+          <a href="./homepage.html" class="mobile-menu__logo-a spaceMono-btns">
+            <img
+              class="btn__img"
+              src="./images/static/icons/logo.png"
+              alt="logo"
+            />
+            Animalshare
+          </a>
+          <button class="mobile-menu__exit workSans-btns">
+            <img
+              src="./images/static/icons/cross.png"
+              alt="Exit"
+            />
+          </button>
+        </div>
+        <div class="mobile-menu__a-cont">
+          <a
+            href="./login.html"
+            class="mobile-menu__a-without-arrow workSans-btns"
+          >
             Login
             <img
               class="btn__img btn__img--mobile"
@@ -38,11 +57,71 @@
               alt="Login"
             />
           </a>
-          <a class="workSans-btns" href="/">Marketplace</a>
-          <a class="workSans-btns" href="/">Forum</a>
-          <a class="workSans-btns" href="./myprofile.html">Profile</a>
         </div>
-        <button class="mobile-menu__exit workSans-btns">x</button>
+        <div class="mobile-menu__a-cont">
+          <a
+            class="mobile-menu__a-without-arrow workSans-btns"
+            href="./myprofile.html"
+            >Profile</a
+          >
+        </div>
+
+        <div class="mobile-menu__a-cont">
+          <a
+            class="mobile-menu__a-with-arrow workSans-btns"
+            href="/"
+            >Forum</a
+          >
+          <button class="mobile-menu__link-arrow mobile-menu__link-arrow--forum">
+            <img src="./images/static/icons/arrow-down.png" alt="show sub-items">
+          </button>
+        </div>
+        <div class="dropdown-menu dropdown-menu--forum workSans-base">
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">Create a post</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My posts</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My comments</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My messages</a>
+          </div>
+          <div class="dropdown-menu__a-cont">
+            <a class="dropdown-menu__a" href="">Gallery</a>
+          </div>
+        </div>
+        <div class="mobile-menu__a-cont">
+          <a
+            class="mobile-menu__a-with-arrow workSans-btns"
+            href="/"
+            >Marketplace</a
+          >
+          <button class="mobile-menu__link-arrow mobile-menu__link-arrow--marketplace">
+            <img src="./images/static/icons/arrow-down.png" alt="Show sub-items">
+          </button>
+        </div>
+        <div
+          class="dropdown-menu dropdown-menu--marketplace workSans-base hidden"
+        >
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My goods</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">Cat's gear</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My comments</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">For fish</a>
+          </div>
+          <div class="dropdown-menu__a-cont">
+            <a class="dropdown-menu__a" href="">Other</a>
+          </div>
+        </div>
       </div>
     </header>
     <!--? Конец мобильного хедера -->
