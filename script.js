@@ -21,12 +21,16 @@ document.querySelector(".overlay").addEventListener("click", function () {
   document.querySelector(".overlay").classList.add("hidden");
 });
 
-document.querySelector(".mobile-menu__link-arrow--forum").addEventListener("click", function () {
+document.querySelector(".btn--whith-img--forum").addEventListener("click", function () {
   document.querySelector(".dropdown-menu--forum").classList.toggle("hidden");
 });
 
-document.querySelector(".mobile-menu__link-arrow--marketplace").addEventListener("click", function () {
+document.querySelector(".btn--whith-img--marketplace").addEventListener("click", function () {
   document.querySelector(".dropdown-menu--marketplace").classList.toggle("hidden");
 });
 
-
+document.querySelector(".marketplace-sort__sorting-btn-open").addEventListener("click", function () {
+  document.querySelector(".marketplace-sort__dropdown-menu").classList.toggle("hidden");
+  document.querySelector(".marketplace-sort__sorting-btn-open-span").classList.toggle("hidden");
+  document.querySelector(".marketplace-sort__sorting-btn-open").classList.toggle("marketplace-sort__sorting-btn-open--white");
+});

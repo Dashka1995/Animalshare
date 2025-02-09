@@ -243,6 +243,13 @@ body {
   line-height: 22px;
 }
 
+.workSans-btns-h5 {
+  font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: clamp(16px, 4.8px + 1.35vw, 22px);
+  line-height: clamp(22px, 5.1px + 2.02vw, 31px);
+}
+
 .workSans-base-body {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 400;
@@ -434,6 +441,7 @@ body {
 
 .btn-menu {
   position: fixed;
+  z-index: 2;
   top: 10px;
   right: 32px;
   max-width: 32px;
@@ -450,6 +458,7 @@ body {
 
 .overlay {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -462,7 +471,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--main-secondary-color);
   display: flex;
   flex-direction: column;
@@ -507,7 +516,7 @@ body {
   border-bottom: 1px dashed var(--elem-fourth-color);
 }
 
-.mobile-menu__link-arrow {
+.btn--whith-img {
   max-height: 24px;
   max-width: 24px;
   background-color: transparent;
@@ -1154,6 +1163,136 @@ body {
 }
 
 /*? Конец раздела My Profile*/
+
+/*? Начало раздела Marketplace*/
+/*? конец секции описания маркетплейса*/
+.marketplace-description {
+  padding: 30px 0;
+  position: relative;
+}
+
+@media screen and (min-width: 834px) {
+  .marketplace-description {
+    padding: 60px 0;
+  }
+}
+
+
+.search-form--marketplace {
+  width: min(100%, 1050px);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.marketplace-description::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-secondary-color);
+}
+
+.search-form__input {
+  height: 60px;
+  background-color: transparent;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: 1px solid var(--main-secondary-color);
+  width: 100%;
+}
+
+.search-form__btn {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 12px;
+  border: none;
+}
+/*? конец секции описания маркетплейса*/
+
+/*? Начало секции сортировки товаров*/
+
+.marketplace-description__my-goods-a {
+  display: block;
+  padding-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 834px) {
+  .marketplace-description__my-goods-a {
+    padding-top: 60px;
+  }
+}
+
+.marketplace-sort__nav {
+  padding: 30px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.marketplace-sort__a--active {
+  color: var(--elem-secondary-color);
+}
+
+.marketplace-sort__sorting {
+  margin-bottom: 20px;
+}
+
+.marketplace-sort__sorting, .marketplace-sort__dropdown-menu, .marketplace-sort__dropdown-menu-radio-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.marketplace-sort__sorting-btn-open {
+  background-color: transparent;
+  color: var(--elem-fourth-color);
+  border: none;
+}
+
+.marketplace-sort__sorting-btn-open--white {
+  color: var(--elem-primary-color);
+}
+
+.marketplace-sort__dropdown-menu-switch {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+/*? Конец секции сортировки товаров*/
+/*? Начало секции карточек товаров*/
+
+.marketplace-cards--bg {
+  background-color: var(--main-secondary-color);
+}
+
+.marketplace-cards {
+  padding-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
+  padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
+}
+
+
+
+
+
+
+
+
+
+
+/*? Конец секции карточек товаров*/
+/*? Конец раздела Marketplace*/
 
 .hidden {
   display: none;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animalshare</title>
+    <title>Animalshare/Login</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./fonts/workSans/font.css" />
     <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
@@ -39,10 +39,7 @@
             Animalshare
           </a>
           <button class="mobile-menu__exit workSans-btns">
-            <img
-              src="./images/static/icons/cross.png"
-              alt="Exit"
-            />
+            <img src="./images/static/icons/cross.png" alt="Exit" />
           </button>
         </div>
         <div class="mobile-menu__a-cont">
@@ -67,13 +64,14 @@
         </div>
 
         <div class="mobile-menu__a-cont">
-          <a
-            class="mobile-menu__a-with-arrow workSans-btns"
-            href="/"
-            >Forum</a
+          <a class="mobile-menu__a-with-arrow workSans-btns" href="/">Forum</a>
+          <button
+            class="btn--whith-img btn--whith-img--forum"
           >
-          <button class="btn--whith-img btn--whith-img--forum">
-            <img src="./images/static/icons/arrow-down.png" alt="show sub-items">
+            <img
+              src="./images/static/icons/arrow-down.png"
+              alt="show sub-items"
+            />
           </button>
         </div>
         <div class="dropdown-menu dropdown-menu--forum workSans-base">
@@ -99,8 +97,13 @@
             href="./marketplace.html"
             >Marketplace</a
           >
-          <button class="btn--whith-img btn--whith-img--marketplace">
-            <img src="./images/static/icons/arrow-down.png" alt="Show sub-items">
+          <button
+            class="btn--whith-img btn--whith-img--marketplace"
+          >
+            <img
+              src="./images/static/icons/arrow-down.png"
+              alt="Show sub-items"
+            />
           </button>
         </div>
         <div
@@ -158,76 +161,108 @@
       <p class="spaceMono-h5-h4">Error during registration</p>
     </div>
     <!--? Конец раздела Ворнинг-месс -->
-    <main class="wrapper">
-      <h1 class="welcome workSans-h4-h3-h1">Welcome to Animalshare</h1>
-      <!--? раздел херо -->
-      <div class="hero">
-        <div class="hero__description">
-          <p class="hero__text--color workSans-h5">
-            This is a test site as a portfolio for job offer, to show everyone,
-            how good I am at django and deploy it.
-          </p>
-          <p class="workSans-base-body">
-            Happiness for everyone, for free, and let no one leave offended!
-          </p>
-          <div class="hero__statistics">
-            <div class="hero__post-statistics">
-              <p class="spaceMono-h5-h4">80+</p>
-              <p class="workSans-base-body">Posts</p>
-            </div>
-            <div class="hero__profile-statistics">
-              <p class="spaceMono-h5-h4">20+</p>
-              <p class="workSans-base-body">Profiles</p>
-            </div>
-            <div class="hero__goods-statistics">
-              <p class="spaceMono-h5-h4">100+</p>
-              <p class="workSans-base-body">Products</p>
-            </div>
-          </div>
+    <!--? Начало раздела Меин -->
+
+    <main>
+        <div class="wrapper">
+            <section class="marketplace-description">
+              <h1 class="workSans-h4-h3-h2">Browse Marketplace</h1>
+              <form
+                class="search-form--marketplace"
+                role="search"
+                action="/shop/search/"
+                method="get"
+              >
+                <input
+                  class="search-form__input workSans-base"
+                  type="search"
+                  name="q"
+                  placeholder="Good's search"
+                />
+                <button class="search-form__btn" type="submit">
+                  <img src="./images/static/icons/search.png" alt="Search" />
+                </button>
+              </form>
+              <a href="/" class="marketplace-description__my-goods-a workSans-btns-h5">My goods<span>(9)</span></a>
+            </section>
+            <section class="marketplace-sort">
+              <div class="marketplace-sort__nav">
+                <a class="workSans-btns-h5 marketplace-sort__a--active" href="/"
+                  >All goods</a
+                >
+                <a class="workSans-btns-h5" href="/">Cat's gear</a>
+                <a class="workSans-btns-h5" href="/">Dog's gear</a>
+                <a class="workSans-btns-h5" href="/">For fish</a>
+                <a class="workSans-btns-h5" href="/">Other</a>
+              </div>
+              <form class="marketplace-sort__sorting">
+                <button
+                  type="button"
+                  class="marketplace-sort__sorting-btn-open workSans-btns-h5"
+                  tabindex="1"
+                >
+                  Sort by <span class="marketplace-sort__sorting-btn-open-span hidden">:</span>
+                </button>
+                <ul class="marketplace-sort__dropdown-menu workSans-btns hidden">
+                  <li>
+                    <input class="marketplace-sort__dropdown-menu-switch" type="checkbox" name="on_sale" value="on" /><label
+                      >Discount only</label
+                    >
+                  </li>
+                  <!--тут мы реализовали метод, который будет оставлять галочку при сортировке и перемещении по магазину с пункта - по скидке, 2== обязательно!-->
+                  <div class="marketplace-sort__dropdown-menu-radio-items">
+                    <li>
+                      <input
+                          class="marketplace-sort__dropdown-menu-switch"
+                        type="radio"
+                        name="order_by"
+                        id="flexRadioDefault1"
+                        value="default"
+                        checked=""
+                      /><label>No filter</label>
+                    </li>
+                    <li>
+                      <input
+                      class="marketplace-sort__dropdown-menu-switch"
+                        type="radio"
+                        name="order_by"
+                        id="flexRadioDefault2"
+                        value="-price"
+                      /><label>Expensive first</label>
+                    </li>
+                    <li>
+                      <input
+                      class="marketplace-sort__dropdown-menu-switch"
+                        type="radio"
+                        name="order_by"
+                        id="flexRadioDefault3"
+                        value="price"
+                      /><label>Cheap first</label>
+                    </li>
+                    <button class="btn--whith-img" type="submit">
+                      <img src="./images/static/icons/sort.png" alt="Sort">
+                    </button>
+                  </div>
+                </ul>
+              </form>
+              <div class="marketplace-sort__cards">
+      
+              </div>
+            </section>
         </div>
-        <div class="post-cards">
-          <div class="post-card">
-            <img
-              class="post-card__img"
-              src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
-              alt="Post picture"
-            />
-            <div class="post-card__description">
-              <a href="/" class="post-card__sign workSans-h5"
-                >The hamster has escaped!</a
-              >
-              <a href="/" class="post-card__author workSans-base">
-                <img
-                  class="post-card__avatar"
-                  src="./images/static/avatars/Avatar3.png"
-                  alt="Avatar"
-                />Little Bird</a
-              >
+      <div class="marketplace-cards--bg">
+        <section class="marketplace-cards wr">
+            <div class="marketplace-cards__cont">
+                <div class="marketplace-card">
+                    
+                </div>
             </div>
-          </div>
-          <div class="post-card">
-            <img
-              class="post-card__img"
-              src="./images/users images/post images/IMG_20241118_120913919_MP.jpg"
-              alt="Post picture"
-            />
-            <div class="post-card__description">
-              <a href="/" class="post-card__sign workSans-h5"
-                >My dog ate my neighbor!</a
-              >
-              <a href="/" class="post-card__author workSans-base">
-                <img
-                  class="post-card__avatar"
-                  src="./images/static/avatars/avatar13.png"
-                  alt="Avatar"
-                />Animakid</a
-              >
-            </div>
-          </div>
-        </div>
+            <div class="marketplace-cards__pagination"></div>
+        </section>
       </div>
-      <!--? Конец раздела херо -->
     </main>
+
+    <!--? Конец раздела Меин -->
     <!--? Футер -->
     <footer class="footer">
       <div class="footer__inner wrapper">
