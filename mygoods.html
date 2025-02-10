@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animalshare/Profile</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./fonts/workSans/font.css" />
+    <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--? Мобильный хедер -->
+    <header class="header-mobile wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img
+          class="logo__img"
+          src="./images/static/icons/logo.png"
+          alt="logo"
+        />
+        Animalshare
+      </a>
+      <div class="overlay hidden"></div>
+      <button class="btn-menu">
+        <img
+          class="btn-menu__img"
+          src="./images/static/icons/list.png"
+          alt="menu"
+        />
+      </button>
+      <div class="mobile-menu hidden">
+        <div class="mobile-menu__logo-cont">
+          <a href="./homepage.html" class="mobile-menu__logo-a spaceMono-btns">
+            <img
+              class="btn__img"
+              src="./images/static/icons/logo.png"
+              alt="logo"
+            />
+            Animalshare
+          </a>
+          <button class="mobile-menu__exit workSans-btns">
+            <img src="./images/static/icons/cross.png" alt="Exit" />
+          </button>
+        </div>
+        <div class="mobile-menu__a-cont">
+          <a
+            href="./login.html"
+            class="mobile-menu__a-without-arrow workSans-btns"
+          >
+            Login
+            <img
+              class="btn__img btn__img--mobile"
+              src="./images/static/icons/user.png"
+              alt="Login"
+            />
+          </a>
+        </div>
+        <div class="mobile-menu__a-cont">
+          <a
+            class="mobile-menu__a-without-arrow workSans-btns"
+            href="./myprofile.html"
+            >Profile</a
+          >
+        </div>
+
+        <div class="mobile-menu__a-cont">
+          <a class="mobile-menu__a-with-arrow workSans-btns" href="/">Forum</a>
+          <button
+            class="btn--whith-img btn--whith-img--forum"
+          >
+            <img
+              src="./images/static/icons/arrow-down.png"
+              alt="show sub-items"
+            />
+          </button>
+        </div>
+        <div class="dropdown-menu dropdown-menu--forum workSans-base">
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">Create a post</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My posts</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My comments</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My messages</a>
+          </div>
+          <div class="dropdown-menu__a-cont">
+            <a class="dropdown-menu__a" href="">Gallery</a>
+          </div>
+        </div>
+        <div class="mobile-menu__a-cont">
+          <a
+            class="mobile-menu__a-with-arrow workSans-btns"
+            href="./marketplace.html"
+            >Marketplace</a
+          >
+          <button
+            class="btn--whith-img btn--whith-img--marketplace"
+          >
+            <img
+              src="./images/static/icons/arrow-down.png"
+              alt="Show sub-items"
+            />
+          </button>
+        </div>
+        <div
+          class="dropdown-menu dropdown-menu--marketplace workSans-base hidden"
+        >
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My goods</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">Cat's gear</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">My comments</a>
+          </div>
+          <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+            <a class="dropdown-menu__a" href="">For fish</a>
+          </div>
+          <div class="dropdown-menu__a-cont">
+            <a class="dropdown-menu__a" href="">Other</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--? Конец мобильного хедера -->
+
+    <!--? Десктопный хедер -->
+    <header class="header-desktop wrapper-header">
+      <a class="logo spaceMono-btns" href="./homepage.html">
+        <img
+          class="logo__img"
+          src="./images/static/icons/logo.png"
+          alt="logo"
+        />
+        Animalshare
+      </a>
+      <div class="desktop-menu">
+        <a class="workSans-btns" href="./marketplace.html">Marketplace</a>
+        <a class="workSans-btns" href="/">Forum</a>
+        <a class="workSans-btns" href="./myprofile.html">Profile</a>
+        <a
+          href="./login.html"
+          class="a-as-btn btn btn--Filled btn--Secondary workSans-btns"
+        >
+          <img
+            class="btn__img btn__img--desktop"
+            src="./images/static/icons/user.png"
+            alt=""
+          />Login
+        </a>
+      </div>
+    </header>
+    <!--? Конец десктопного хедера -->
+    <!--? Раздел Ворнинг-месс -->
+    <div class="warning-mess warning-mess--error hidden">
+      <p class="spaceMono-h5-h4">Error during registration</p>
+    </div>
+    <!--? Конец раздела Ворнинг-месс -->
+    <img
+      class="mygoods-top__bg-img"
+      src="./images/static/bg-img/khameleon-iashcheritsa-okras-trava-chameleon-chamaeleonidae.jpg"
+      alt="My goods"
+    />
+    <main class="wrapper">
+      <section class="profile-bottom profile-bottom--margin">
+        <div class="selected-goods">
+          <h2
+            class="profile-top__title profile-top__title--under profile-top__title--834-left workSans-h4-h3"
+          >
+            My goods
+          </h2>
+          <div class="selected-goods__card">
+            <a class="selected-goods__card-a-whith-img" href="/">
+              <img
+                class="selected-goods__card-img"
+                src="./images/static/goods/248932465.webp"
+                alt="Reptile run wheel"
+              />
+            </a>
+            <div class="selected-goods__card-inf">
+              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
+              <p class="workSans-base-body">4.99$</p>
+              <p class="workSans-h5-h4">Totall 4.99$</p>
+              <div class="selected-goods__card-btns--content-center">
+                <div class="selected-goods__card-btns">
+                  <div class="selected-goods__card-change-quantity-cont">
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="decrease"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/plus.png"
+                        alt="Add"
+                      />
+                    </button>
+                    <p
+                      class="selected-goods__cart-quantity workSans-h4-h3"
+                      data-cart-id="95"
+                    >
+                      1
+                    </p>
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="increase"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/minus.png"
+                        alt="Subtract"
+                      />
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
+                    data-cart-id="95"
+                    data-remove-url="/cart/cart_remove/95"
+                  >
+                    <input
+                      type="hidden"
+                      name="csrfmiddlewaretoken"
+                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                    />
+                    <img
+                      class="selected-goods__btn-img"
+                      src="./images/static/icons/trash.png"
+                      alt="Delete"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selected-goods__card">
+            <a class="selected-goods__card-a-whith-img" href="/">
+              <img
+                class="selected-goods__card-img"
+                src="./images/static/goods/248932465.webp"
+                alt="Reptile run wheel"
+              />
+            </a>
+            <div class="selected-goods__card-inf">
+              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
+              <p class="workSans-base-body">4.99$</p>
+              <p class="workSans-h5-h4">Totall 4.99$</p>
+              <div class="selected-goods__card-btns--content-center">
+                <div class="selected-goods__card-btns">
+                  <div class="selected-goods__card-change-quantity-cont">
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="decrease"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/plus.png"
+                        alt="Add"
+                      />
+                    </button>
+                    <p
+                      class="selected-goods__cart-quantity workSans-h4-h3"
+                      data-cart-id="95"
+                    >
+                      1
+                    </p>
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="increase"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/minus.png"
+                        alt="Subtract"
+                      />
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
+                    data-cart-id="95"
+                    data-remove-url="/cart/cart_remove/95"
+                  >
+                    <input
+                      type="hidden"
+                      name="csrfmiddlewaretoken"
+                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                    />
+                    <img
+                      class="selected-goods__btn-img"
+                      src="./images/static/icons/trash.png"
+                      alt="Delete"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="selected-goods__cont-place-order">
+          <a
+            class="a-as-btn btn btn--place-order btn--Filled btn--Secondary workSans-h5-h4"
+            href=""
+            >Place an order!</a
+          >
+          <p class="workSans-base-body">
+            10 goods for
+            <span class="selected-goods__cont-place-order-span workSans-h5-h4"
+              >totall 662.60 $</span
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <!--? Футер -->
+    <footer class="footer">
+      <div class="footer__inner wrapper">
+        <div class="footer__before-hr">
+          <div class="footer__before-hr-description">
+            <a class="logo spaceMono-btns" href="./homepage.html">
+              <img
+                class="logo__img"
+                src="./images/static/icons/logo.png"
+                alt="logo"
+              />
+              Animalshare
+            </a>
+            <p class="workSans-base">Question about commercial? Contact us!</p>
+            <address class="footer__adress">
+              <a class="footer__adress-a" href="tel:+380633731255">
+                <img
+                  class="footer__adress-img"
+                  src="./images/static/icons/phone.png"
+                  alt="Phone"
+                />
+                +380633731255</a
+              >
+              <a class="footer__adress-a" href="mailto:237629134pah@gmail.com">
+                <img
+                  class="footer__adress-img"
+                  src="./images/static/icons/message.png"
+                  width="32px"
+                  alt="Email"
+                />
+                237629134pah@gmail.com</a
+              >
+            </address>
+          </div>
+        </div>
+        <p class="footer__text-after-hr workSans-caption">
+          Ⓒ Animalshare. Use it with pleasure.
+        </p>
+      </div>
+    </footer>
+    <!--? Конец футера -->
+    <script src="./script.js"></script>
+  </body>
+</html>
