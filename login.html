@@ -65,16 +65,14 @@
 
         <div class="mobile-menu__a-cont">
           <a class="mobile-menu__a-with-arrow workSans-btns" href="/">Forum</a>
-          <button
-            class="btn--whith-img btn--whith-img--forum"
-          >
+          <button class="btn--whith-img btn--whith-img--forum">
             <img
               src="./images/static/icons/arrow-down.png"
               alt="show sub-items"
             />
           </button>
         </div>
-        <div class="dropdown-menu dropdown-menu--forum workSans-base">
+        <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">Create a post</a>
           </div>
@@ -97,9 +95,7 @@
             href="./marketplace.html"
             >Marketplace</a
           >
-          <button
-            class="btn--whith-img btn--whith-img--marketplace"
-          >
+          <button class="btn--whith-img btn--whith-img--marketplace">
             <img
               src="./images/static/icons/arrow-down.png"
               alt="Show sub-items"
@@ -107,7 +103,7 @@
           </button>
         </div>
         <div
-          class="dropdown-menu dropdown-menu--marketplace workSans-base hidden"
+          class="dropdown-menu dropdown-menu--mobile-marketplace workSans-base hidden"
         >
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">My goods</a>
@@ -116,7 +112,7 @@
             <a class="dropdown-menu__a" href="">Cat's gear</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My comments</a>
+            <a class="dropdown-menu__a" href="">Dog's gear</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">For fish</a>
@@ -128,7 +124,6 @@
       </div>
     </header>
     <!--? Конец мобильного хедера -->
-
     <!--? Десктопный хедер -->
     <header class="header-desktop wrapper-header">
       <a class="logo spaceMono-btns" href="./homepage.html">
@@ -140,8 +135,60 @@
         Animalshare
       </a>
       <div class="desktop-menu">
-        <a class="workSans-btns" href="./marketplace.html">Marketplace</a>
-        <a class="workSans-btns" href="/">Forum</a>
+        <ul class="desktop-menu__marketplace-list">
+          <li>
+            <a
+              class="desktop-menu__list-title workSans-btns"
+              href="./marketplace.html"
+              >Marketplace</a
+            >
+          </li>
+          <ul
+            class="dropdown-menu dropdown-menu--desktop-marketplace workSans-base"
+          >
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My goods</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Cat's gear</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Dog's gear</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">For fish</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Other</a>
+            </li>
+          </ul>
+        </ul>
+        <ul class="desktop-menu__forum-list">
+          <li>
+            <a
+              class="desktop-menu__list-title workSans-btns"
+              href="./forum.html"
+              >Forum</a
+            >
+          </li>
+          <ul class="dropdown-menu dropdown-menu--desktop-forum workSans-base">
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Create a post</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My posts</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My comments</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My messages</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Gallery</a>
+            </li>
+          </ul>
+        </ul>
         <a class="workSans-btns" href="./myprofile.html">Profile</a>
         <a
           href="./login.html"

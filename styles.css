@@ -194,7 +194,6 @@ body {
   line-height: 22px;
 }
 
-
 .spaceMono-btns {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 700;
@@ -490,10 +489,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  padding-right: 5px; */
   padding: 17px 5px 15px 16px;
   background-color: var(--main-primary-color);
 }
@@ -512,7 +507,8 @@ body {
   border: none;
 }
 
-.mobile-menu__a-cont, .dropdown-menu__a-cont {
+.mobile-menu__a-cont,
+.dropdown-menu__a-cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -531,10 +527,6 @@ body {
   border: none;
 }
 
-/* .dropdown-menu {
-  display: none;
-} */
-
 .desktop-menu {
   display: flex;
   column-gap: 30px;
@@ -546,6 +538,36 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.dropdown-menu--desktop-marketplace,
+.dropdown-menu--desktop-forum {
+  display: none;
+  position: absolute;
+  background-color: #2b2b2b8f;
+  border-radius: 20px;
+  z-index: 1;
+  width: max-content;
+}
+
+.dropdown-menu--desktop-forum {
+  left: -20px;
+}
+
+.desktop-menu__list-title:hover {
+  color: var(--elem-secondary-color);
+}
+
+.desktop-menu__marketplace-list:hover,
+.desktop-menu__forum-list:hover {
+  position: relative;
+}
+
+.desktop-menu__marketplace-list:hover > .dropdown-menu--desktop-marketplace,
+.desktop-menu__forum-list:hover > .dropdown-menu--desktop-forum {
+  display: block;
+  position: absolute;
+}
+
 /*? Конец раздела Хедер */
 
 /* Раздел Ворнинг-месс */
@@ -865,7 +887,8 @@ body {
   }
 }
 
-.profile-top__bg-img, .mygoods-top__bg-img {
+.profile-top__bg-img,
+.mygoods-top__bg-img {
   width: 100vw;
   height: 66vw;
 }
@@ -1192,7 +1215,6 @@ body {
   }
 }
 
-
 .search-form--marketplace {
   width: min(100%, 1050px);
   margin-top: 30px;
@@ -1218,6 +1240,7 @@ body {
   color: var(--elem-primary-color);
   border-radius: 20px;
   padding-left: 20px;
+  padding-right: 50px;
   border: 1px solid var(--main-secondary-color);
   width: 100%;
 }
@@ -1263,7 +1286,9 @@ body {
   margin-bottom: 20px;
 }
 
-.marketplace-sort__sorting, .marketplace-sort__dropdown-menu, .marketplace-sort__dropdown-menu-radio-items {
+.marketplace-sort__sorting,
+.marketplace-sort__dropdown-menu,
+.marketplace-sort__dropdown-menu-radio-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1293,7 +1318,7 @@ body {
   padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
 }
 
-.marketplace-cards::after{
+.marketplace-cards::after {
   content: "";
   position: relative;
   display: block;
@@ -1305,14 +1330,14 @@ body {
 }
 
 @media screen and (min-width: 834px) {
-  .marketplace-cards::after{
+  .marketplace-cards::after {
     left: -72px;
     width: calc(100% + 144px);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .marketplace-cards::after{
+  .marketplace-cards::after {
     left: -115px;
     width: calc(100% + 230px);
   }
@@ -1337,16 +1362,16 @@ body {
   max-width: clamp(315px, 306.8px + 2.18vw, 325px);
   max-height: clamp(238px, calc(191.4px + 12.42vw), 295px);
   overflow: hidden;
-
 }
 
-.marketplace-card__a-whith-img, .marketplace-card__img {
+.marketplace-card__a-whith-img,
+.marketplace-card__img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .marketplace-card__description {
-  padding:20px clamp(20px, calc(11.8px + 2.18vw), 30px) 25px;
+  padding: 20px clamp(20px, calc(11.8px + 2.18vw), 30px) 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1404,8 +1429,6 @@ body {
   color: var(--elem-secondary-color);
   font-size: 27px;
 }
-
-
 
 /*? Конец секции карточек товаров*/
 /*? Конец раздела Marketplace*/

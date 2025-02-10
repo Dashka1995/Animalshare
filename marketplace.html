@@ -65,16 +65,14 @@
 
         <div class="mobile-menu__a-cont">
           <a class="mobile-menu__a-with-arrow workSans-btns" href="/">Forum</a>
-          <button
-            class="btn--whith-img btn--whith-img--forum"
-          >
+          <button class="btn--whith-img btn--whith-img--forum">
             <img
               src="./images/static/icons/arrow-down.png"
               alt="show sub-items"
             />
           </button>
         </div>
-        <div class="dropdown-menu dropdown-menu--forum workSans-base">
+        <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">Create a post</a>
           </div>
@@ -97,9 +95,7 @@
             href="./marketplace.html"
             >Marketplace</a
           >
-          <button
-            class="btn--whith-img btn--whith-img--marketplace"
-          >
+          <button class="btn--whith-img btn--whith-img--marketplace">
             <img
               src="./images/static/icons/arrow-down.png"
               alt="Show sub-items"
@@ -107,7 +103,7 @@
           </button>
         </div>
         <div
-          class="dropdown-menu dropdown-menu--marketplace workSans-base hidden"
+          class="dropdown-menu dropdown-menu--mobile-marketplace workSans-base hidden"
         >
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">My goods</a>
@@ -116,7 +112,7 @@
             <a class="dropdown-menu__a" href="">Cat's gear</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My comments</a>
+            <a class="dropdown-menu__a" href="">Dog's gear</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">For fish</a>
@@ -128,7 +124,6 @@
       </div>
     </header>
     <!--? Конец мобильного хедера -->
-
     <!--? Десктопный хедер -->
     <header class="header-desktop wrapper-header">
       <a class="logo spaceMono-btns" href="./homepage.html">
@@ -140,8 +135,60 @@
         Animalshare
       </a>
       <div class="desktop-menu">
-        <a class="workSans-btns" href="./marketplace.html">Marketplace</a>
-        <a class="workSans-btns" href="/">Forum</a>
+        <ul class="desktop-menu__marketplace-list">
+          <li>
+            <a
+              class="desktop-menu__list-title workSans-btns"
+              href="./marketplace.html"
+              >Marketplace</a
+            >
+          </li>
+          <ul
+            class="dropdown-menu dropdown-menu--desktop-marketplace workSans-base"
+          >
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My goods</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Cat's gear</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Dog's gear</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">For fish</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Other</a>
+            </li>
+          </ul>
+        </ul>
+        <ul class="desktop-menu__forum-list">
+          <li>
+            <a
+              class="desktop-menu__list-title workSans-btns"
+              href="./forum.html"
+              >Forum</a
+            >
+          </li>
+          <ul class="dropdown-menu dropdown-menu--desktop-forum workSans-base">
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Create a post</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My posts</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My comments</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">My messages</a>
+            </li>
+            <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
+              <a class="dropdown-menu__a" href="">Gallery</a>
+            </li>
+          </ul>
+        </ul>
         <a class="workSans-btns" href="./myprofile.html">Profile</a>
         <a
           href="./login.html"
@@ -164,212 +211,362 @@
     <!--? Начало раздела Меин -->
 
     <main>
-        <div class="wrapper">
-            <section class="marketplace-description">
-              <h1 class="workSans-h4-h3-h2">Browse Marketplace</h1>
-              <form
-                class="search-form--marketplace"
-                role="search"
-                action="/shop/search/"
-                method="get"
+      <div class="wrapper">
+        <section class="marketplace-description">
+          <h1 class="workSans-h4-h3-h2">Browse Marketplace</h1>
+          <form
+            class="search-form--marketplace"
+            role="search"
+            action="/shop/search/"
+            method="get"
+          >
+            <input
+              class="search-form__input workSans-base"
+              type="search"
+              name="q"
+              placeholder="Good's search"
+            />
+            <button class="search-form__btn" type="submit">
+              <img src="./images/static/icons/search.png" alt="Search" />
+            </button>
+          </form>
+          <a
+            href="./mygoods.html"
+            class="marketplace-description__my-goods-a workSans-btns-h5"
+            >My goods<span>(9)</span></a
+          >
+        </section>
+        <section class="marketplace-sort">
+          <div class="marketplace-sort__nav">
+            <a class="workSans-btns-h5 marketplace-sort__a--active" href="/"
+              >All goods</a
+            >
+            <a class="workSans-btns-h5" href="/">Cat's gear</a>
+            <a class="workSans-btns-h5" href="/">Dog's gear</a>
+            <a class="workSans-btns-h5" href="/">For fish</a>
+            <a class="workSans-btns-h5" href="/">Other</a>
+          </div>
+          <form class="marketplace-sort__sorting">
+            <button
+              type="button"
+              class="marketplace-sort__sorting-btn-open btn btn--Outlined btn--Tertiary workSans-btns"
+              tabindex="1"
+            >
+              Sort by
+              <span class="marketplace-sort__sorting-btn-open-span hidden"
+                >:</span
               >
+            </button>
+            <ul class="marketplace-sort__dropdown-menu workSans-btns hidden">
+              <li>
                 <input
-                  class="search-form__input workSans-base"
-                  type="search"
-                  name="q"
-                  placeholder="Good's search"
-                />
-                <button class="search-form__btn" type="submit">
-                  <img src="./images/static/icons/search.png" alt="Search" />
+                  class="marketplace-sort__dropdown-menu-switch"
+                  type="checkbox"
+                  name="on_sale"
+                  value="on"
+                /><label>Discount only</label>
+              </li>
+              <!--тут мы реализовали метод, который будет оставлять галочку при сортировке и перемещении по магазину с пункта - по скидке, 2== обязательно!-->
+              <div class="marketplace-sort__dropdown-menu-radio-items">
+                <li>
+                  <input
+                    class="marketplace-sort__dropdown-menu-switch"
+                    type="radio"
+                    name="order_by"
+                    id="flexRadioDefault1"
+                    value="default"
+                    checked=""
+                  /><label>No filter</label>
+                </li>
+                <li>
+                  <input
+                    class="marketplace-sort__dropdown-menu-switch"
+                    type="radio"
+                    name="order_by"
+                    id="flexRadioDefault2"
+                    value="-price"
+                  /><label>Expensive first</label>
+                </li>
+                <li>
+                  <input
+                    class="marketplace-sort__dropdown-menu-switch"
+                    type="radio"
+                    name="order_by"
+                    id="flexRadioDefault3"
+                    value="price"
+                  /><label>Cheap first</label>
+                </li>
+                <button class="btn--whith-img" type="submit">
+                  <img src="./images/static/icons/sort.png" alt="Sort" />
                 </button>
-              </form>
-              <a href="./mygoods.html" class="marketplace-description__my-goods-a workSans-btns-h5">My goods<span>(9)</span></a>
-            </section>
-            <section class="marketplace-sort">
-              <div class="marketplace-sort__nav">
-                <a class="workSans-btns-h5 marketplace-sort__a--active" href="/"
-                  >All goods</a
-                >
-                <a class="workSans-btns-h5" href="/">Cat's gear</a>
-                <a class="workSans-btns-h5" href="/">Dog's gear</a>
-                <a class="workSans-btns-h5" href="/">For fish</a>
-                <a class="workSans-btns-h5" href="/">Other</a>
               </div>
-              <form class="marketplace-sort__sorting">
-                <button
-                  type="button"
-                  class="marketplace-sort__sorting-btn-open btn btn--Outlined btn--Tertiary workSans-btns"
-                  tabindex="1"
-                >
-                  Sort by <span class="marketplace-sort__sorting-btn-open-span hidden">:</span>
-                </button>
-                <ul class="marketplace-sort__dropdown-menu workSans-btns hidden">
-                  <li>
-                    <input class="marketplace-sort__dropdown-menu-switch" type="checkbox" name="on_sale" value="on" /><label
-                      >Discount only</label
-                    >
-                  </li>
-                  <!--тут мы реализовали метод, который будет оставлять галочку при сортировке и перемещении по магазину с пункта - по скидке, 2== обязательно!-->
-                  <div class="marketplace-sort__dropdown-menu-radio-items">
-                    <li>
-                      <input
-                          class="marketplace-sort__dropdown-menu-switch"
-                        type="radio"
-                        name="order_by"
-                        id="flexRadioDefault1"
-                        value="default"
-                        checked=""
-                      /><label>No filter</label>
-                    </li>
-                    <li>
-                      <input
-                      class="marketplace-sort__dropdown-menu-switch"
-                        type="radio"
-                        name="order_by"
-                        id="flexRadioDefault2"
-                        value="-price"
-                      /><label>Expensive first</label>
-                    </li>
-                    <li>
-                      <input
-                      class="marketplace-sort__dropdown-menu-switch"
-                        type="radio"
-                        name="order_by"
-                        id="flexRadioDefault3"
-                        value="price"
-                      /><label>Cheap first</label>
-                    </li>
-                    <button class="btn--whith-img" type="submit">
-                      <img src="./images/static/icons/sort.png" alt="Sort">
-                    </button>
-                  </div>
-                </ul>
-              </form>
-              <div class="marketplace-sort__cards">
-      
-              </div>
-            </section>
-        </div>
+            </ul>
+          </form>
+          <div class="marketplace-sort__cards"></div>
+        </section>
+      </div>
       <div class="marketplace-cards--bg">
         <section class="marketplace-cards wrapper">
-            <div class="marketplace-cards__cont">
-                <div class="marketplace-card">
-                  <a class="marketplace-card__a-whith-img" href="/">
-                    <img class="marketplace-card__img" src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg" alt="Automatic fish feeder">
-                  </a>
-                  <div class="marketplace-card__description">
-                    <h2 class="marketplace-card__title workSans-h5" >Automatic fish feeder</h2>
-                    <p class="marketplace-card__availability spaceMono-base">In stock<span class="marketplace-card__quantity spaceMono-base">(7)</span></p>
-                    <div class="marketplace-card__bottom-cont">
-                      <div class="marketplace-card__price-cont">
-                        <p class="marketplace-card__regular-price spaceMono-caption">650.20$</p>
-                        <p class="marketplace-card__discounted-price spaceMono-base">617.69$</p>
-                      </div>
-                      <button class="marketplace-card__basket">
-                        <img src="./images/static/icons/basket.png" alt="Add to cart">
-                      </button>
-                    </div>
+          <div class="marketplace-cards__cont">
+            <div class="marketplace-card">
+              <a class="marketplace-card__a-whith-img" href="/">
+                <img
+                  class="marketplace-card__img"
+                  src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg"
+                  alt="Automatic fish feeder"
+                />
+              </a>
+              <div class="marketplace-card__description">
+                <h2 class="marketplace-card__title workSans-h5">
+                  Automatic fish feeder
+                </h2>
+                <p class="marketplace-card__availability spaceMono-base">
+                  In stock<span
+                    class="marketplace-card__quantity spaceMono-base"
+                    >(7)</span
+                  >
+                </p>
+                <div class="marketplace-card__bottom-cont">
+                  <div class="marketplace-card__price-cont">
+                    <p
+                      class="marketplace-card__regular-price spaceMono-caption"
+                    >
+                      650.20$
+                    </p>
+                    <p
+                      class="marketplace-card__discounted-price spaceMono-base"
+                    >
+                      617.69$
+                    </p>
                   </div>
+                  <button class="marketplace-card__basket">
+                    <img
+                      src="./images/static/icons/basket.png"
+                      alt="Add to cart"
+                    />
+                  </button>
                 </div>
-                <div class="marketplace-card">
-                  <a class="marketplace-card__a-whith-img" href="/">
-                    <img class="marketplace-card__img" src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg" alt="Automatic fish feeder">
-                  </a>
-                  <div class="marketplace-card__description">
-                    <h2 class="marketplace-card__title workSans-h5" >Automatic fish feeder</h2>
-                    <p class="marketplace-card__availability spaceMono-base">In stock<span class="marketplace-card__quantity spaceMono-base">(7)</span></p>
-                    <div class="marketplace-card__bottom-cont">
-                      <div class="marketplace-card__price-cont">
-                        <p class="marketplace-card__regular-price spaceMono-caption">650.20$</p>
-                        <p class="marketplace-card__discounted-price spaceMono-base">617.69$</p>
-                      </div>
-                      <button class="marketplace-card__basket">
-                        <img src="./images/static/icons/basket.png" alt="Add to cart">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="marketplace-card">
-                  <a class="marketplace-card__a-whith-img" href="/">
-                    <img class="marketplace-card__img" src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg" alt="Automatic fish feeder">
-                  </a>
-                  <div class="marketplace-card__description">
-                    <h2 class="marketplace-card__title workSans-h5" >Automatic fish feeder</h2>
-                    <p class="marketplace-card__availability spaceMono-base">In stock<span class="marketplace-card__quantity spaceMono-base">(7)</span></p>
-                    <div class="marketplace-card__bottom-cont">
-                      <div class="marketplace-card__price-cont">
-                        <p class="marketplace-card__regular-price spaceMono-caption">650.20$</p>
-                        <p class="marketplace-card__discounted-price spaceMono-base">617.69$</p>
-                      </div>
-                      <button class="marketplace-card__basket">
-                        <img src="./images/static/icons/basket.png" alt="Add to cart">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="marketplace-card">
-                  <a class="marketplace-card__a-whith-img" href="/">
-                    <img class="marketplace-card__img" src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg" alt="Automatic fish feeder">
-                  </a>
-                  <div class="marketplace-card__description">
-                    <h2 class="marketplace-card__title workSans-h5" >Automatic fish feeder</h2>
-                    <p class="marketplace-card__availability spaceMono-base">In stock<span class="marketplace-card__quantity spaceMono-base">(7)</span></p>
-                    <div class="marketplace-card__bottom-cont">
-                      <div class="marketplace-card__price-cont">
-                        <p class="marketplace-card__regular-price spaceMono-caption">650.20$</p>
-                        <p class="marketplace-card__discounted-price spaceMono-base">617.69$</p>
-                      </div>
-                      <button class="marketplace-card__basket">
-                        <img src="./images/static/icons/basket.png" alt="Add to cart">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="marketplace-card">
-                  <a class="marketplace-card__a-whith-img" href="/">
-                    <img class="marketplace-card__img" src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg" alt="Automatic fish feeder">
-                  </a>
-                  <div class="marketplace-card__description">
-                    <h2 class="marketplace-card__title workSans-h5" >Automatic fish feeder</h2>
-                    <p class="marketplace-card__availability spaceMono-base">In stock<span class="marketplace-card__quantity spaceMono-base">(7)</span></p>
-                    <div class="marketplace-card__bottom-cont">
-                      <div class="marketplace-card__price-cont">
-                        <p class="marketplace-card__regular-price spaceMono-caption">650.20$</p>
-                        <p class="marketplace-card__discounted-price spaceMono-base">617.69$</p>
-                      </div>
-                      <button class="marketplace-card__basket">
-                        <img src="./images/static/icons/basket.png" alt="Add to cart">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="marketplace-card">
-                  <a class="marketplace-card__a-whith-img" href="/">
-                    <img class="marketplace-card__img" src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg" alt="Automatic fish feeder">
-                  </a>
-                  <div class="marketplace-card__description">
-                    <h2 class="marketplace-card__title workSans-h5" >Automatic fish feeder</h2>
-                    <p class="marketplace-card__availability spaceMono-base">In stock<span class="marketplace-card__quantity spaceMono-base">(7)</span></p>
-                    <div class="marketplace-card__bottom-cont">
-                      <div class="marketplace-card__price-cont">
-                        <p class="marketplace-card__regular-price spaceMono-caption">650.20$</p>
-                        <p class="marketplace-card__discounted-price spaceMono-base">617.69$</p>
-                      </div>
-                      <button class="marketplace-card__basket">
-                        <img src="./images/static/icons/basket.png" alt="Add to cart">
-                      </button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="marketplace-card__pagination workSans-btns-h5">
-              <div class="marketplace-card__pagination-numbers">
-                <a class="marketplace-card__pagination-number--active" href="?page=1">1</a>
-                <a href="?page=2">2</a>
-                <a href="?page=3">3</a> 
               </div>
-            <a class="marketplace-card__pagination-arrow" href="?page=2"><img src="./images/static/icons/arrow-left.png" alt="Next page"></a>
-            <a class="marketplace-card__pagination-arrow marketplace-card__pagination-arrow--right" href="?page=3"><img src="./images/static/icons/arrow-right.png" alt="Last page"></a>
+            </div>
+            <div class="marketplace-card">
+              <a class="marketplace-card__a-whith-img" href="/">
+                <img
+                  class="marketplace-card__img"
+                  src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg"
+                  alt="Automatic fish feeder"
+                />
+              </a>
+              <div class="marketplace-card__description">
+                <h2 class="marketplace-card__title workSans-h5">
+                  Automatic fish feeder
+                </h2>
+                <p class="marketplace-card__availability spaceMono-base">
+                  In stock<span
+                    class="marketplace-card__quantity spaceMono-base"
+                    >(7)</span
+                  >
+                </p>
+                <div class="marketplace-card__bottom-cont">
+                  <div class="marketplace-card__price-cont">
+                    <p
+                      class="marketplace-card__regular-price spaceMono-caption"
+                    >
+                      650.20$
+                    </p>
+                    <p
+                      class="marketplace-card__discounted-price spaceMono-base"
+                    >
+                      617.69$
+                    </p>
+                  </div>
+                  <button class="marketplace-card__basket">
+                    <img
+                      src="./images/static/icons/basket.png"
+                      alt="Add to cart"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="marketplace-card">
+              <a class="marketplace-card__a-whith-img" href="/">
+                <img
+                  class="marketplace-card__img"
+                  src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg"
+                  alt="Automatic fish feeder"
+                />
+              </a>
+              <div class="marketplace-card__description">
+                <h2 class="marketplace-card__title workSans-h5">
+                  Automatic fish feeder
+                </h2>
+                <p class="marketplace-card__availability spaceMono-base">
+                  In stock<span
+                    class="marketplace-card__quantity spaceMono-base"
+                    >(7)</span
+                  >
+                </p>
+                <div class="marketplace-card__bottom-cont">
+                  <div class="marketplace-card__price-cont">
+                    <p
+                      class="marketplace-card__regular-price spaceMono-caption"
+                    >
+                      650.20$
+                    </p>
+                    <p
+                      class="marketplace-card__discounted-price spaceMono-base"
+                    >
+                      617.69$
+                    </p>
+                  </div>
+                  <button class="marketplace-card__basket">
+                    <img
+                      src="./images/static/icons/basket.png"
+                      alt="Add to cart"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="marketplace-card">
+              <a class="marketplace-card__a-whith-img" href="/">
+                <img
+                  class="marketplace-card__img"
+                  src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg"
+                  alt="Automatic fish feeder"
+                />
+              </a>
+              <div class="marketplace-card__description">
+                <h2 class="marketplace-card__title workSans-h5">
+                  Automatic fish feeder
+                </h2>
+                <p class="marketplace-card__availability spaceMono-base">
+                  In stock<span
+                    class="marketplace-card__quantity spaceMono-base"
+                    >(7)</span
+                  >
+                </p>
+                <div class="marketplace-card__bottom-cont">
+                  <div class="marketplace-card__price-cont">
+                    <p
+                      class="marketplace-card__regular-price spaceMono-caption"
+                    >
+                      650.20$
+                    </p>
+                    <p
+                      class="marketplace-card__discounted-price spaceMono-base"
+                    >
+                      617.69$
+                    </p>
+                  </div>
+                  <button class="marketplace-card__basket">
+                    <img
+                      src="./images/static/icons/basket.png"
+                      alt="Add to cart"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="marketplace-card">
+              <a class="marketplace-card__a-whith-img" href="/">
+                <img
+                  class="marketplace-card__img"
+                  src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg"
+                  alt="Automatic fish feeder"
+                />
+              </a>
+              <div class="marketplace-card__description">
+                <h2 class="marketplace-card__title workSans-h5">
+                  Automatic fish feeder
+                </h2>
+                <p class="marketplace-card__availability spaceMono-base">
+                  In stock<span
+                    class="marketplace-card__quantity spaceMono-base"
+                    >(7)</span
+                  >
+                </p>
+                <div class="marketplace-card__bottom-cont">
+                  <div class="marketplace-card__price-cont">
+                    <p
+                      class="marketplace-card__regular-price spaceMono-caption"
+                    >
+                      650.20$
+                    </p>
+                    <p
+                      class="marketplace-card__discounted-price spaceMono-base"
+                    >
+                      617.69$
+                    </p>
+                  </div>
+                  <button class="marketplace-card__basket">
+                    <img
+                      src="./images/static/icons/basket.png"
+                      alt="Add to cart"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="marketplace-card">
+              <a class="marketplace-card__a-whith-img" href="/">
+                <img
+                  class="marketplace-card__img"
+                  src="./images/static/goods/81JoIbWrcWL._AC_UF10001000_QL80_.jpg"
+                  alt="Automatic fish feeder"
+                />
+              </a>
+              <div class="marketplace-card__description">
+                <h2 class="marketplace-card__title workSans-h5">
+                  Automatic fish feeder
+                </h2>
+                <p class="marketplace-card__availability spaceMono-base">
+                  In stock<span
+                    class="marketplace-card__quantity spaceMono-base"
+                    >(7)</span
+                  >
+                </p>
+                <div class="marketplace-card__bottom-cont">
+                  <div class="marketplace-card__price-cont">
+                    <p
+                      class="marketplace-card__regular-price spaceMono-caption"
+                    >
+                      650.20$
+                    </p>
+                    <p
+                      class="marketplace-card__discounted-price spaceMono-base"
+                    >
+                      617.69$
+                    </p>
+                  </div>
+                  <button class="marketplace-card__basket">
+                    <img
+                      src="./images/static/icons/basket.png"
+                      alt="Add to cart"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="marketplace-card__pagination workSans-btns-h5">
+            <div class="marketplace-card__pagination-numbers">
+              <a
+                class="marketplace-card__pagination-number--active"
+                href="?page=1"
+                >1</a
+              >
+              <a href="?page=2">2</a>
+              <a href="?page=3">3</a>
+            </div>
+            <a class="marketplace-card__pagination-arrow" href="?page=2"
+              ><img src="./images/static/icons/arrow-left.png" alt="Next page"
+            /></a>
+            <a
+              class="marketplace-card__pagination-arrow marketplace-card__pagination-arrow--right"
+              href="?page=3"
+              ><img src="./images/static/icons/arrow-right.png" alt="Last page"
+            /></a>
           </div>
         </section>
       </div>
