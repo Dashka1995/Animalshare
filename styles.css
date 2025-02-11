@@ -55,252 +55,266 @@ body {
 
 /* .h1-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 67px;
+  font-size: 4.188rem;
   font-weight: 700;
-  line-height: 74px;
+  line-height: 4.625rem;
   text-align: left;
 }
 
 .h2-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 51px;
+  font-size: 3.188rem;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 3.5rem;
   text-align: left;
 }
 
 .h3-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 2.875rem;
   text-align: left;
 }
 
 .h4-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 2.438rem;
   text-align: left;
 }
 
 .h5-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
-  line-height: 35px;
+  line-height: 2.188rem;
   text-align: left;
 }
 
 .base-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.375rem;
   text-align: left;
 }
 
 .caption-spaceMono {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 13px;
+  line-height: 0.813rem;
   text-align: left;
 }
 
 .h1-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 67px;
+  font-size: 4.188rem;
   font-weight: 600;
-  line-height: 74px;
+  line-height: 4.625rem;
   text-align: left;
 }
 
 .h2-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 51px;
+  font-size: 3.188rem;
   font-weight: 600;
-  line-height: 56px;
+  line-height: 3.5rem;
   text-align: left;
 }
 
 .h3-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 2.875rem;
   text-align: left;
 }
 
 .h4-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
-  line-height: 39px;
+  line-height: 2.438rem;
   text-align: left;
 }
   
 
 .h5-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
-  line-height: 31px;
+  line-height: 1.938rem;
   text-align: left;
 }
 
 .base-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.375rem;
   text-align: left;
 }
 
 .body-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 2.188rem;
   text-align: left;
 }
 
 .caption-workSans {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 13px;
+  line-height: 0.813rem;
   text-align: left;
 }*/
 .spaceMono-h5 {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
-  line-height: 35px;
+  line-height: 2.188rem;
 }
 
 .spaceMono-caption {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 0.75rem;
+  line-height: 0.813rem;
 }
 
 .spaceMono-base {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375rem;
 }
 
 .spaceMono-btns {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
+}
+
+.spaceMono-base-body {
+  font-family: "Space Mono", "Lucida Console", Monaco, monospace;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.845rem + 0.66vw, 1.375rem);
+  line-height: clamp(1.375rem, 1.038rem + 1.44vw, 2.188rem);
+}
+
+.spaceMono-h4-h3 {
+  font-family: "Space Mono", "Lucida Console", Monaco, monospace;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 0.581rem + 2.24vw, 2.375rem);
+  line-height: clamp(2.438rem, 1.619rem + 1.57vw, 2.875rem);
 }
 
 .spaceMono-h5-h4 {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 700;
-  font-size: clamp(22px, 1.22rem + 0.66vw, 28px);
-  line-height: clamp(35px, 2.084rem + 0.44vw, 39px);
+  font-size: clamp(1.375rem, 1.22rem + 0.66vw, 1.75rem);
+  line-height: clamp(2.188rem, 2.084rem + 0.44vw, 2.438rem);
 }
 
 .spaceMono-caption-base {
   font-family: "Space Mono", "Lucida Console", Monaco, monospace;
   font-weight: 400;
-  font-size: clamp(12px, 0.546rem + 0.87vw, 16px);
-  line-height: clamp(13px, 0.353rem + 1.96vw, 22px);
+  font-size: clamp(0.75rem, 0.546rem + 0.87vw, 1rem);
+  line-height: clamp(0.813rem, 0.353rem + 1.96vw, 1.375rem);
 }
 
 .workSans-h5-h4 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: clamp(22px, 19.5px + 0.66vw, 28px);
-  line-height: clamp(31px, 27.7px + 0.88vw, 39px);
+  font-size: clamp(1.375rem, 1.219rem + 0.66vw, 1.75rem);
+  line-height: clamp(1.938rem, 1.731rem + 0.88vw, 2.438rem);
 }
 
 .workSans-h5 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 22px;
   font-weight: 600;
-  line-height: 31px;
+  font-size: 1.375rem;
+  line-height: 1.938rem;
 }
 
 .workSans-caption {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 13px;
+  font-size: 0.75rem;
+  line-height: 0.813rem;
 }
 
 .workSans-btns {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375rem;
 }
 
 .workSans-base {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.375rem;
 }
 
 .workSans-btns-h5 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: clamp(16px, 4.8px + 1.35vw, 22px);
-  line-height: clamp(22px, 5.1px + 2.02vw, 31px);
+  font-size: clamp(1rem, 0.3rem + 1.35vw, 1.375rem);
+  line-height: clamp(1.375rem, 0.319rem + 2.02vw, 1.938rem);
 }
 
 .workSans-base-body {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 400;
-  font-size: clamp(16px, 0.845rem + 0.66vw, 22px);
-  line-height: clamp(22px, 1.038rem + 1.44vw, 35px);
+  font-size: clamp(1rem, 0.845rem + 0.66vw, 1.375rem);
+  line-height: clamp(1.375rem, 1.038rem + 1.44vw, 2.188rem);
 }
 
 .workSans-h4-h3 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: clamp(28px, 14.9px + 1.57vw, 35px);
-  line-height: clamp(39px, 33.4px + 0.67vw, 42px);
+  font-size: clamp(1.75rem, 0.931rem + 1.57vw, 2.188rem);
+  line-height: clamp(2.438rem, 2.088rem + 0.67vw, 2.625rem);
 }
 
 .workSans-h3-h2 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: clamp(38px, 0.856rem + 2.91vw, 51px);
-  line-height: clamp(46px, 1.706rem + 2.24vw, 56px);
+  font-size: clamp(2.375rem, 0.856rem + 2.91vw, 3.188rem);
+  line-height: clamp(2.875rem, 1.706rem + 2.24vw, 3.5rem);
 }
 
 .workSans-h4-h3-h2 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: clamp(28px, 1.239rem + 2.18vw, 38px);
-  line-height: clamp(39px, 2.08rem + 1.53vw, 46px);
+  font-size: clamp(1.75rem, 1.239rem + 2.18vw, 2.375rem);
+  line-height: clamp(2.438rem, 2.08rem + 1.53vw, 2.875rem);
 }
 @media screen and (min-width: 834px) {
   .workSans-h4-h3-h2 {
-    font-size: clamp(38px, 0.856rem + 2.91vw, 51px);
-    line-height: clamp(46px, 1.706rem + 2.24vw, 56px);
+    font-size: clamp(2.375rem, 0.856rem + 2.91vw, 3.188rem);
+    line-height: clamp(2.875rem, 1.706rem + 2.24vw, 3.5rem);
   }
 }
 
 .workSans-h4-h3-h1 {
   font-family: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: clamp(28px, 1.239rem + 2.18vw, 38px);
-  line-height: clamp(39px, 2.08rem + 1.53vw, 46px);
+  font-size: clamp(1.75rem, 1.239rem + 2.18vw, 2.375rem);
+  line-height: clamp(2.438rem, 2.08rem + 1.53vw, 2.875rem);
 }
 @media screen and (min-width: 834px) {
   .workSans-h4-h3-h1 {
-    font-size: clamp(38px, -1.014rem + 6.5vw, 67px);
-    line-height: clamp(46px, -0.397rem + 6.28vw, 74px);
+    font-size: clamp(2.375rem, -1.014rem + 6.5vw, 4.188rem);
+    line-height: clamp(2.875rem, -0.397rem + 6.28vw, 4.625rem);
   }
 }
 
@@ -354,6 +368,11 @@ body {
   margin-top: 20px;
 }
 
+.btn--whith-img {
+  background-color: transparent;
+  border: none;
+}
+
 .btn__img {
   max-height: 20px;
 }
@@ -372,7 +391,22 @@ body {
 
 /* конец стилей кнопок*/
 
+.img-in-btn {
+  max-height: 24px;
+}
+
+.a-as-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
 /*? конец раздела*/
+
 
 /*? Раздел Враппер - чтобы отцентрировать весь контент на странице*/
 .wrapper,
@@ -433,11 +467,6 @@ body {
     display: flex;
     align-items: center;
   }
-}
-
-.logo__img,
-.btn-menu__img {
-  max-height: 24px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -502,8 +531,6 @@ body {
 .mobile-menu__exit {
   color: var(--elem-primary-color);
   background-color: transparent;
-  width: 24px;
-  height: 24px;
   border: none;
 }
 
@@ -520,31 +547,17 @@ body {
   border-bottom: 1px dashed var(--elem-fourth-color);
 }
 
-.btn--whith-img {
-  max-height: 24px;
-  max-width: 24px;
-  background-color: transparent;
-  border: none;
-}
-
 .desktop-menu {
   display: flex;
   column-gap: 30px;
   align-items: center;
 }
 
-.a-as-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .dropdown-menu--desktop-marketplace,
 .dropdown-menu--desktop-forum {
   display: none;
   position: absolute;
-  background-color: #2b2b2b8f;
-  border-radius: 20px;
+  background-color: #2b2b2bbd;
   z-index: 1;
   width: max-content;
 }
@@ -676,7 +689,6 @@ body {
 }
 
 .post-card__avatar {
-  width: 24px;
   margin-right: 12px;
 }
 /*? Конец раздела Херо */
@@ -1383,6 +1395,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .marketplace-card__price-cont {
@@ -1398,21 +1412,30 @@ body {
 .marketplace-card__basket {
   background-color: transparent;
   border: none;
-  max-width: 24px;
-  max-height: 24px;
   align-self: flex-end;
 }
+
+.product-card__basket {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 230px) {
+  .product-card__basket-img {
+  display: none;
+  }
+}
+
+.product-card__descripton {
+  border-top: 1px solid var(--main-secondary-color);
+  padding: 20px;
+}
+
 
 .marketplace-card__pagination {
   margin-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-
-.marketplace-card__pagination-arrow {
-  max-height: 24px;
-  max-width: 24px;
 }
 
 .marketplace-card__pagination-numbers {
@@ -1427,7 +1450,7 @@ body {
 
 .marketplace-card__pagination-number--active {
   color: var(--elem-secondary-color);
-  font-size: 27px;
+  font-size: 1.688rem;
 }
 
 /*? Конец секции карточек товаров*/
