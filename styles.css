@@ -38,7 +38,6 @@ a {
   color: var(--elem-primary-color);
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
 }
 
 button {
@@ -1030,14 +1029,14 @@ body {
   }
 }
 
-.profile-top__cont {
+.profile-top-cont {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 834px) {
-  .profile-top__cont {
+  .profile-top-cont {
     flex-direction: row;
     padding-bottom: 0;
   }
@@ -1250,19 +1249,19 @@ body {
   align-content: center;
 }
 
-.selected-goods__cont-place-order {
+.selected-goods-cont-place-order {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 45px;
 }
 
-.selected-goods__cont-place-order-span {
+.selected-goods-cont-place-order-span {
   margin-left: 5px;
 }
 
 @media screen and (max-width: 833px) {
-  .selected-goods__cont-place-order {
+  .selected-goods-cont-place-order {
     align-items: center;
   }
 }
@@ -1418,7 +1417,11 @@ body {
   padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
 }
 
-.marketplace-cards__cont {
+.forum-comments {
+  padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
+}
+
+.marketplace-cards-cont {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -1620,17 +1623,13 @@ body {
   }
 }
 
-.post-cards__cont {
+.post-cards-cont {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 30px;
 }
 
-/* .post-card {
-  display: flex;
-  flex-direction: column;
-} */
 .post-card-top {
   display: flex;
   flex-direction: column;
@@ -1703,7 +1702,6 @@ body {
   border-radius: 20px;
 }
 
-
 .post-card__author-other {
   display: flex;
   flex-direction: column;
@@ -1722,9 +1720,29 @@ body {
 }
 
 .clearfix::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
+}
+
+.forum-comments__title {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.forum-comments-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-card {
+  background-color: var(--main-primary-color);
+  border-radius: 20px;
+  width: 315;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 /*? Конец раздела Forum*/
