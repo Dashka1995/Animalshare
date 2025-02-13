@@ -433,10 +433,26 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    width: 1690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 834px) {
   .wrapper-header {
     margin-left: 50px;
     margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper-header {
+    width: 1820px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1393,40 +1409,13 @@ body {
 .marketplace-cards--bg,
 .forum-cards--bg {
   background-color: var(--main-secondary-color);
+  border-bottom: 1px solid var(--main-primary-color);
 }
 
 .marketplace-cards,
 .forum-cards {
   padding-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
   padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
-}
-
-.marketplace-cards::after,
-.forum-cards::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: calc(100% + 60px);
-  height: 1px;
-  top: clamp(40px, calc(23.66px + 4.36vw), 60px);
-  left: -30px;
-  background-color: var(--main-primary-color);
-}
-
-@media screen and (min-width: 834px) {
-  .marketplace-cards::after,
-  .forum-cards::after {
-    left: -72px;
-    width: calc(100% + 144px);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .marketplace-cards::after,
-  .forum-cards::after {
-    left: -115px;
-    width: calc(100% + 230px);
-  }
 }
 
 .marketplace-cards__cont {
@@ -1638,13 +1627,14 @@ body {
   gap: 30px;
 }
 
-.post-card {
+/* .post-card {
   display: flex;
   flex-direction: column;
-}
+} */
 .post-card-top {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: clamp(30px, -63.5px + 11.21vw, 80px);
 }
 
@@ -1664,6 +1654,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  gap: 5px;
+  margin-bottom: 5px;
 }
 
 .post-card__a {
@@ -1672,11 +1664,15 @@ body {
   overflow: hidden;
   width: 100%;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 834px) {
   .post-card__a {
-    width: 33%;
+    width: min(40%, 435px);
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1725,7 +1721,11 @@ body {
   margin-top: 10px;
 }
 
-
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 /*? Конец раздела Forum*/
 .hidden {
