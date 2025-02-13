@@ -39,7 +39,11 @@
             Animalshare
           </a>
           <button class="mobile-menu__exit workSans-btns">
-            <img class="img-in-btn" src="./images/static/icons/cross.png" alt="Exit" />
+            <img
+              class="img-in-btn"
+              src="./images/static/icons/cross.png"
+              alt="Exit"
+            />
           </button>
         </div>
         <div class="mobile-menu__a-cont">
@@ -64,9 +68,12 @@
         </div>
 
         <div class="mobile-menu__a-cont">
-          <a class="mobile-menu__a-with-arrow workSans-btns" href="/">Forum</a>
+          <a class="mobile-menu__a-with-arrow workSans-btns" href="./forum.html"
+            >Forum</a
+          >
           <button class="btn--whith-img btn--whith-img--forum">
-            <img class="img-in-btn"
+            <img
+              class="img-in-btn"
               src="./images/static/icons/arrow-down.png"
               alt="show sub-items"
             />
@@ -96,7 +103,8 @@
             >Marketplace</a
           >
           <button class="btn--whith-img btn--whith-img--marketplace">
-            <img class="img-in-btn"
+            <img
+              class="img-in-btn"
               src="./images/static/icons/arrow-down.png"
               alt="Show sub-items"
             />
@@ -106,7 +114,7 @@
           class="dropdown-menu dropdown-menu--mobile-marketplace workSans-base hidden"
         >
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My goods</a>
+            <a class="dropdown-menu__a" href="./mygoods.html">My goods</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">Cat's gear</a>
@@ -147,7 +155,7 @@
             class="dropdown-menu dropdown-menu--desktop-marketplace workSans-base"
           >
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">My goods</a>
+              <a class="dropdown-menu__a" href="./mygoods.html">My goods</a>
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="">Cat's gear</a>
@@ -223,7 +231,7 @@
               src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
               alt="Avatar"
             />
-            <h1 class="profile-top__title workSans-h4-h3-h2">Little bird</h1>
+            <h1 class="profile-top__title workSans-h4-h3-h2">Little Bird</h1>
             <h2
               class="profile-top__title profile-top__title--under workSans-h4-h3"
             >
@@ -316,11 +324,7 @@
 
         <!-- Правая сторона: -->
         <div class="profile-top__right">
-          <h2
-            class="profile-top__title profile-top__title--under workSans-h4-h3"
-          >
-            My orders
-          </h2>
+          <h2 class="profile-top__right-title workSans-h4-h3">My orders</h2>
           <div class="profile-top__right-cards">
             <!-- Карточки заказов -->
             <div class="order-card workSans-base-body">
@@ -741,6 +745,49 @@
       </div>
     </footer>
     <!--? Конец футера -->
-    <script src="./script.js"></script>
+    <script>
+      "use strict";
+
+      document
+        .querySelector(".btn-menu")
+        .addEventListener("click", function () {
+          document.querySelector(".overlay").classList.toggle("hidden");
+          document.querySelector(".mobile-menu").classList.toggle("hidden");
+          document
+            .querySelector(".dropdown-menu--mobile-forum")
+            .classList.add("hidden");
+          document
+            .querySelector(".dropdown-menu--mobile-marketplace")
+            .classList.add("hidden");
+        });
+
+      document
+        .querySelector(".mobile-menu__exit")
+        .addEventListener("click", function () {
+          document.querySelector(".mobile-menu").classList.add("hidden");
+          document.querySelector(".overlay").classList.add("hidden");
+        });
+
+      document.querySelector(".overlay").addEventListener("click", function () {
+        document.querySelector(".mobile-menu").classList.add("hidden");
+        document.querySelector(".overlay").classList.add("hidden");
+      });
+
+      document
+        .querySelector(".btn--whith-img--forum")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".dropdown-menu--mobile-forum")
+            .classList.toggle("hidden");
+        });
+
+      document
+        .querySelector(".btn--whith-img--marketplace")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".dropdown-menu--mobile-marketplace")
+            .classList.toggle("hidden");
+        });
+    </script>
   </body>
 </html>

@@ -38,6 +38,7 @@ a {
   color: var(--elem-primary-color);
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
 }
 
 button {
@@ -401,8 +402,11 @@ body {
   justify-content: center;
 }
 
-/*? конец раздела*/
+.violet {
+  color: var(--elem-secondary-color);
+}
 
+/*? конец раздела*/
 
 /*? Раздел Враппер - чтобы отцентрировать весь контент на странице*/
 .wrapper,
@@ -620,7 +624,7 @@ body {
 }
 
 @media screen and (min-width: 834px) {
-  .post-cards,
+  .homepage-post-cards,
   .hero__description {
     width: 50%;
   }
@@ -637,18 +641,18 @@ body {
   justify-content: space-between;
 }
 
-.post-cards {
+.homepage-post-cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 @media screen and (min-width: 834px) {
-  .post-cards {
+  .homepage-post-cards {
     flex-direction: row;
   }
 }
 
-.post-card {
+.homepage-post-card {
   display: flex;
   flex-direction: column;
   border-radius: 50px;
@@ -657,34 +661,40 @@ body {
 }
 
 @media screen and (min-width: 834px) {
-  .post-card {
+  .homepage-post-card {
     border-radius: 25px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .post-card {
+  .homepage-post-card {
     width: 50%;
   }
 }
 
-.post-card:last-of-type {
+.homepage-post-card:last-of-type {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  .post-card:last-of-type {
+  .homepage-post-card:last-of-type {
     display: flex;
   }
 }
 
-.post-card__description {
+.homepage-post-card__description {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
   padding: 22px 20px;
 }
 
-.post-card__avatar {
+.homepage-post-card__avatar {
+  height: 24px;
+  max-width: 24px;
+  object-fit: cover;
+  border-radius: 24px;
   margin-right: 12px;
 }
 /*? Конец раздела Херо */
@@ -760,7 +770,8 @@ body {
   }
 }
 
-.create-acc-img, .product-card__img {
+.create-acc-img,
+.product-card__img {
   width: 100vw;
 }
 
@@ -787,7 +798,6 @@ body {
     width: calc(35vw - 30px);
   }
 }
-
 
 @media screen and (max-width: 833px) {
   .create-acc--wrapper {
@@ -909,7 +919,8 @@ body {
 }
 
 .profile-top__bg-img,
-.mygoods-top__bg-img {
+.mygoods-top__bg-img,
+.forum-top__bg-img {
   width: 100vw;
   height: 66vw;
 }
@@ -926,6 +937,20 @@ body {
   .mygoods-top__bg-img {
     min-height: 280px;
     height: calc(205px + 8.97vw);
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .forum-top__bg-img {
+    min-height: 280px;
+    height: calc(205px + 8.97vw);
+    object-position: 0vw -16vw;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .forum-top__bg-img {
+    object-position: 0vw -20vw;
   }
 }
 
@@ -948,7 +973,7 @@ body {
   height: 240px;
   width: 240px;
   position: relative;
-  top: -50px;
+  top: -80px;
   left: calc(50% - 120px);
   border: 2px solid var(--elem-primary-color);
   background-color: var(--elem-primary-color);
@@ -966,6 +991,15 @@ body {
     text-align: center;
   }
 }
+
+.profile-top__title--right-top {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 45px;
+  color: var(--elem-secondary-color);
+}
+/* 60 */
+/* 20 */
 
 .profile-top__title--under {
   text-align: center;
@@ -1024,14 +1058,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-height: clamp(885px, calc(790px + 11.21vw), 930px);
+  max-height: clamp(840px, 802.6px + 4.48vw, 860px);
   overflow-x: auto;
-}
-
-@media screen and (min-width: 1280px) {
-  .profile-top__right-cards {
-    max-height: 930px;
-  }
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .profile-top__right-cards::-webkit-scrollbar {
@@ -1221,19 +1251,59 @@ body {
   }
 }
 
+.my-goods__title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--elem-secondary-color);
+}
+@media screen and (max-width: 833px) {
+  .my-goods__title {
+    text-align: center;
+  }
+}
+
+.profile-top__right-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: var(--elem-secondary-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 834px) {
+  .profile-top__right-title {
+    margin-top: clamp(80px, 42.6px + 4.48vw, 100px);
+    margin-bottom: clamp(20px, -17.4px + 4.48vw, 40px);
+    color: var(--elem-secondary-color);
+    text-align: center;
+  }
+}
+
 /*? Конец раздела My Profile*/
 
 /*? Начало раздела Marketplace*/
 /*? конец секции описания маркетплейса*/
-.marketplace-description {
+.marketplace-description,
+.forum-description {
   padding: 30px 0;
   position: relative;
 }
 
 @media screen and (min-width: 834px) {
-  .marketplace-description {
+  .marketplace-description,
+  .forum-description {
     padding: 60px 0;
   }
+}
+
+.marketplace-description::after,
+.forum-description::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-secondary-color);
 }
 
 .search-form--marketplace {
@@ -1243,16 +1313,6 @@ body {
   flex-direction: row;
   align-items: center;
   position: relative;
-}
-
-.marketplace-description::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--main-secondary-color);
 }
 
 .search-form__input {
@@ -1290,7 +1350,7 @@ body {
   }
 }
 
-.marketplace-sort__nav {
+.sort__nav {
   padding: 30px 0px 20px;
   display: flex;
   flex-direction: row;
@@ -1299,17 +1359,17 @@ body {
   margin-bottom: 15px;
 }
 
-.marketplace-sort__a--active {
+.sort__a--active {
   color: var(--elem-secondary-color);
 }
 
-.marketplace-sort__sorting {
+.sort__sorting {
   margin-bottom: 20px;
 }
 
-.marketplace-sort__sorting,
-.marketplace-sort__dropdown-menu,
-.marketplace-sort__dropdown-menu-radio-items {
+.sort__sorting,
+.sort__dropdown-menu,
+.sort__dropdown-menu-radio-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1317,12 +1377,12 @@ body {
   align-items: center;
 }
 
-.marketplace-sort__sorting-btn-open--white {
+.sort__sorting-btn-open--white {
   color: var(--elem-primary-color);
   border-color: transparent;
 }
 
-.marketplace-sort__dropdown-menu-switch {
+.sort__dropdown-menu-switch {
   position: relative;
   top: 1px;
   margin-right: 2px;
@@ -1330,16 +1390,19 @@ body {
 /*? Конец секции сортировки товаров*/
 /*? Начало секции карточек товаров*/
 
-.marketplace-cards--bg {
+.marketplace-cards--bg,
+.forum-cards--bg {
   background-color: var(--main-secondary-color);
 }
 
-.marketplace-cards {
+.marketplace-cards,
+.forum-cards {
   padding-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
   padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
 }
 
-.marketplace-cards::after {
+.marketplace-cards::after,
+.forum-cards::after {
   content: "";
   position: relative;
   display: block;
@@ -1351,14 +1414,16 @@ body {
 }
 
 @media screen and (min-width: 834px) {
-  .marketplace-cards::after {
+  .marketplace-cards::after,
+  .forum-cards::after {
     left: -72px;
     width: calc(100% + 144px);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .marketplace-cards::after {
+  .marketplace-cards::after,
+  .forum-cards::after {
     left: -115px;
     width: calc(100% + 230px);
   }
@@ -1488,7 +1553,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 834px) {
   .product-card {
     flex-direction: row;
@@ -1503,7 +1567,6 @@ body {
   flex-wrap: wrap-reverse;
   padding-right: 40px;
   gap: 5px;
-
 }
 @media screen and (max-width: 833px) {
   .product-card-top__availability-cont {
@@ -1511,14 +1574,13 @@ body {
   }
 }
 
-
 .product-card__basket {
   align-self: flex-end;
 }
 
 @media screen and (max-width: 230px) {
   .product-card__basket-img {
-  display: none;
+    display: none;
   }
 }
 
@@ -1532,24 +1594,24 @@ body {
   }
 }
 
-.marketplace-card__pagination {
+.pagination {
   margin-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-.marketplace-card__pagination-numbers {
+.pagination-numbers {
   display: flex;
   gap: 20px;
   order: 1;
 }
 
-.marketplace-card__pagination-arrow--right {
+.pagination-arrow--right {
   order: 2;
 }
 
-.marketplace-card__pagination-number--active {
+.pagination-number--active {
   color: var(--elem-secondary-color);
   font-size: 1.688rem;
 }
@@ -1557,6 +1619,115 @@ body {
 /*? Конец секции карточек товаров*/
 /*? Конец раздела Marketplace*/
 
+/*? Начало раздела Forum*/
+.forum__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 834px) {
+  .forum__title {
+    text-align: left;
+    margin-top: clamp(0px, -74.8px + 8.97vw, 40px);
+  }
+}
+
+.post-cards__cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+}
+.post-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(30px, -63.5px + 11.21vw, 80px);
+}
+
+@media screen and (min-width: 834px) {
+  .post-card {
+    background-color: var(--main-primary-color);
+    border-radius: 20px;
+    padding: clamp(25px, -3.06px + 3.36vw, 40px);
+  }
+  .post-card-top {
+    flex-direction: row-reverse;
+  }
+}
+
+.post-card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.post-card__a {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  align-self: center;
+}
+
+@media screen and (min-width: 834px) {
+  .post-card__a {
+    width: 33%;
+  }
+}
+
+.post-card__avatar-img {
+  height: 70px;
+  max-width: 70px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid var(--elem-primary-color);
+  background-color: var(--elem-primary-color);
+  margin-right: 20px;
+}
+
+.post-card__author-items {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 374px) {
+  .post-card__author-items {
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+.post-card__img {
+  border-radius: 20px;
+}
+
+
+.post-card__author-other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-card__middle-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.post-card__bottom-text {
+  margin-top: 10px;
+}
+
+
+
+/*? Конец раздела Forum*/
 .hidden {
   display: none;
 }

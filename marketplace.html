@@ -39,7 +39,11 @@
             Animalshare
           </a>
           <button class="mobile-menu__exit workSans-btns">
-            <img class="img-in-btn" src="./images/static/icons/cross.png" alt="Exit" />
+            <img
+              class="img-in-btn"
+              src="./images/static/icons/cross.png"
+              alt="Exit"
+            />
           </button>
         </div>
         <div class="mobile-menu__a-cont">
@@ -64,9 +68,12 @@
         </div>
 
         <div class="mobile-menu__a-cont">
-          <a class="mobile-menu__a-with-arrow workSans-btns" href="/">Forum</a>
+          <a class="mobile-menu__a-with-arrow workSans-btns" href="./forum.html"
+            >Forum</a
+          >
           <button class="btn--whith-img btn--whith-img--forum">
-            <img class="img-in-btn"
+            <img
+              class="img-in-btn"
               src="./images/static/icons/arrow-down.png"
               alt="show sub-items"
             />
@@ -96,7 +103,8 @@
             >Marketplace</a
           >
           <button class="btn--whith-img btn--whith-img--marketplace">
-            <img class="img-in-btn"
+            <img
+              class="img-in-btn"
               src="./images/static/icons/arrow-down.png"
               alt="Show sub-items"
             />
@@ -106,7 +114,7 @@
           class="dropdown-menu dropdown-menu--mobile-marketplace workSans-base hidden"
         >
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My goods</a>
+            <a class="dropdown-menu__a" href="./mygoods.html">My goods</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">Cat's gear</a>
@@ -147,7 +155,7 @@
             class="dropdown-menu dropdown-menu--desktop-marketplace workSans-base"
           >
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">My goods</a>
+              <a class="dropdown-menu__a" href="./mygoods.html">My goods</a>
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="">Cat's gear</a>
@@ -236,41 +244,37 @@
             >My goods<span>(9)</span></a
           >
         </section>
-        <section class="marketplace-sort">
-          <div class="marketplace-sort__nav">
-            <a class="workSans-btns-h5 marketplace-sort__a--active" href="/"
-              >All goods</a
-            >
+        <section class="sort">
+          <div class="sort__nav">
+            <a class="workSans-btns-h5 sort__a--active" href="/">All goods</a>
             <a class="workSans-btns-h5" href="/">Cat's gear</a>
             <a class="workSans-btns-h5" href="/">Dog's gear</a>
             <a class="workSans-btns-h5" href="/">For fish</a>
             <a class="workSans-btns-h5" href="/">Other</a>
           </div>
-          <form class="marketplace-sort__sorting">
+          <form class="sort__sorting">
             <button
               type="button"
-              class="marketplace-sort__sorting-btn-open btn btn--Outlined btn--Tertiary workSans-btns"
+              class="sort__sorting-btn-open btn btn--Outlined btn--Tertiary workSans-btns"
               tabindex="1"
             >
               Sort by
-              <span class="marketplace-sort__sorting-btn-open-span hidden"
-                >:</span
-              >
+              <span class="sort__sorting-btn-open-span hidden">:</span>
             </button>
-            <ul class="marketplace-sort__dropdown-menu workSans-btns hidden">
+            <ul class="sort__dropdown-menu workSans-btns hidden">
               <li>
                 <input
-                  class="marketplace-sort__dropdown-menu-switch"
+                  class="sort__dropdown-menu-switch"
                   type="checkbox"
                   name="on_sale"
                   value="on"
                 /><label>Discount only</label>
               </li>
               <!--тут мы реализовали метод, который будет оставлять галочку при сортировке и перемещении по магазину с пункта - по скидке, 2== обязательно!-->
-              <div class="marketplace-sort__dropdown-menu-radio-items">
+              <div class="sort__dropdown-menu-radio-items">
                 <li>
                   <input
-                    class="marketplace-sort__dropdown-menu-switch"
+                    class="sort__dropdown-menu-switch"
                     type="radio"
                     name="order_by"
                     id="flexRadioDefault1"
@@ -280,7 +284,7 @@
                 </li>
                 <li>
                   <input
-                    class="marketplace-sort__dropdown-menu-switch"
+                    class="sort__dropdown-menu-switch"
                     type="radio"
                     name="order_by"
                     id="flexRadioDefault2"
@@ -289,7 +293,7 @@
                 </li>
                 <li>
                   <input
-                    class="marketplace-sort__dropdown-menu-switch"
+                    class="sort__dropdown-menu-switch"
                     type="radio"
                     name="order_by"
                     id="flexRadioDefault3"
@@ -297,13 +301,15 @@
                   /><label>Cheap first</label>
                 </li>
                 <button class="btn--whith-img" type="submit">
-                  <img class="img-in-btn" 
-                  src="./images/static/icons/sort.png" alt="Sort" />
+                  <img
+                    class="img-in-btn"
+                    src="./images/static/icons/sort.png"
+                    alt="Sort"
+                  />
                 </button>
               </div>
             </ul>
           </form>
-          <div class="marketplace-sort__cards"></div>
         </section>
       </div>
       <div class="marketplace-cards--bg">
@@ -318,7 +324,10 @@
                 />
               </a>
               <div class="marketplace-card__description">
-                <a href="./product-card.html" class="marketplace-card__title workSans-h5">
+                <a
+                  href="./product-card.html"
+                  class="marketplace-card__title workSans-h5"
+                >
                   Automatic fish feeder
                 </a>
                 <p class="marketplace-card__availability spaceMono-base">
@@ -329,18 +338,12 @@
                 </p>
                 <div class="marketplace-card__bottom-cont">
                   <div class="marketplace-card__price-cont spaceMono-base">
-                    <p
-                      class="marketplace-card__crossed-out-price"
-                    >
-                      650.20$
-                    </p>
-                    <p
-                    >
-                      617.69$
-                    </p>
+                    <p class="marketplace-card__crossed-out-price">650.20$</p>
+                    <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img class="img-in-btn"
+                    <img
+                      class="img-in-btn"
                       src="./images/static/icons/basket.png"
                       alt="Add to cart"
                     />
@@ -368,18 +371,12 @@
                 </p>
                 <div class="marketplace-card__bottom-cont">
                   <div class="marketplace-card__price-cont spaceMono-base">
-                    <p
-                      class="marketplace-card__crossed-out-price"
-                    >
-                      650.20$
-                    </p>
-                    <p
-                    >
-                      617.69$
-                    </p>
+                    <p class="marketplace-card__crossed-out-price">650.20$</p>
+                    <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img class="img-in-btn"
+                    <img
+                      class="img-in-btn"
                       src="./images/static/icons/basket.png"
                       alt="Add to cart"
                     />
@@ -407,18 +404,12 @@
                 </p>
                 <div class="marketplace-card__bottom-cont">
                   <div class="marketplace-card__price-cont spaceMono-base">
-                    <p
-                      class="marketplace-card__crossed-out-price"
-                    >
-                      650.20$
-                    </p>
-                    <p
-                    >
-                      617.69$
-                    </p>
+                    <p class="marketplace-card__crossed-out-price">650.20$</p>
+                    <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img class="img-in-btn"
+                    <img
+                      class="img-in-btn"
                       src="./images/static/icons/basket.png"
                       alt="Add to cart"
                     />
@@ -446,18 +437,12 @@
                 </p>
                 <div class="marketplace-card__bottom-cont">
                   <div class="marketplace-card__price-cont spaceMono-base">
-                    <p
-                      class="marketplace-card__crossed-out-price"
-                    >
-                      650.20$
-                    </p>
-                    <p
-                    >
-                      617.69$
-                    </p>
+                    <p class="marketplace-card__crossed-out-price">650.20$</p>
+                    <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img class="img-in-btn"
+                    <img
+                      class="img-in-btn"
                       src="./images/static/icons/basket.png"
                       alt="Add to cart"
                     />
@@ -485,18 +470,12 @@
                 </p>
                 <div class="marketplace-card__bottom-cont">
                   <div class="marketplace-card__price-cont spaceMono-base">
-                    <p
-                      class="marketplace-card__crossed-out-price"
-                    >
-                      650.20$
-                    </p>
-                    <p
-                    >
-                      617.69$
-                    </p>
+                    <p class="marketplace-card__crossed-out-price">650.20$</p>
+                    <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img class="img-in-btn"
+                    <img
+                      class="img-in-btn"
                       src="./images/static/icons/basket.png"
                       alt="Add to cart"
                     />
@@ -513,7 +492,11 @@
                 />
               </a>
               <div class="marketplace-card__description">
-                <a href="/" href="/" class="marketplace-card__title workSans-h5">
+                <a
+                  href="/"
+                  href="/"
+                  class="marketplace-card__title workSans-h5"
+                >
                   Automatic fish feeder
                 </a>
                 <p class="marketplace-card__availability spaceMono-base">
@@ -524,18 +507,12 @@
                 </p>
                 <div class="marketplace-card__bottom-cont">
                   <div class="marketplace-card__price-cont spaceMono-base">
-                    <p
-                      class="marketplace-card__crossed-out-price"
-                    >
-                      650.20$
-                    </p>
-                    <p
-                    >
-                      617.69$
-                    </p>
+                    <p class="marketplace-card__crossed-out-price">650.20$</p>
+                    <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img class="img-in-btn"
+                    <img
+                      class="img-in-btn"
                       src="./images/static/icons/basket.png"
                       alt="Add to cart"
                     />
@@ -544,23 +521,23 @@
               </div>
             </div>
           </div>
-          <div class="marketplace-card__pagination workSans-btns-h5">
-            <div class="marketplace-card__pagination-numbers">
-              <a
-                class="marketplace-card__pagination-number--active"
-                href="?page=1"
-                >1</a
-              >
+          <div class="pagination workSans-btns-h5">
+            <div class="pagination-numbers">
+              <a class="pagination-number--active" href="?page=1">1</a>
               <a href="?page=2">2</a>
               <a href="?page=3">3</a>
             </div>
             <a href="?page=2"
-              ><img class="img-in-btn" src="./images/static/icons/arrow-left.png" alt="Next page"
+              ><img
+                class="img-in-btn"
+                src="./images/static/icons/arrow-left.png"
+                alt="Next page"
             /></a>
-            <a
-              class="marketplace-card__pagination-arrow--right"
-              href="?page=3"
-              ><img class="img-in-btn" src="./images/static/icons/arrow-right.png" alt="Last page"
+            <a class="pagination-arrow--right" href="?page=3"
+              ><img
+                class="img-in-btn"
+                src="./images/static/icons/arrow-right.png"
+                alt="Last page"
             /></a>
           </div>
         </section>
@@ -609,6 +586,63 @@
       </div>
     </footer>
     <!--? Конец футера -->
-    <script src="./script.js"></script>
+    <script>
+      "use strict";
+
+      document
+        .querySelector(".btn-menu")
+        .addEventListener("click", function () {
+          document.querySelector(".overlay").classList.toggle("hidden");
+          document.querySelector(".mobile-menu").classList.toggle("hidden");
+          document
+            .querySelector(".dropdown-menu--mobile-forum")
+            .classList.add("hidden");
+          document
+            .querySelector(".dropdown-menu--mobile-marketplace")
+            .classList.add("hidden");
+        });
+
+      document
+        .querySelector(".mobile-menu__exit")
+        .addEventListener("click", function () {
+          document.querySelector(".mobile-menu").classList.add("hidden");
+          document.querySelector(".overlay").classList.add("hidden");
+        });
+
+      document.querySelector(".overlay").addEventListener("click", function () {
+        document.querySelector(".mobile-menu").classList.add("hidden");
+        document.querySelector(".overlay").classList.add("hidden");
+      });
+
+      document
+        .querySelector(".btn--whith-img--forum")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".dropdown-menu--mobile-forum")
+            .classList.toggle("hidden");
+        });
+
+      document
+        .querySelector(".btn--whith-img--marketplace")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".dropdown-menu--mobile-marketplace")
+            .classList.toggle("hidden");
+        });
+
+      document
+        .querySelector(".sort__sorting-btn-open")
+        .addEventListener("click", function () {
+          document
+            .querySelector(".sort__dropdown-menu")
+            .classList.toggle("hidden");
+          document
+            .querySelector(".sort__sorting-btn-open-span")
+            .classList.toggle("hidden");
+          document
+            .querySelector(".sort__sorting-btn-open")
+            .classList.toggle("sort__sorting-btn-open--white");
+        });
+    </script>
   </body>
 </html>
