@@ -967,6 +967,47 @@ body {
   }
 }
 
+.title {
+  width: 100vw;
+  height: 66vw;
+  background-color: var(--main-primary-color);
+  background-image: url(./images/static/bg-img/kamni-zhivotnoe-kot-kotionok.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg1 {
+  background-image: url(./images/static/bg-img/kamni-zhivotnoe-kot-kotionok.jpg);
+}
+.bg2 {
+  background-image: url(./images/static/bg-img/iashcheritsa-trava-boke-vzgliad.jpg);
+}
+.bg3 {
+  background-image: url(./images/static/bg-img/khameleon-iashcheritsa-okras-trava-chameleon-chamaeleonidae.jpg);
+}
+.bg4 {
+  background-image: url(./images/static/bg-img/svetlana-pisareva-zhivotnye-sobaki-para-priroda-vesna-kamen.jpg);
+}
+
+@media screen and (min-width: 834px) {
+  .title {
+    min-height: 280px;
+    height: calc(205px + 8.97vw);
+  }
+
+  .bg1 {
+    background-position: 0vw -15vw;
+  }
+  .bg2 {
+    background-position: 0vw -13vw;
+  }
+  .bg3 {
+    background-position: 0vw -20vw;
+  }
+  .bg4 {
+    background-position: 0vw -17vw;
+  }
+}
+
 @media screen and (min-width: 1700px) {
   .forum-top__bg-img {
     object-position: 0vw -20vw;
