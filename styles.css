@@ -405,6 +405,10 @@ body {
   color: var(--elem-secondary-color);
 }
 
+.w400 {
+  font-weight: 400;
+}
+
 /*? конец раздела*/
 
 /*? Раздел Враппер - чтобы отцентрировать весь контент на странице*/
@@ -1613,11 +1617,11 @@ body {
 
 /*? Начало раздела Forum*/
 
-  .post-cards-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+.post-cards-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 .post-card {
   border-bottom: 1px dashed var(--elem-secondary-color);
@@ -1639,7 +1643,8 @@ body {
   border-radius: 20px;
 }
 
-.post-card__avatar-a {
+.post-card__avatar-a,
+.comment-card__avatar-a {
   overflow: hidden;
   float: left;
   margin-right: 20px;
@@ -1649,7 +1654,9 @@ body {
 }
 
 .post-card__avatar-a,
-.post-card__avatar-img {
+.comment-card__avatar-a,
+.post-card__avatar-img,
+.comment-card__avatar-img {
   display: block;
   width: 20vw;
   height: 20vw;
@@ -1689,9 +1696,11 @@ body {
   }
 
   .post-card__avatar-a,
-  .post-card__avatar-img {
-    width: min(15vw, 192px);
-    height: min(15vw, 192px);
+  .comment-card__avatar-a,
+  .post-card__avatar-img,
+  .comment-card__avatar-img {
+    width: min(12vw, 150px);
+    height: min(12vw, 150px);
   }
 
   .post-card__author-inf {
@@ -1702,7 +1711,6 @@ body {
 .post-card__mess {
   padding: 0px 20px;
   border-radius: 15px;
-
 }
 
 .forum__title {
@@ -1720,6 +1728,7 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .forum-comments-cont {
@@ -1731,9 +1740,20 @@ body {
 .comment-card {
   background-color: var(--main-primary-color);
   border-radius: 20px;
-  width: 315;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 20px 20px;
+}
+
+.comment-card__card-inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: min(12vw, 150px);
+}
+
+.comment-card__card-text {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
 
 /*? Конец раздела Forum*/
