@@ -10,6 +10,7 @@
   --elem-tertiary-color: #cccccc;
   --elem-fourth-color: #858584;
   --elem-error-color: #870f0f;
+  --elem-shadow-color: #3b3b3ba5;
   --primary-font: "Work Sans", "Trebuchet MS", Helvetica, sans-serif;
   --secondary-font: "Space Mono", "Lucida Console", Monaco, monospace;
 }
@@ -777,44 +778,11 @@ body {
 
 /*? Начало раздела Креэйт Акк*/
 
-.create-acc-main {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (min-width: 834px) {
   .create-acc-main {
+    display: flex;
     flex-direction: row;
     gap: 40px;
-  }
-}
-
-.create-acc-img,
-.product-card__img {
-  width: 100vw;
-}
-
-@media screen and (min-width: 834px) {
-  .create-acc-img {
-    width: calc(50vw - 20px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .create-acc-img {
-    width: calc(50vw - 30px);
-  }
-}
-
-@media screen and (min-width: 834px) {
-  .product-card__img {
-    height: calc(35vw - 20px);
-    width: calc(35vw - 20px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .product-card__img {
-    height: calc(35vw - 30px);
-    width: calc(35vw - 30px);
   }
 }
 
@@ -836,6 +804,7 @@ body {
     padding-top: 80px;
     padding-right: 72px;
     padding-bottom: 80px;
+    width: calc(50vw - 20px);
   }
 }
 
@@ -844,6 +813,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     padding-right: 150px;
+    width: calc(50vw - 30px);
   }
 }
 
@@ -857,6 +827,20 @@ body {
 @media screen and (min-width: 834px) {
   .create-acc__description {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .create-acc__description {
+    position: relative;
+  }
+
+  .create-acc__title {
+    position: absolute;
+    bottom: 130px;
+    right: 50%;
+    transform: translate(+50%, 0);
+    text-shadow: 2px 2px 5px var(--elem-shadow-color), -2px -2px 5px var(--elem-shadow-color);
   }
 }
 
@@ -937,43 +921,16 @@ body {
   }
 }
 
-.profile-top__bg-img,
-.mygoods-top__bg-img,
-.forum-top__bg-img,
-.postpage-top__bg-img {
-  width: 100vw;
-  height: 66vw;
-}
-
-@media screen and (min-width: 834px) {
-  .profile-top__bg-img {
-    min-height: 280px;
-    height: calc(205px + 8.97vw);
-    object-position: 0vw -13vw;
-  }
-  .mygoods-top__bg-img {
-    min-height: 280px;
-    height: calc(205px + 8.97vw);
-  }
-  .forum-top__bg-img {
-    min-height: 280px;
-    height: calc(205px + 8.97vw);
-    object-position: 0vw -16vw;
-  }
-  .postpage-top__bg-img {
-    min-height: 280px;
-    height: calc(205px + 8.97vw);
-    object-position: 0vw -15vw;
-  }
-}
-
 .title {
   width: 100vw;
   height: 66vw;
   background-color: var(--main-primary-color);
-  background-image: url(./images/static/bg-img/kamni-zhivotnoe-kot-kotionok.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 30px;
 }
 .bg1 {
   background-image: url(./images/static/bg-img/kamni-zhivotnoe-kot-kotionok.jpg);
@@ -986,6 +943,24 @@ body {
 }
 .bg4 {
   background-image: url(./images/static/bg-img/svetlana-pisareva-zhivotnye-sobaki-para-priroda-vesna-kamen.jpg);
+}
+.bg4 {
+  background-image: url(./images/static/bg-img/svetlana-pisareva-zhivotnye-sobaki-para-priroda-vesna-kamen.jpg);
+}
+.bg5 {
+  background-image: url(./images/static/bg-img/iashcheritsa-ulitka-nezabudki-makro.jpg);
+}
+.bg6 {
+  background-image: url(./images/static/bg-img/priroda-zarosli-tsvety-listia-zhivotnoe-kot-koshka-golova.jpg);
+}
+.bg7 {
+  background-image: url(./images/static/bg-img/sobaka-zhivotnoe-pes-vzglyad.jpg);
+}
+.bg8 {
+  background-image: url(./images/static/bg-img/zhivotnoe-iashcheritsa-priroda-trava-kapli.jpg);
+}
+.bg9 {
+  background-image: url(./images/static/bg-img/tsvety-rozovye-lepestki-1.jpg);
 }
 
 @media screen and (min-width: 834px) {
@@ -1006,11 +981,115 @@ body {
   .bg4 {
     background-position: 0vw -17vw;
   }
+  .bg5 {
+    background-position: 0vw -20vw;
+  }
+  .bg6 {
+    background-position: 0vw -13vw;
+  }
+  .bg7 {
+    background-position: 0vw -12vw;
+  }
+  .bg8 {
+    background-position: 0vw -5vw;
+  }
+  .bg9 {
+    background-position: 0vw -11vw;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .bg1 {
+    background-position: 0vw -16vw;
+  }
+  .bg2 {
+    background-position: 0vw -15vw;
+  }
+  .bg4 {
+    background-position: 0vw -21vw;
+  }
+  .bg6 {
+    background-position: 0vw -18vw;
+  }
+  .bg8 {
+    background-position: 0vw -6vw;
+  }
+  .bg9 {
+    background-position: 0vw -16vw;
+  }
 }
 
-@media screen and (min-width: 1700px) {
-  .forum-top__bg-img {
-    object-position: 0vw -20vw;
+.bg-left {
+  height: 50vw;
+  width: 100vw;
+  background-color: var(--main-primary-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 834px) {
+  .bg-left {
+    width: calc(50vw - 20px);
+    height: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bg-left {
+    width: calc(50vw - 30px);
+  }
+}
+.bg-left1 {
+  background-image: url(./images/static/bg-img/priroda-zarosli-tsvety-listia-zhivotnoe-kot-koshka-golova.jpg);
+  background-position-x: 57%;
+}
+.bg-left2 {
+  background-image: url(./images/static/bg-img/sobaka-zhivotnoe-pes-vzglyad.jpg);
+  background-position-x: 45%;
+}
+.bg-left3 {
+  background-image: url(./images/static/bg-img/svetlana-pisareva-zhivotnye-sobaki-para-priroda-vesna-kamen.jpg);
+  background-position-x: 30%;
+}
+.bg-left4 {
+  background-image: url(./images/static/bg-img/priroda-sobaka-ptitsa-sova-pen.jpg);
+  background-position-x: 55%;
+}
+.bg-left5 {
+  background-image: url(./images/static/bg-img/zhivotnoe-iashcheritsa-priroda-trava-kapli.jpg);
+  background-position-x: 25%;
+}
+.bg-left6 {
+  background-image: url(./images/static/bg-img/iashcheritsa-trava-boke-vzgliad.jpg);
+  background-position-x: 68%;
+}
+.bg-left7 {
+  background-image: url(./images/static/bg-img/priroda-sobaka-ptitsa-sova-pen.jpg);
+  background-position-x: 55%;
+}
+.bg-left8 {
+  background-image: url(./images/static/bg-img/kamni-zhivotnoe-kot-kotionok.jpg);
+}
+.bg-left9 {
+  background-image: url(./images/static/bg-img/khameleon-iashcheritsa-okras-trava-chameleon-chamaeleonidae.jpg);
+  transform: scale(-1, 1); 
+}
+
+.title__text {
+  text-align: center;
+  text-shadow: 2px 2px 5px var(--elem-shadow-color), -2px -2px 5px var(--elem-shadow-color);
+}
+
+@media screen and (max-width: 833px) {
+  .title__text--myprofile {
+    position: relative;
+    bottom: 70px;
+  }
+}
+@media screen and (min-width: 834px) {
+  .title__text {
+    text-align: left;
+  }
+  .title__text--myprofile {
+    text-align: center;
   }
 }
 
@@ -1058,8 +1137,6 @@ body {
   margin-bottom: 45px;
   color: var(--elem-secondary-color);
 }
-/* 60 */
-/* 20 */
 
 .profile-top__title--under {
   text-align: center;
@@ -1311,17 +1388,6 @@ body {
   }
 }
 
-.my-goods__title {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: var(--elem-secondary-color);
-}
-@media screen and (max-width: 833px) {
-  .my-goods__title {
-    text-align: center;
-  }
-}
-
 .profile-top__right-title {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -1523,6 +1589,23 @@ body {
   line-height: 0.813rem;
 }
 
+.product-card__img {
+  width: 100vw;
+}
+
+@media screen and (min-width: 834px) {
+  .product-card__img {
+    height: calc(35vw - 20px);
+    width: calc(35vw - 20px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .product-card__img {
+    height: calc(35vw - 30px);
+    width: calc(35vw - 30px);
+  }
+}
+
 .product-card__crossed-out-price {
   text-decoration-line: line-through;
   font-size: clamp(1.375rem, 1.22rem + 0.66vw, 1.75rem);
@@ -1704,6 +1787,12 @@ body {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 350px) {
+  .comment-card__avatar-a {
+    float: none;
+  }
+}
+
 .post-card__author {
   display: flex;
   flex-direction: row;
@@ -1752,17 +1841,6 @@ body {
 .post-card__mess {
   padding: 0px 20px;
   border-radius: 15px;
-}
-
-.forum__title {
-  text-align: center;
-}
-
-@media screen and (min-width: 834px) {
-  .forum__title {
-    text-align: left;
-    margin-top: clamp(0px, -74.8px + 8.97vw, 40px);
-  }
 }
 
 .forum-comments__title {
