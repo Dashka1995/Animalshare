@@ -62,7 +62,7 @@
         <div class="mobile-menu__a-cont">
           <a
             class="mobile-menu__a-without-arrow workSans-btns"
-            href="./myprofile.html"
+            href="./my-profile.html"
             >Profile</a
           >
         </div>
@@ -84,13 +84,17 @@
             <a class="dropdown-menu__a" href="">Create a post</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My posts</a>
+            <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My comments</a>
+            <a class="dropdown-menu__a" href="./my-comments.html"
+              >My comments</a
+            >
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">My messages</a>
+            <a class="dropdown-menu__a" href="./inbox-messages.html"
+              >My messages</a
+            >
           </div>
           <div class="dropdown-menu__a-cont">
             <a class="dropdown-menu__a" href="">Gallery</a>
@@ -114,7 +118,7 @@
           class="dropdown-menu dropdown-menu--mobile-marketplace workSans-base hidden"
         >
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="./mygoods.html">My goods</a>
+            <a class="dropdown-menu__a" href="./my-goods.html">My goods</a>
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="">Cat's gear</a>
@@ -155,7 +159,7 @@
             class="dropdown-menu dropdown-menu--desktop-marketplace workSans-base"
           >
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="./mygoods.html">My goods</a>
+              <a class="dropdown-menu__a" href="./my-goods.html">My goods</a>
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="">Cat's gear</a>
@@ -184,20 +188,24 @@
               <a class="dropdown-menu__a" href="">Create a post</a>
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">My posts</a>
+              <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">My comments</a>
+              <a class="dropdown-menu__a" href="./my-comments.html"
+                >My comments</a
+              >
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">My messages</a>
+              <a class="dropdown-menu__a" href="./inbox-messages.html"
+                >My messages</a
+              >
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="">Gallery</a>
             </li>
           </ul>
         </ul>
-        <a class="workSans-btns" href="./myprofile.html">Profile</a>
+        <a class="workSans-btns" href="./my-profile.html">Profile</a>
         <a
           href="./login.html"
           class="a-as-btn btn btn--Filled btn--Secondary workSans-btns"
@@ -217,7 +225,8 @@
     </div>
     <!--? Конец раздела Ворнинг-месс -->
     <!--? Вставить переменную для смены bg-img -->
-    <section class="title bg1"><!--! Вставить переменную для смены bg-img -->
+    <section class="title bg1">
+      <!--! Вставить переменную для смены bg-img -->
       <h1 class="title__text wrapper workSans-h4-h3-h2">Forum</h1>
     </section>
     <main>
@@ -227,61 +236,69 @@
             <a class="workSans-btns-h5 sort__a--active" href="/"
               >Create a post</a
             >
-            <a class="workSans-btns-h5" href="/">My posts</a>
-            <a class="workSans-btns-h5" href="/">My comments</a>
-            <a class="workSans-btns-h5" href="/">My messages</a>
+            <a class="workSans-btns-h5" href="./my-posts.html">My posts</a>
+            <a class="workSans-btns-h5" href="./my-comments.html"
+              >My comments</a
+            >
+            <a class="workSans-btns-h5" href="./inbox-messages.html"
+              >My messages</a
+            >
             <a class="workSans-btns-h5" href="/">Gallery</a>
           </div>
         </section>
       </div>
       <div class="forum-cards--bg">
         <section class="forum-cards wrapper">
-          <div class="post-card clearfix">
-            <a class="post-card__a" href=""
-              ><img
-                class="post-card__img"
-                src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
-                alt="Post Card image"
-            /></a>
-            <div class="post-card__author">
-              <a class="post-card__avatar-a workSans-h4-h3" href="">
-                <img
-                  class="post-card__avatar-img"
-                  src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
-                  alt="Avatar"
+          <div class="post-cards-cont">
+            <div class="post-card clearfix">
+              <a class="post-card__a" href=""
+                ><img
+                  class="post-card__img"
+                  src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
+                  alt="Post Card image"
               /></a>
-              <div class="post-card__author-inf">
-                <a class="post-card__author-name workSans-h4-h3" href=""
-                  >Little Bird</a
-                >
-                <a
-                  class="post-card__mess workSans-btns-h5 a-as-btn btn--Outlined btn--Tertiary"
-                  href=""
-                  >Message me</a
-                >
+              <div class="post-card__author">
+                <a class="post-card__avatar-a workSans-h4-h3" href="">
+                  <img
+                    class="post-card__avatar-img"
+                    src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
+                    alt="Avatar"
+                /></a>
+                <div class="post-card__author-inf">
+                  <a class="post-card__author-name workSans-h4-h3" href=""
+                    >Little Bird</a
+                  >
+                  <a
+                    class="post-card__mess workSans-btns-h5 a-as-btn btn--Outlined btn--Tertiary"
+                    href=""
+                    >Message me</a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="post-card__post-inf">
-              <a class="workSans-h4-h3" href="./post-page.html"
-                >The hamster has escaped!</a
-              >
-              <p class="workSans-h5 violet">
-                It happened 23 January - 2025 (14:07)
+              <div class="post-card__post-inf">
+                <a class="workSans-h4-h3" href="./post-page.html"
+                  >The hamster has escaped!</a
+                >
+                <p class="workSans-h5 violet">
+                  It happened 23 January - 2025 (14:07)
+                </p>
+              </div>
+              <p class="post-card__post-text workSans-h5">
+                Yesterday my favorite hamster ran away, please return the
+                reward, he won’t take it with his bare hands, he will bite it
+                off up to the elbow! Refuse to pay for physical and...
               </p>
             </div>
-            <p class="post-card__post-text workSans-h5">
-              Yesterday my favorite hamster ran away, please return the reward,
-              he won’t take it with his bare hands, he will bite it off up to
-              the elbow! Refuse to pay for physical and...
-            </p>
           </div>
         </section>
-        <section class="forum-comments wrapper">
-          <div class="forum-comments__title">
-            <h2 class="workSans-btns-h5">Comments</h2>
-            <a class="violet workSans-btns-h5" href="">Add a comment</a>
+        <section class="forum-comments">
+          <div class="sub-title-cont__border">
+            <div class="sub-title-cont wrapper">
+              <h2 class="workSans-btns-h5">Comments</h2>
+              <a class="violet workSans-btns-h5" href="">Add a comment</a>
+            </div>
           </div>
-          <div class="forum-comments-cont">
+          <div class="forum-comments-cont wrapper">
             <div class="comment-card clearfix">
               <a class="comment-card__avatar-a" href="">
                 <img
@@ -291,8 +308,8 @@
               /></a>
               <div class="comment-card__card-inf">
                 <p class="workSans-h5 violet">
-                  <a class="workSans-h5-h4" href="/">Wong</a> comment at 30 January -
-                  2025 (21:01) in Post:
+                  <a class="workSans-h5-h4" href="/">Wong</a> comment at 30
+                  January - 2025 (21:01) in Post:
                   <a class="workSans-h5-h4" href="./post-page.html"
                     >The hamster has escaped!</a
                   >
@@ -314,8 +331,8 @@
               /></a>
               <div class="comment-card__card-inf">
                 <p class="workSans-h5 violet">
-                  <a class="workSans-h5-h4" href="/">Wong</a> comment at 30 January -
-                  2025 (21:01) in Post:
+                  <a class="workSans-h5-h4" href="/">Wong</a> comment at 30
+                  January - 2025 (21:01) in Post:
                   <a class="workSans-h5-h4" href="./post-page.html"
                     >The hamster has escaped!</a
                   >
@@ -337,8 +354,8 @@
               /></a>
               <div class="comment-card__card-inf">
                 <p class="workSans-h5 violet">
-                  <a class="workSans-h5-h4" href="/">Wong</a> comment at 30 January -
-                  2025 (21:01) in Post:
+                  <a class="workSans-h5-h4" href="/">Wong</a> comment at 30
+                  January - 2025 (21:01) in Post:
                   <a class="workSans-h5-h4" href="./post-page.html"
                     >The hamster has escaped!</a
                   >

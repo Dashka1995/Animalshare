@@ -840,7 +840,8 @@ body {
     bottom: 130px;
     right: 50%;
     transform: translate(+50%, 0);
-    text-shadow: 2px 2px 5px var(--elem-shadow-color), -2px -2px 5px var(--elem-shadow-color);
+    text-shadow: 2px 2px 5px var(--elem-shadow-color),
+      -2px -2px 5px var(--elem-shadow-color);
   }
 }
 
@@ -1070,16 +1071,17 @@ body {
 }
 .bg-left9 {
   background-image: url(./images/static/bg-img/khameleon-iashcheritsa-okras-trava-chameleon-chamaeleonidae.jpg);
-  transform: scale(-1, 1); 
+  transform: scale(-1, 1);
 }
 
 .title__text {
   text-align: center;
-  text-shadow: 2px 2px 5px var(--elem-shadow-color), -2px -2px 5px var(--elem-shadow-color);
+  text-shadow: 2px 2px 5px var(--elem-shadow-color),
+    -2px -2px 5px var(--elem-shadow-color);
 }
 
 @media screen and (max-width: 833px) {
-  .title__text--myprofile {
+  .title__text--my-profile {
     position: relative;
     bottom: 70px;
   }
@@ -1088,7 +1090,7 @@ body {
   .title__text {
     text-align: left;
   }
-  .title__text--myprofile {
+  .title__text--my-profile {
     text-align: center;
   }
 }
@@ -1485,10 +1487,6 @@ body {
   margin-bottom: 15px;
 }
 
-.sort__a--active {
-  color: var(--elem-secondary-color);
-}
-
 .sort__sorting {
   margin-bottom: 20px;
 }
@@ -1740,6 +1738,15 @@ body {
 /*? Конец раздела Marketplace*/
 
 /*? Начало раздела Forum*/
+.sub-title__border,
+.sub-title-cont__border {
+  border-bottom: 1px solid var(--main-primary-color);
+}
+
+.sub-title {
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
 
 .post-cards-cont {
   display: flex;
@@ -1748,8 +1755,12 @@ body {
 }
 
 .post-card {
-  border-bottom: 1px dashed var(--elem-secondary-color);
-  padding-bottom: 40px;
+  border-bottom: 1px solid var(--elem-fourth-color);
+  padding-bottom: 30px;
+}
+
+.post-card:only-of-type {
+  border: none;
 }
 
 .clearfix::after {
@@ -1843,14 +1854,23 @@ body {
   border-radius: 15px;
 }
 
-.forum-comments__title {
+.comment-card__mess-subject {
+  display: inline;
+}
+
+.sub-title-cont {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.sub-title-cont--top-padd {
+  padding-top: 35px;
 }
 
 .forum-comments-cont {
+  padding-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1867,6 +1887,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: min(12vw, 150px);
+}
+
+.comment-card__card-inf--short {
+  min-height: auto;
 }
 
 .comment-card__card-text {
