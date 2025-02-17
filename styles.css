@@ -390,7 +390,8 @@ body {
   margin-right: 12px;
 }
 
-.btn__img--mobile {
+.btn__img--mobile, 
+.btn__img--mar12 {
   margin-left: 12px;
 }
 
@@ -1964,10 +1965,6 @@ body {
   align-items: center;
 }
 
-/* .comment-card__delete {
-
-} */
-
 .create-smt {
   padding-bottom: 35px;
 }
@@ -1976,7 +1973,38 @@ body {
   padding: 35px 0px 25px;
 }
 
+.pictures-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-top: clamp(40px, 1.479rem + 4.36vw, 60px);
+}
+
+.picture-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 25px;
+  background-color: var(--main-primary-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 834px) {
+  .picture-card {
+    width: clamp(325px, 315.6px + 1.12vw, 330px);
+  }
+}
+
+.picture-card__text {
+  padding: 0 clamp(20px, 11.82px + 2.18vw, 30px);
+}
+
 /*? Конец раздела Forum*/
 .hidden {
   display: none;
 }
+
