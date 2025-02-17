@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animalshare/Forum</title>
+    <title>Animalshare/Write a message</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./fonts/workSans/font.css" />
     <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
@@ -228,213 +228,53 @@
       <p class="spaceMono-h5-h4">Error during registration</p>
     </div>
     <!--? Конец раздела Ворнинг-месс -->
-    <!--? Начало раздела Меин -->
     <section class="title bg4">
       <!--! Вставить переменную для смены bg-img -->
       <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html">Forum</a>
     </section>
-    <main>
-      <div class="wrapper">
-        <section class="sort">
-          <div class="sort__nav">
-            <a class="workSans-btns-h5" href="./create-post.html"
-              >Create a post</a
-            >
-            <a class="workSans-btns-h5" href="./my-posts.html">My posts</a>
-            <a class="workSans-btns-h5" href="./my-comments.html"
-              >My comments</a
-            >
-            <a class="workSans-btns-h5" href="./inbox-messages.html"
-              >My messages</a
-            >
-            <a class="workSans-btns-h5" href="/">Gallery</a>
+    <main class="wrapper">
+      <section class="create-smt">
+        <form
+          class="create-smt-form"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h2 class="create-smt__title violet workSans-h4-h3">Message to HellowKitty</h2>
+          <div class="create-smt-form__input-cont">
+            <label class="workSans-base-body" for="id_subject">Subject:</label>
+            <input
+              class="form-input form-input--without-img workSans-base"
+              maxlength="255"
+              type="text"
+              name="subject"
+              id="id_subject"
+              required
+            />
           </div>
-        </section>
-      </div>
-      <div class="forum-cards--bg">
-        <section class="forum-cards wrapper">
-          <div class="post-cards-cont">
-            <div class="post-card clearfix">
-              <a class="post-card__a" href=""
-                ><img
-                  class="post-card__img"
-                  src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
-                  alt="Post Card image"
-              /></a>
-              <div class="post-card__author">
-                <a class="post-card__avatar-a workSans-h4-h3" href="">
-                  <img
-                    class="post-card__avatar-img"
-                    src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
-                    alt="Avatar"
-                /></a>
-                <div class="post-card__author-inf">
-                  <a class="post-card__author-name workSans-h4-h3" href=""
-                    >Little Bird</a
-                  >
-                  <a
-                    class="post-card__mess workSans-btns-h5 a-as-btn btn--Outlined btn--Tertiary"
-                    href="./create-message.html"
-                    >Message me</a
-                  >
-                </div>
-              </div>
-              <div class="post-card__post-inf">
-                <a class="workSans-h4-h3" href="./post-page.html"
-                  >The hamster has escaped!</a
-                >
-                <p class="workSans-h5 violet">
-                  It happened 23 January - 2025 (14:07)
-                </p>
-              </div>
-              <p class="post-card__post-text workSans-h5">
-                Yesterday my favorite hamster ran away, please return the
-                reward, he won’t take it with his bare hands, he will bite it
-                off up to the elbow! Refuse to pay for physical and...
-              </p>
-            </div>
-            <div class="post-card clearfix">
-              <a class="post-card__a" href=""
-                ><img
-                  class="post-card__img"
-                  src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
-                  alt="Post Card image"
-              /></a>
-              <div class="post-card__author">
-                <a class="post-card__avatar-a workSans-h4-h3" href="">
-                  <img
-                    class="post-card__avatar-img"
-                    src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
-                    alt="Avatar"
-                /></a>
-                <div class="post-card__author-inf">
-                  <a class="post-card__author-name workSans-h4-h3" href=""
-                    >Little Bird</a
-                  >
-                  <a
-                    class="post-card__mess workSans-btns-h5 a-as-btn btn--Outlined btn--Tertiary"
-                    href="./create-message.html"
-                    >Message me</a
-                  >
-                </div>
-              </div>
-              <div class="post-card__post-inf">
-                <a class="workSans-h4-h3" href="./post-page.html"
-                  >The hamster has escaped!</a
-                >
-                <p class="workSans-h5 violet">
-                  It happened 23 January - 2025 (14:07)
-                </p>
-              </div>
-              <p class="post-card__post-text workSans-h5">
-                Yesterday my favorite hamster ran away, please return the
-                reward, he won’t take it with his bare hands, he will bite it
-                off up to the elbow! Refuse to pay for physical and...
-              </p>
-            </div>
-            <div class="post-card clearfix">
-              <a class="post-card__a" href=""
-                ><img
-                  class="post-card__img"
-                  src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
-                  alt="Post Card image"
-              /></a>
-              <div class="post-card__author">
-                <a class="post-card__avatar-a workSans-h4-h3" href="">
-                  <img
-                    class="post-card__avatar-img"
-                    src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
-                    alt="Avatar"
-                /></a>
-                <div class="post-card__author-inf">
-                  <a class="post-card__author-name workSans-h4-h3" href=""
-                    >Little Bird</a
-                  >
-                  <a
-                    class="post-card__mess workSans-btns-h5 a-as-btn btn--Outlined btn--Tertiary"
-                    href="./create-message.html"
-                    >Message me</a
-                  >
-                </div>
-              </div>
-              <div class="post-card__post-inf">
-                <a class="workSans-h4-h3" href="./post-page.html"
-                  >The hamster has escaped!</a
-                >
-                <p class="workSans-h5 violet">
-                  It happened 23 January - 2025 (14:07)
-                </p>
-              </div>
-              <p class="post-card__post-text workSans-h5">
-                Yesterday my favorite hamster ran away, please return the
-                reward, he won’t take it with his bare hands, he will bite it
-                off up to the elbow! Refuse to pay for physical and...
-              </p>
-            </div>
-            <div class="post-card clearfix">
-              <a class="post-card__a" href=""
-                ><img
-                  class="post-card__img"
-                  src="./images/users images/post images/lesnoi-khomiak-karbysh-chernyi-24.webp"
-                  alt="Post Card image"
-              /></a>
-              <div class="post-card__author">
-                <a class="post-card__avatar-a workSans-h4-h3" href="">
-                  <img
-                    class="post-card__avatar-img"
-                    src="./images/users images/avatars/vetki-listia-aziatka-milaia-boke.jpg"
-                    alt="Avatar"
-                /></a>
-                <div class="post-card__author-inf">
-                  <a class="post-card__author-name workSans-h4-h3" href=""
-                    >Little Bird</a
-                  >
-                  <a
-                    class="post-card__mess workSans-btns-h5 a-as-btn btn--Outlined btn--Tertiary"
-                    href="./create-message.html"
-                    >Message me</a
-                  >
-                </div>
-              </div>
-              <div class="post-card__post-inf">
-                <a class="workSans-h4-h3" href="./post-page.html"
-                  >The hamster has escaped!</a
-                >
-                <p class="workSans-h5 violet">
-                  It happened 23 January - 2025 (14:07)
-                </p>
-              </div>
-              <p class="post-card__post-text workSans-h5">
-                Yesterday my favorite hamster ran away, please return the
-                reward, he won’t take it with his bare hands, he will bite it
-                off up to the elbow! Refuse to pay for physical and...
-              </p>
-            </div>
+          <div
+            class="create-smt-form__input-cont create-smt-form__input-cont--column"
+          >
+            <label class="workSans-base-body" for="id_content"
+              >Content:</label
+            >
+            <textarea
+              class="textarea workSans-base"
+              name="content"
+              cols="40"
+              rows="10"
+              required
+              id="id_content"
+            ></textarea>
           </div>
-          <div class="pagination workSans-btns-h5">
-            <div class="pagination-numbers">
-              <a class="pagination-number--active" href="?page=1">1</a>
-              <a href="?page=2">2</a>
-              <a href="?page=3">3</a>
-            </div>
-            <a href="?page=2"
-              ><img
-                class="img-in-btn"
-                src="./images/static/icons/arrow-left.png"
-                alt="Next page"
-            /></a>
-            <a class="pagination-arrow--right" href="?page=3"
-              ><img
-                class="img-in-btn"
-                src="./images/static/icons/arrow-right.png"
-                alt="Last page"
-            /></a>
-          </div>
-        </section>
-      </div>
+          <button
+            class="btn btn--form btn--Filled btn--Tertiary btn--margin-top20 workSans-btns"
+            type="submit"
+          >
+            Send message
+          </button>
+        </form>
+      </section>
     </main>
-
-    <!--? Конец раздела Меин -->
     <!--? Футер -->
     <footer class="footer">
       <div class="footer__inner wrapper">

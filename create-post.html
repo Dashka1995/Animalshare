@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animalshare/My goods</title>
+    <title>Animalshare/New post</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./fonts/workSans/font.css" />
     <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
@@ -81,7 +81,9 @@
         </div>
         <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">Create a post</a>
+            <a class="dropdown-menu__a" href="./create-post.html"
+              >Create a post</a
+            >
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
@@ -185,7 +187,9 @@
           </li>
           <ul class="dropdown-menu dropdown-menu--desktop-forum workSans-base">
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">Create a post</a>
+              <a class="dropdown-menu__a" href="./create-post.html"
+                >Create a post</a
+              >
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
@@ -224,185 +228,94 @@
       <p class="spaceMono-h5-h4">Error during registration</p>
     </div>
     <!--? Конец раздела Ворнинг-месс -->
-    <section class="title bg3">
+    <section class="title bg4">
       <!--! Вставить переменную для смены bg-img -->
-      <h1 class="title__text wrapper workSans-h4-h3-h2">My goods</h1>
+      <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html">Forum</a>
     </section>
     <main class="wrapper">
-      <section class="profile-bottom profile-bottom--margin">
-        <div class="selected-goods">
-          <div class="selected-goods__card">
-            <a class="selected-goods__card-a-whith-img" href="/">
-              <img
-                class="selected-goods__card-img"
-                src="./images/static/goods/248932465.webp"
-                alt="Reptile run wheel"
-              />
-            </a>
-            <div class="selected-goods__card-inf">
-              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
-              <p class="workSans-base-body">4.99$</p>
-              <p class="workSans-h5-h4">Totall 4.99$</p>
-              <div class="selected-goods__card-btns--content-center">
-                <div class="selected-goods__card-btns">
-                  <div class="selected-goods__card-change-quantity-cont">
-                    <button
-                      type="button"
-                      class="selected-goods__btn selected-goods__btn-change-quantity"
-                      data-cart-id="95"
-                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
-                      data-action="decrease"
-                    >
-                      <input
-                        type="hidden"
-                        name="csrfmiddlewaretoken"
-                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
-                      />
-                      <img
-                        class="selected-goods__btn-img"
-                        src="./images/static/icons/plus.png"
-                        alt="Add"
-                      />
-                    </button>
-                    <p
-                      class="selected-goods__cart-quantity workSans-h4-h3"
-                      data-cart-id="95"
-                    >
-                      1
-                    </p>
-                    <button
-                      type="button"
-                      class="selected-goods__btn selected-goods__btn-change-quantity"
-                      data-cart-id="95"
-                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
-                      data-action="increase"
-                    >
-                      <input
-                        type="hidden"
-                        name="csrfmiddlewaretoken"
-                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
-                      />
-                      <img
-                        class="selected-goods__btn-img"
-                        src="./images/static/icons/minus.png"
-                        alt="Subtract"
-                      />
-                    </button>
-                  </div>
-                  <button
-                    type="button"
-                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
-                    data-cart-id="95"
-                    data-remove-url="/cart/cart_remove/95"
-                  >
-                    <input
-                      type="hidden"
-                      name="csrfmiddlewaretoken"
-                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
-                    />
-                    <img
-                      class="selected-goods__btn-img"
-                      src="./images/static/icons/trash.png"
-                      alt="Delete"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
+      <section class="create-smt">
+        <form
+          class="create-smt-form"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h2 class="create-smt__title violet workSans-h4-h3">New post</h2>
+          <div class="create-smt-form__input-cont">
+            <label class="workSans-base-body" for="id_title">Title:</label>
+            <input
+              class="form-input form-input--without-img workSans-base"
+              maxlength="100"
+              type="text"
+              name="title"
+              id="id_title"
+              required
+            />
           </div>
-          <div class="selected-goods__card">
-            <a class="selected-goods__card-a-whith-img" href="/">
-              <img
-                class="selected-goods__card-img"
-                src="./images/static/goods/248932465.webp"
-                alt="Reptile run wheel"
-              />
-            </a>
-            <div class="selected-goods__card-inf">
-              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
-              <p class="workSans-base-body">4.99$</p>
-              <p class="workSans-h5-h4">Totall 4.99$</p>
-              <div class="selected-goods__card-btns--content-center">
-                <div class="selected-goods__card-btns">
-                  <div class="selected-goods__card-change-quantity-cont">
-                    <button
-                      type="button"
-                      class="selected-goods__btn selected-goods__btn-change-quantity"
-                      data-cart-id="95"
-                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
-                      data-action="decrease"
-                    >
-                      <input
-                        type="hidden"
-                        name="csrfmiddlewaretoken"
-                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
-                      />
-                      <img
-                        class="selected-goods__btn-img"
-                        src="./images/static/icons/plus.png"
-                        alt="Add"
-                      />
-                    </button>
-                    <p
-                      class="selected-goods__cart-quantity workSans-h4-h3"
-                      data-cart-id="95"
-                    >
-                      1
-                    </p>
-                    <button
-                      type="button"
-                      class="selected-goods__btn selected-goods__btn-change-quantity"
-                      data-cart-id="95"
-                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
-                      data-action="increase"
-                    >
-                      <input
-                        type="hidden"
-                        name="csrfmiddlewaretoken"
-                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
-                      />
-                      <img
-                        class="selected-goods__btn-img"
-                        src="./images/static/icons/minus.png"
-                        alt="Subtract"
-                      />
-                    </button>
-                  </div>
-                  <button
-                    type="button"
-                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
-                    data-cart-id="95"
-                    data-remove-url="/cart/cart_remove/95"
-                  >
-                    <input
-                      type="hidden"
-                      name="csrfmiddlewaretoken"
-                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
-                    />
-                    <img
-                      class="selected-goods__btn-img"
-                      src="./images/static/icons/trash.png"
-                      alt="Delete"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="selected-goods-cont-place-order">
-          <a
-            class="a-as-btn btn btn--place-order btn--Filled btn--Secondary workSans-h5-h4"
-            href=""
-            >Place an order!</a
-          >
-          <p class="workSans-base-body">
-            10 goods for
-            <span class="selected-goods-cont-place-order-span workSans-h5-h4"
-              >totall 662.60 $</span
+          <div class="create-smt-form__input-cont">
+            <label class="workSans-base-body" for="id_animaltype"
+              >Animaltype:</label
             >
-          </p>
-        </div>
+            <input
+              class="form-input form-input--without-img workSans-base"
+              type="text"
+              name="animaltype"
+              id="id_animaltype"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="create-smt-form__input-cont">
+            <label class="workSans-base-body" for="id_animalstatus"
+              >Animalstatus:</label
+            >
+            <input
+              class="form-input form-input--without-img workSans-base"
+              type="text"
+              name="animalstatus"
+              id="id_animalstatus"
+              maxlength="50"
+              required
+            />
+          </div>
+          <div class="create-smt-form__input-cont">
+            <p class="workSans-base-body">Animal image:</p>
+            <label
+              class="select-file-label btn btn--form btn--Outlined btn--Tertiary workSans-btns"
+              for="id_animal_image"
+              >Select file</label
+            >
+            <input
+              class="hidden"
+              accept="image/*"
+              type="file"
+              name="animal_image"
+              value="profile_pics/Clipboard01_r5UMOFz.jpg"
+              id="id_animal_image"
+            />
+          </div>
+
+          <div
+            class="create-smt-form__input-cont create-smt-form__input-cont--column"
+          >
+            <label class="workSans-base-body" for="id_description"
+              >Description:</label
+            >
+            <textarea
+              class="textarea workSans-base"
+              name="description"
+              cols="40"
+              rows="10"
+              required=""
+              id="id_description"
+            ></textarea>
+          </div>
+          <button
+            class="btn btn--form btn--Filled btn--Tertiary btn--margin-top20 workSans-btns"
+            type="submit"
+          >
+            Send post
+          </button>
+        </form>
       </section>
     </main>
     <!--? Футер -->

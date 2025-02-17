@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animalshare/Create Account</title>
+    <title>Animalshare/My goods</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./fonts/workSans/font.css" />
     <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
@@ -81,7 +81,9 @@
         </div>
         <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">Create a post</a>
+            <a class="dropdown-menu__a" href="./create-post.html"
+              >Create a post</a
+            >
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
@@ -185,7 +187,9 @@
           </li>
           <ul class="dropdown-menu dropdown-menu--desktop-forum workSans-base">
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">Create a post</a>
+              <a class="dropdown-menu__a" href="./create-post.html"
+                >Create a post</a
+              >
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
@@ -224,68 +228,186 @@
       <p class="spaceMono-h5-h4">Error during registration</p>
     </div>
     <!--? Конец раздела Ворнинг-месс -->
-    <main class="create-acc-main">
-      <!--? Фоновая картинка для раздела Create Account -->
-      <div class="bg-left bg-left1"></div>
-      <!--? Начало раздела Create Acc -->
-      <section class="create-acc create-acc--wrapper">
-        <div class="create-acc__description">
-          <h1 class="create-acc__title workSans-h3-h2">Create Account</h1>
+    <section class="title bg3">
+      <!--! Вставить переменную для смены bg-img -->
+      <h1 class="title__text wrapper workSans-h4-h3-h2">My goods</h1>
+    </section>
+    <main class="wrapper">
+      <section class="profile-bottom profile-bottom--margin">
+        <div class="selected-goods">
+          <div class="selected-goods__card">
+            <a class="selected-goods__card-a-whith-img" href="/">
+              <img
+                class="selected-goods__card-img"
+                src="./images/static/goods/248932465.webp"
+                alt="Reptile run wheel"
+              />
+            </a>
+            <div class="selected-goods__card-inf">
+              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
+              <p class="workSans-base-body">4.99$</p>
+              <p class="workSans-h5-h4">Totall 4.99$</p>
+              <div class="selected-goods__card-btns--content-center">
+                <div class="selected-goods__card-btns">
+                  <div class="selected-goods__card-change-quantity-cont">
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="decrease"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/plus.png"
+                        alt="Add"
+                      />
+                    </button>
+                    <p
+                      class="selected-goods__cart-quantity workSans-h4-h3"
+                      data-cart-id="95"
+                    >
+                      1
+                    </p>
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="increase"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/minus.png"
+                        alt="Subtract"
+                      />
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
+                    data-cart-id="95"
+                    data-remove-url="/cart/cart_remove/95"
+                  >
+                    <input
+                      type="hidden"
+                      name="csrfmiddlewaretoken"
+                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                    />
+                    <img
+                      class="selected-goods__btn-img"
+                      src="./images/static/icons/trash.png"
+                      alt="Delete"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selected-goods__card">
+            <a class="selected-goods__card-a-whith-img" href="/">
+              <img
+                class="selected-goods__card-img"
+                src="./images/static/goods/248932465.webp"
+                alt="Reptile run wheel"
+              />
+            </a>
+            <div class="selected-goods__card-inf">
+              <a class="workSans-h4-h3" href="/">Reptile run wheel</a>
+              <p class="workSans-base-body">4.99$</p>
+              <p class="workSans-h5-h4">Totall 4.99$</p>
+              <div class="selected-goods__card-btns--content-center">
+                <div class="selected-goods__card-btns">
+                  <div class="selected-goods__card-change-quantity-cont">
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="decrease"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/plus.png"
+                        alt="Add"
+                      />
+                    </button>
+                    <p
+                      class="selected-goods__cart-quantity workSans-h4-h3"
+                      data-cart-id="95"
+                    >
+                      1
+                    </p>
+                    <button
+                      type="button"
+                      class="selected-goods__btn selected-goods__btn-change-quantity"
+                      data-cart-id="95"
+                      data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
+                      data-action="increase"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrfmiddlewaretoken"
+                        value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                      />
+                      <img
+                        class="selected-goods__btn-img"
+                        src="./images/static/icons/minus.png"
+                        alt="Subtract"
+                      />
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="selected-goods__btn selected-goods__btn-remove-cart-item"
+                    data-cart-id="95"
+                    data-remove-url="/cart/cart_remove/95"
+                  >
+                    <input
+                      type="hidden"
+                      name="csrfmiddlewaretoken"
+                      value="Ph176yNQwhbRxzFodNOyMY8pLoEUgnZl30DgDUZ0LldJUbTWfeifTTV7bHJ3CLiM"
+                    />
+                    <img
+                      class="selected-goods__btn-img"
+                      src="./images/static/icons/trash.png"
+                      alt="Delete"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="selected-goods-cont-place-order">
+          <a
+            class="a-as-btn btn btn--place-order btn--Filled btn--Secondary workSans-h5-h4"
+            href=""
+            >Place an order!</a
+          >
           <p class="workSans-base-body">
-            Welcome! enter your details and start creating posts, chatting and
-            shopping on Animalshare.
+            10 goods for
+            <span class="selected-goods-cont-place-order-span workSans-h5-h4"
+              >totall 662.60 $</span
+            >
           </p>
         </div>
-        <form class="create-acc-form">
-          <input
-            class="form-input create-acc-form__input--username workSans-base"
-            type="text"
-            name="username"
-            id="id_username"
-            placeholder="Username"
-            required
-          />
-          <input
-            class="form-input create-acc-form__input--email workSans-base"
-            type="email"
-            name="email"
-            id="id_email"
-            placeholder="Email"
-            required
-          />
-          <input
-            class="form-input create-acc-form__input--password workSans-base"
-            type="password"
-            name="password1"
-            id="id_password1"
-            placeholder="Password"
-            required
-          />
-          <input
-            class="form-input create-acc-form__input--password workSans-base"
-            type="password"
-            name="password2"
-            id="id_password2"
-            placeholder="Confirm Password"
-            required
-          />
-          <button
-            class="btn btn--form btn--Filled btn--Tertiary workSans-btns"
-            type="submit"
-          >
-            Create account
-          </button>
-        </form>
-        <div class="create-acc-form__after">
-          <p class="workSans-base-body">Already have an account?</p>
-          <a
-            href="./login.html"
-            class="a-as-btn btn btn--form btn--Outlined btn--Tertiary workSans-btns"
-            >Login</a
-          >
-        </div>
       </section>
-      <!--? Конец раздела Create Account -->
     </main>
     <!--? Футер -->
     <footer class="footer">

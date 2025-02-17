@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animalshare/Forum</title>
+    <title>Animalshare/Outbox message</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./fonts/workSans/font.css" />
     <link rel="stylesheet" href="./fonts/spaceMono/font.css" />
@@ -81,7 +81,9 @@
         </div>
         <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-            <a class="dropdown-menu__a" href="">Create a post</a>
+            <a class="dropdown-menu__a" href="./create-post.html"
+              >Create a post</a
+            >
           </div>
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
             <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
@@ -185,7 +187,9 @@
           </li>
           <ul class="dropdown-menu dropdown-menu--desktop-forum workSans-base">
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
-              <a class="dropdown-menu__a" href="">Create a post</a>
+              <a class="dropdown-menu__a" href="./create-post.html"
+                >Create a post</a
+              >
             </li>
             <li class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
               <a class="dropdown-menu__a" href="./my-posts.html">My posts</a>
@@ -227,13 +231,13 @@
     <!--? Вставить переменную для смены bg-img -->
     <section class="title bg1">
       <!--! Вставить переменную для смены bg-img -->
-      <h1 class="title__text wrapper workSans-h4-h3-h2">Forum</h1>
+      <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html">Forum</a>
     </section>
     <main>
       <div class="wrapper">
         <section class="sort">
           <div class="sort__nav">
-            <a class="workSans-btns-h5" href="/"
+            <a class="workSans-btns-h5" href="./create-post.html"
               >Create a post</a
             >
             <a class="workSans-btns-h5" href="./my-posts.html">My posts</a>
