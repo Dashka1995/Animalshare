@@ -28,7 +28,7 @@
           alt="menu"
         />
       </button>
-      <div class="mobile-menu hidden">
+      <nav class="mobile-menu hidden">
         <div class="mobile-menu__logo-cont">
           <a href="./homepage.html" class="mobile-menu__logo-a spaceMono-btns">
             <img
@@ -135,7 +135,7 @@
             <a class="dropdown-menu__a" href="">Other</a>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!--? Конец мобильного хедера -->
     <!--? Десктопный хедер -->
@@ -148,7 +148,7 @@
         />
         Animalshare
       </a>
-      <div class="desktop-menu">
+      <nav class="desktop-menu">
         <ul class="desktop-menu__marketplace-list">
           <li>
             <a
@@ -220,7 +220,7 @@
             alt=""
           />Login
         </a>
-      </div>
+      </nav>
     </header>
     <!--? Конец десктопного хедера -->
     <!--? Раздел Ворнинг-месс -->
@@ -228,14 +228,16 @@
       <p class="spaceMono-h5-h4">Error during registration</p>
     </div>
     <!--? Конец раздела Ворнинг-месс -->
-    <!--? Вставить переменную для смены bg-img -->
-    <section class="title bg1">
-      <!--! Вставить переменную для смены bg-img -->
-      <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html">Forum</a>
-    </section>
     <main>
+      <!--? Вставить переменную для смены bg-img -->
+      <section class="title bg1">
+        <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html"
+          >Forum</a
+        >
+      </section>
       <div class="wrapper">
-        <section class="sort">
+        <!--? Раздел Сортировки -->
+        <nav class="sort">
           <div class="sort__nav">
             <a
               class="workSans-btns-h5 sort__a--active"
@@ -251,9 +253,11 @@
             >
             <a class="workSans-btns-h5" href="./gallery.html">Gallery</a>
           </div>
-        </section>
+        </nav>
+        <!--? Конец раздела Сортировки -->
       </div>
       <div class="forum-cards--bg">
+        <!--? Раздел карточки поста -->
         <section class="forum-cards wrapper">
           <div class="post-cards-cont">
             <div class="post-card clearfix">
@@ -297,6 +301,8 @@
             </div>
           </div>
         </section>
+        <!--? Конец раздела карточки поста -->
+        <!--? Раздел комментариев к посту -->
         <section class="forum-comments">
           <div class="sub-title-cont__border">
             <div class="sub-title-cont wrapper">
@@ -328,7 +334,11 @@
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
                   <button class="comment-card__btn btn--whith-img">
-                    <img class="btn__img-large" src="./images/static/icons/trash--violet.png" alt="Delete">
+                    <img
+                      class="btn__img-large"
+                      src="./images/static/icons/trash--violet.png"
+                      alt="Delete"
+                    />
                   </button>
                 </p>
               </div>
@@ -354,7 +364,11 @@
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
                   <button class="comment-card__btn btn--whith-img">
-                    <img class="btn__img-large" src="./images/static/icons/trash--violet.png" alt="Delete">
+                    <img
+                      class="btn__img-large"
+                      src="./images/static/icons/trash--violet.png"
+                      alt="Delete"
+                    />
                   </button>
                 </p>
               </div>
@@ -380,7 +394,11 @@
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
                   <button class="comment-card__btn btn--whith-img">
-                    <img class="btn__img-large" src="./images/static/icons/trash--violet.png" alt="Delete">
+                    <img
+                      class="btn__img-large"
+                      src="./images/static/icons/trash--violet.png"
+                      alt="Delete"
+                    />
                   </button>
                 </p>
               </div>
@@ -406,17 +424,20 @@
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
                   <button class="comment-card__btn btn--whith-img">
-                    <img class="btn__img-large" src="./images/static/icons/trash--violet.png" alt="Delete">
+                    <img
+                      class="btn__img-large"
+                      src="./images/static/icons/trash--violet.png"
+                      alt="Delete"
+                    />
                   </button>
                 </p>
               </div>
             </div>
           </div>
         </section>
+        <!--? Конец раздела комментариев к посту -->
       </div>
     </main>
-
-    <!--? Конец раздела Меин -->
     <!--? Футер -->
     <footer class="footer">
       <div class="footer__inner wrapper">
