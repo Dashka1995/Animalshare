@@ -1261,6 +1261,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  align-items: center;
 }
 
 @media screen and (max-width: 641px) {
@@ -1275,10 +1276,6 @@ body {
   }
 }
 
-.selected-goods__btn {
-  background-color: transparent;
-  border: none;
-}
 
 .selected-goods__btn-img {
   height: 32px;
@@ -1375,13 +1372,20 @@ body {
   width: 100%;
 }
 
-.search-form__btn {
+.btn-search {
   background-color: transparent;
   width: 50px;
   height: 50px;
   position: absolute;
   right: 12px;
   border: none;
+  background-image: url(./images/static/icons/search.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-search:hover {
+  background-image: url(./images/static/icons/search--violet.png);
 }
 /*? конец секции описания маркетплейса*/
 
@@ -1537,6 +1541,15 @@ body {
   background-color: transparent;
   border: none;
   align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/basket.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.marketplace-card__basket:hover {
+  background-image: url(./images/static/icons/basket--violet.png);
 }
 
 .product-card-top {
@@ -1650,6 +1663,25 @@ body {
 
 .pagination-arrow--right {
   order: 2;
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/arrow-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pagination-arrow--right:hover {
+  background-image: url(./images/static/icons/arrow-right--violet.png);
+}
+
+.pagination-arrow--left {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/arrow-left.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pagination-arrow--left:hover {
+  background-image: url(./images/static/icons/arrow-left--violet.png);
 }
 
 .pagination-number--active {
@@ -1751,9 +1783,53 @@ body {
   gap: 5px;
 }
 
-.comment-card__btn {
+.btn-plus {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/plus.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-plus:hover {
+  background-image: url(./images/static/icons/plus--violet.png);
+}
+
+.btn-minus {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/minus.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-minus:hover {
+  background-image: url(./images/static/icons/minus--violet.png);
+}
+
+.btn-delete {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/trash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-delete:hover {
+  background-image: url(./images/static/icons/trash--violet.png);
+}
+
+.btn-delete--comments {
   align-self: flex-end;
   float: right;
+}
+
+.btn-sort {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/sort.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-sort:hover {
+  background-image: url(./images/static/icons/sort--violet.png);
 }
 
 @media screen and (min-width: 834px) {

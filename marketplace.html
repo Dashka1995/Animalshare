@@ -54,7 +54,7 @@
             Login
             <img
               class="btn__img btn__img--mobile"
-              src="./images/static/icons/user.png"
+              src="./images/static/icons/user--violet.png"
               alt="Login"
             />
           </a>
@@ -246,8 +246,7 @@
               name="q"
               placeholder="Good's search"
             />
-            <button class="search-form__btn" type="submit">
-              <img src="./images/static/icons/search.png" alt="Search" />
+            <button class="btn-search" type="submit">
             </button>
           </form>
           <a
@@ -271,7 +270,6 @@
               tabindex="1"
             >
               Sort by
-              <span class="sort__sorting-btn-open-span hidden">:</span>
             </button>
             <ul class="sort__dropdown-menu workSans-btns hidden">
               <li>
@@ -312,12 +310,7 @@
                     value="price"
                   /><label>Cheap first</label>
                 </li>
-                <button class="btn--whith-img" type="submit">
-                  <img
-                    class="img-in-btn"
-                    src="./images/static/icons/sort.png"
-                    alt="Sort"
-                  />
+                <button class="btn-sort btn--whith-img" type="submit">
                 </button>
               </div>
             </ul>
@@ -354,11 +347,6 @@
                     <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img
-                      class="img-in-btn"
-                      src="./images/static/icons/basket.png"
-                      alt="Add to cart"
-                    />
                   </button>
                 </div>
               </div>
@@ -390,11 +378,6 @@
                     <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img
-                      class="img-in-btn"
-                      src="./images/static/icons/basket.png"
-                      alt="Add to cart"
-                    />
                   </button>
                 </div>
               </div>
@@ -426,11 +409,6 @@
                     <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img
-                      class="img-in-btn"
-                      src="./images/static/icons/basket.png"
-                      alt="Add to cart"
-                    />
                   </button>
                 </div>
               </div>
@@ -462,11 +440,6 @@
                     <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img
-                      class="img-in-btn"
-                      src="./images/static/icons/basket.png"
-                      alt="Add to cart"
-                    />
                   </button>
                 </div>
               </div>
@@ -498,11 +471,6 @@
                     <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img
-                      class="img-in-btn"
-                      src="./images/static/icons/basket.png"
-                      alt="Add to cart"
-                    />
                   </button>
                 </div>
               </div>
@@ -534,11 +502,6 @@
                     <p>617.69$</p>
                   </div>
                   <button class="marketplace-card__basket">
-                    <img
-                      class="img-in-btn"
-                      src="./images/static/icons/basket.png"
-                      alt="Add to cart"
-                    />
                   </button>
                 </div>
               </div>
@@ -550,18 +513,8 @@
               <a href="?page=2">2</a>
               <a href="?page=3">3</a>
             </div>
-            <a href="?page=2"
-              ><img
-                class="img-in-btn"
-                src="./images/static/icons/arrow-left.png"
-                alt="Next page"
-            /></a>
-            <a class="pagination-arrow--right" href="?page=3"
-              ><img
-                class="img-in-btn"
-                src="./images/static/icons/arrow-right.png"
-                alt="Last page"
-            /></a>
+            <a class="pagination-arrow--left" href="?page=2"></a>
+            <a class="pagination-arrow--right" href="?page=3"></a>
           </div>
         </section>
       </div>
@@ -586,7 +539,7 @@
               <a class="footer__adress-a" href="tel:+380633731255">
                 <img
                   class="footer__adress-img"
-                  src="./images/static/icons/phone.png"
+                  src="./images/static/icons/phone--violet.png"
                   alt="Phone"
                 />
                 +380633731255</a
@@ -594,7 +547,7 @@
               <a class="footer__adress-a" href="mailto:237629134pah@gmail.com">
                 <img
                   class="footer__adress-img"
-                  src="./images/static/icons/message.png"
+                  src="./images/static/icons/message--violet.png"
                   width="32px"
                   alt="Email"
                 />
@@ -658,9 +611,6 @@
         .addEventListener("click", function () {
           document
             .querySelector(".sort__dropdown-menu")
-            .classList.toggle("hidden");
-          document
-            .querySelector(".sort__sorting-btn-open-span")
             .classList.toggle("hidden");
           document
             .querySelector(".sort__sorting-btn-open")
