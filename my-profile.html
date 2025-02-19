@@ -22,15 +22,10 @@
       </a>
       <div class="overlay hidden"></div>
       <button class="btn-menu">
-        <img
-          class="img-in-btn"
-          src="./images/static/icons/list.png"
-          alt="menu"
-        />
       </button>
       <div class="mobile-menu hidden">
         <div class="mobile-menu__logo-cont">
-          <a href="./homepage.html" class="mobile-menu__logo-a spaceMono-btns">
+          <a href="./homepage.html" class="logo spaceMono-btns">
             <img
               class="btn__img"
               src="./images/static/icons/logo.png"
@@ -39,11 +34,6 @@
             Animalshare
           </a>
           <button class="mobile-menu__exit workSans-btns">
-            <img
-              class="img-in-btn"
-              src="./images/static/icons/cross.png"
-              alt="Exit"
-            />
           </button>
         </div>
         <div class="mobile-menu__a-cont">
@@ -71,12 +61,7 @@
           <a class="mobile-menu__a-with-arrow workSans-btns" href="./forum.html"
             >Forum</a
           >
-          <button class="btn--whith-img btn--whith-img--forum">
-            <img
-              class="img-in-btn"
-              src="./images/static/icons/arrow-down.png"
-              alt="show sub-items"
-            />
+          <button class="btn-arrow-down btn--with-img btn--with-img--forum">
           </button>
         </div>
         <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
@@ -108,12 +93,7 @@
             href="./marketplace.html"
             >Marketplace</a
           >
-          <button class="btn--whith-img btn--whith-img--marketplace">
-            <img
-              class="img-in-btn"
-              src="./images/static/icons/arrow-down.png"
-              alt="Show sub-items"
-            />
+          <button class="btn-arrow-down btn--with-img btn--with-img--marketplace">
           </button>
         </div>
         <div
@@ -560,7 +540,7 @@
                   <div class="selected-goods__card-change-quantity-cont">
                     <button
                       type="button"
-                      class="btn-plus btn--whith-img"
+                      class="btn-plus btn--with-img"
                       data-cart-id="95"
                       data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
                       data-action="decrease"
@@ -579,7 +559,7 @@
                     </p>
                     <button
                       type="button"
-                      class="btn-minus btn--whith-img"
+                      class="btn-minus btn--with-img"
                       data-cart-id="95"
                       data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
                       data-action="increase"
@@ -593,7 +573,7 @@
                   </div>
                   <button
                     type="button"
-                    class="btn-delete btn--whith-img"
+                    class="btn-delete btn--with-img"
                     data-cart-id="95"
                     data-remove-url="/cart/cart_remove/95"
                   >
@@ -624,7 +604,7 @@
                   <div class="selected-goods__card-change-quantity-cont">
                     <button
                       type="button"
-                      class="btn-plus btn--whith-img"
+                      class="btn-plus btn--with-img"
                       data-cart-id="95"
                       data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
                       data-action="decrease"
@@ -643,7 +623,7 @@
                     </p>
                     <button
                       type="button"
-                      class="btn-minus btn--whith-img"
+                      class="btn-minus btn--with-img"
                       data-cart-id="95"
                       data-change-url="/cart/cart_change/michu-cat-grass-seed-replacement-pack/"
                       data-action="increase"
@@ -657,7 +637,7 @@
                   </div>
                   <button
                     type="button"
-                    class="btn-delete btn--whith-img"
+                    class="btn-delete btn--with-img"
                     data-cart-id="95"
                     data-remove-url="/cart/cart_remove/95"
                   >
@@ -757,7 +737,7 @@
       });
 
       document
-        .querySelector(".btn--whith-img--forum")
+        .querySelector(".btn--with-img--forum")
         .addEventListener("click", function () {
           document
             .querySelector(".dropdown-menu--mobile-forum")
@@ -765,7 +745,7 @@
         });
 
       document
-        .querySelector(".btn--whith-img--marketplace")
+        .querySelector(".btn--with-img--marketplace")
         .addEventListener("click", function () {
           document
             .querySelector(".dropdown-menu--mobile-marketplace")

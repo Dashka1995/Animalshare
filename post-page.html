@@ -21,16 +21,10 @@
         Animalshare
       </a>
       <div class="overlay hidden"></div>
-      <button class="btn-menu">
-        <img
-          class="img-in-btn"
-          src="./images/static/icons/list.png"
-          alt="menu"
-        />
       </button>
       <nav class="mobile-menu hidden">
         <div class="mobile-menu__logo-cont">
-          <a href="./homepage.html" class="mobile-menu__logo-a spaceMono-btns">
+          <a href="./homepage.html" class="logo spaceMono-btns">
             <img
               class="btn__img"
               src="./images/static/icons/logo.png"
@@ -39,11 +33,6 @@
             Animalshare
           </a>
           <button class="mobile-menu__exit workSans-btns">
-            <img
-              class="img-in-btn"
-              src="./images/static/icons/cross.png"
-              alt="Exit"
-            />
           </button>
         </div>
         <div class="mobile-menu__a-cont">
@@ -71,12 +60,7 @@
           <a class="mobile-menu__a-with-arrow workSans-btns" href="./forum.html"
             >Forum</a
           >
-          <button class="btn--whith-img btn--whith-img--forum">
-            <img
-              class="img-in-btn"
-              src="./images/static/icons/arrow-down.png"
-              alt="show sub-items"
-            />
+          <button class="btn-arrow-down btn--with-img btn--with-img--forum">
           </button>
         </div>
         <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
@@ -108,12 +92,7 @@
             href="./marketplace.html"
             >Marketplace</a
           >
-          <button class="btn--whith-img btn--whith-img--marketplace">
-            <img
-              class="img-in-btn"
-              src="./images/static/icons/arrow-down.png"
-              alt="Show sub-items"
-            />
+          <button class="btn-arrow-down btn--with-img btn--with-img--marketplace">
           </button>
         </div>
         <div
@@ -333,7 +312,7 @@
                   Your hamster attacked and brutally beat my uncle, get ready
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
-                  <button class="btn-delete btn-delete--comments btn--whith-img">
+                  <button class="btn-delete btn-delete--comments btn--with-img">
                   </button>
                 </p>
               </div>
@@ -359,7 +338,7 @@
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
             <!-- класс хидден скрывает кнопку Удалить: -->
-                  <button class="btn-delete btn-delete--comments btn--whith-img hidden">
+                  <button class="btn-delete btn-delete--comments btn--with-img hidden">
                   </button>
                 </p>
               </div>
@@ -384,7 +363,7 @@
                   Your hamster attacked and brutally beat my uncle, get ready
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
-                  <button class="btn-delete btn-delete--comments btn--whith-img">
+                  <button class="btn-delete btn-delete--comments btn--with-img">
                   </button>
                 </p>
               </div>
@@ -409,7 +388,7 @@
                   Your hamster attacked and brutally beat my uncle, get ready
                   for trial! Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Illum, repellendus fugit.
-                  <button class="btn-delete btn-delete--comments btn--whith-img">
+                  <button class="btn-delete btn-delete--comments btn--with-img">
                   </button>
                 </p>
               </div>
@@ -489,7 +468,7 @@
       });
 
       document
-        .querySelector(".btn--whith-img--forum")
+        .querySelector(".btn--with-img--forum")
         .addEventListener("click", function () {
           document
             .querySelector(".dropdown-menu--mobile-forum")
@@ -497,7 +476,7 @@
         });
 
       document
-        .querySelector(".btn--whith-img--marketplace")
+        .querySelector(".btn--with-img--marketplace")
         .addEventListener("click", function () {
           document
             .querySelector(".dropdown-menu--mobile-marketplace")

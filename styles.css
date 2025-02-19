@@ -249,9 +249,20 @@ body {
   margin-top: 20px;
 }
 
-.btn--whith-img {
+.btn--with-img {
   background-color: transparent;
   border: none;
+}
+
+.btn-arrow-down {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/static/icons/arrow-down.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-arrow-down:hover {
+  background-image: url(./images/static/icons/arrow-down--violet.png);
 }
 
 .btn__img {
@@ -374,6 +385,12 @@ body {
   }
 }
 
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 @media screen and (min-width: 1280px) {
   .logo__img {
     max-width: 32px;
@@ -385,11 +402,20 @@ body {
   z-index: 2;
   top: 10px;
   right: 32px;
-  max-width: 32px;
   background-color: var(--main-primary-color);
   border-radius: 5px;
   border: 2px solid transparent;
+  width: 32px;
+  height: 32px;
+  background-image: url(./images/static/icons/list.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.btn-menu:hover {
+  background-image: url(./images/static/icons/list--violet.png);
+}
+
+
 
 @media screen and (min-width: 834px) {
   .btn-menu {
@@ -423,7 +449,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 17px 5px 15px 16px;
+  padding: 17px 5px 13px 16px;
   background-color: var(--main-primary-color);
 }
 
@@ -437,6 +463,14 @@ body {
   color: var(--elem-primary-color);
   background-color: transparent;
   border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url(./images/static/icons/cross.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mobile-menu__exit:hover {
+  background-image: url(./images/static/icons/cross--violet.png);
 }
 
 .mobile-menu__a-cont,
@@ -446,6 +480,7 @@ body {
   align-items: center;
   border-bottom: 1px solid var(--elem-fourth-color);
   padding: 5px 5px 5px 16px;
+  min-height: 41px;
 }
 
 .dropdown-menu__a-cont--dashed {
