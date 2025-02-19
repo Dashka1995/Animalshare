@@ -415,8 +415,6 @@ body {
   background-image: url(./images/static/icons/list--violet.png);
 }
 
-
-
 @media screen and (min-width: 834px) {
   .btn-menu {
     right: 52px;
@@ -1103,6 +1101,11 @@ body {
 
 /* Стили для форм создания постов, сообщений и комментариев: */
 
+.create-smt {
+  background-color: var(--main-secondary-color);
+  border-bottom: 1px solid var(--main-primary-color);
+}
+
 .create-smt-form__input-cont {
   display: flex;
   flex-direction: row;
@@ -1311,7 +1314,6 @@ body {
   }
 }
 
-
 .selected-goods__btn-img {
   height: 32px;
   min-width: 32px;
@@ -1481,9 +1483,10 @@ body {
 }
 
 .marketplace-cards,
+.pictures-cont,
 .forum-cards {
-  padding-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
-  padding-bottom: clamp(40px, calc(23.66px + 4.36vw), 60px);
+  padding-top: clamp(40px, 23.66px + 4.36vw, 60px);
+  padding-bottom: clamp(40px, 23.66px + 4.36vw, 60px);
 }
 
 .forum-comments {
@@ -1687,7 +1690,9 @@ body {
   margin-top: clamp(40px, calc(23.66px + 4.36vw), 60px);
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .pagination-numbers {
@@ -1970,7 +1975,6 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding-top: clamp(40px, 1.479rem + 4.36vw, 60px);
 }
 
 .picture-card {

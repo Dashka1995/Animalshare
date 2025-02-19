@@ -21,8 +21,7 @@
         Animalshare
       </a>
       <div class="overlay hidden"></div>
-      <button class="btn-menu">
-      </button>
+      <button class="btn-menu"></button>
       <div class="mobile-menu hidden">
         <div class="mobile-menu__logo-cont">
           <a href="./homepage.html" class="logo spaceMono-btns">
@@ -33,8 +32,7 @@
             />
             Animalshare
           </a>
-          <button class="mobile-menu__exit workSans-btns">
-          </button>
+          <button class="mobile-menu__exit workSans-btns"></button>
         </div>
         <div class="mobile-menu__a-cont">
           <a
@@ -61,8 +59,9 @@
           <a class="mobile-menu__a-with-arrow workSans-btns" href="./forum.html"
             >Forum</a
           >
-          <button class="btn-arrow-down btn--with-img btn--with-img--forum">
-          </button>
+          <button
+            class="btn-arrow-down btn--with-img btn--with-img--forum"
+          ></button>
         </div>
         <div class="dropdown-menu dropdown-menu--mobile-forum workSans-base">
           <div class="dropdown-menu__a-cont dropdown-menu__a-cont--dashed">
@@ -93,8 +92,9 @@
             href="./marketplace.html"
             >Marketplace</a
           >
-          <button class="btn-arrow-down btn--with-img btn--with-img--marketplace">
-          </button>
+          <button
+            class="btn-arrow-down btn--with-img btn--with-img--marketplace"
+          ></button>
         </div>
         <div
           class="dropdown-menu dropdown-menu--mobile-marketplace workSans-base hidden"
@@ -210,92 +210,105 @@
     <!--? Конец раздела Ворнинг-месс -->
     <section class="title bg4">
       <!--! Вставить переменную для смены bg-img -->
-      <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html">Forum</a>
+      <a class="title__text wrapper workSans-h4-h3-h2" href="./forum.html"
+        >Forum</a
+      >
     </section>
-    <main class="wrapper">
-      <section class="create-smt">
-        <form
-          class="create-smt-form"
-          method="post"
-          enctype="multipart/form-data"
+    <main>
+      <nav class="sort__nav wrapper">
+        <a class="workSans-btns-h5 violet" href="./create-post.html"
+          >Create a post</a
         >
-          <h2 class="create-smt__title violet workSans-h4-h3">New post</h2>
-          <div class="create-smt-form__input-cont">
-            <label class="workSans-base-body" for="id_title">Title:</label>
-            <input
-              class="form-input form-input--without-img workSans-base"
-              maxlength="100"
-              type="text"
-              name="title"
-              id="id_title"
-              required
-            />
-          </div>
-          <div class="create-smt-form__input-cont">
-            <label class="workSans-base-body" for="id_animaltype"
-              >Animaltype:</label
-            >
-            <input
-              class="form-input form-input--without-img workSans-base"
-              type="text"
-              name="animaltype"
-              id="id_animaltype"
-              maxlength="50"
-              required
-            />
-          </div>
-          <div class="create-smt-form__input-cont">
-            <label class="workSans-base-body" for="id_animalstatus"
-              >Animalstatus:</label
-            >
-            <input
-              class="form-input form-input--without-img workSans-base"
-              type="text"
-              name="animalstatus"
-              id="id_animalstatus"
-              maxlength="50"
-              required
-            />
-          </div>
-          <div class="create-smt-form__input-cont">
-            <p class="workSans-base-body">Animal image:</p>
-            <label
-              class="select-file-label btn btn--form btn--Outlined btn--Tertiary workSans-btns"
-              for="id_animal_image"
-              >Select file</label
-            >
-            <input
-              class="hidden"
-              accept="image/*"
-              type="file"
-              name="animal_image"
-              value="profile_pics/Clipboard01_r5UMOFz.jpg"
-              id="id_animal_image"
-            />
-          </div>
+        <a class="workSans-btns-h5" href="./my-posts.html">My posts</a>
+        <a class="workSans-btns-h5" href="./my-comments.html">My comments</a>
+        <a class="workSans-btns-h5" href="./inbox-messages.html">My messages</a>
+        <a class="workSans-btns-h5" href="./gallery.html">Gallery</a>
+      </nav>
+      <section class="create-smt">
+        <div class="wrapper">
+          <form
+            class="create-smt-form"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <h2 class="create-smt__title workSans-h4-h3">New post</h2>
+            <div class="create-smt-form__input-cont">
+              <label class="workSans-base-body" for="id_title">Title:</label>
+              <input
+                class="form-input form-input--without-img workSans-base"
+                maxlength="100"
+                type="text"
+                name="title"
+                id="id_title"
+                required
+              />
+            </div>
+            <div class="create-smt-form__input-cont">
+              <label class="workSans-base-body" for="id_animaltype"
+                >Animaltype:</label
+              >
+              <input
+                class="form-input form-input--without-img workSans-base"
+                type="text"
+                name="animaltype"
+                id="id_animaltype"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="create-smt-form__input-cont">
+              <label class="workSans-base-body" for="id_animalstatus"
+                >Animalstatus:</label
+              >
+              <input
+                class="form-input form-input--without-img workSans-base"
+                type="text"
+                name="animalstatus"
+                id="id_animalstatus"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="create-smt-form__input-cont">
+              <p class="workSans-base-body">Animal image:</p>
+              <label
+                class="select-file-label btn btn--form btn--Outlined btn--Tertiary workSans-btns"
+                for="id_animal_image"
+                >Select file</label
+              >
+              <input
+                class="hidden"
+                accept="image/*"
+                type="file"
+                name="animal_image"
+                value="profile_pics/Clipboard01_r5UMOFz.jpg"
+                id="id_animal_image"
+              />
+            </div>
 
-          <div
-            class="create-smt-form__input-cont create-smt-form__input-cont--column"
-          >
-            <label class="workSans-base-body" for="id_description"
-              >Description:</label
+            <div
+              class="create-smt-form__input-cont create-smt-form__input-cont--column"
             >
-            <textarea
-              class="textarea workSans-base"
-              name="description"
-              cols="40"
-              rows="10"
-              required=""
-              id="id_description"
-            ></textarea>
-          </div>
-          <button
-            class="btn btn--form btn--Filled btn--Tertiary btn--margin-top20 workSans-btns"
-            type="submit"
-          >
-            Send post
-          </button>
-        </form>
+              <label class="workSans-base-body" for="id_description"
+                >Description:</label
+              >
+              <textarea
+                class="textarea workSans-base"
+                name="description"
+                cols="40"
+                rows="10"
+                required=""
+                id="id_description"
+              ></textarea>
+            </div>
+            <button
+              class="btn btn--form btn--Filled btn--Tertiary btn--margin-top20 workSans-btns"
+              type="submit"
+            >
+              Send post
+            </button>
+          </form>
+        </div>
       </section>
     </main>
     <!--? Футер -->
