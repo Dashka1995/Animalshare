@@ -478,7 +478,7 @@ body {
   align-items: center;
   border-bottom: 1px solid var(--elem-fourth-color);
   padding: 5px 5px 5px 16px;
-  min-height: 41px;
+  min-height: 40px;
 }
 
 .dropdown-menu__a-cont--dashed {
